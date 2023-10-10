@@ -1,0 +1,114 @@
+[
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "This is a post with executable code.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "posts/new_blog_post/new_post.html",
+    "href": "posts/new_blog_post/new_post.html",
+    "title": "This is a dummy blog posts",
+    "section": "",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam suscipit est nec dui eleifend, at dictum elit ullamcorper. Aliquam feugiat dictum bibendum. Praesent fermentum laoreet quam, cursus volutpat odio dapibus in. Fusce luctus porttitor vehicula. Donec ac tortor nisi. Donec at lectus tortor. Morbi tempor, nibh non euismod viverra, metus arcu aliquet elit, sed fringilla urna leo vel purus.\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nam suscipit est nec dui eleifend, at dictum elit ullamcorper. Aliquam feugiat dictum bibendum. Praesent fermentum laoreet quam, cursus volutpat odio dapibus in. Fusce luctus porttitor vehicula. Donec ac tortor nisi. Donec at lectus tortor. Morbi tempor, nibh non euismod viverra, metus arcu aliquet elit, sed fringilla urna leo vel purus.\n\n\nThis is inline code plus a small code chunk.\n\nlibrary(tidyverse)\n\nggplot(mpg) +\n  geom_jitter(aes(cty, hwy), size = 4, alpha = 0.5) \n\n\n\n\n\n\n\n\nTransforming OLS estimatesMaximizing likelihood\n\n\n\n\nCode\npreds_lm %&gt;% \n  ggplot(aes(body_mass_g, bill_length_mm, col = correct)) +\n  geom_jitter(size = 4, alpha = 0.6) +\n  facet_wrap(vars(species)) +\n  scale_color_manual(values = c('grey60', thematic::okabe_ito(3)[3])) +\n  scale_x_continuous(breaks = seq(3000, 6000, 1000)) +\n  theme_minimal(base_size = 12) +\n  theme(\n    legend.position = 'top', \n    panel.background = element_rect(color = 'black'),\n    panel.grid.minor = element_blank()\n  ) +\n  labs(\n    x = 'Body mass (in g)',\n    y = 'Bill length (in mm)'\n  )\n\n\n\n\n\n\n\n\n\nCode\nglm.mod &lt;- glm(sex ~ body_mass_g + bill_length_mm + species, family = binomial, data = dat)\n\npreds &lt;- dat %&gt;% \n  mutate(\n    prob.fit = glm.mod$fitted.values,\n    prediction = if_else(prob.fit &gt; 0.5, 'male', 'female'),\n    correct = if_else(sex == prediction, 'correct', 'incorrect')\n  )\n\n\npreds %&gt;% \n  ggplot(aes(body_mass_g, bill_length_mm, col = correct)) +\n  geom_jitter(size = 4, alpha = 0.6) +\n  facet_wrap(vars(species)) +\n  scale_x_continuous(breaks = seq(3000, 6000, 1000)) +\n  scale_color_manual(values = c('grey60', thematic::okabe_ito(3)[3])) +\n  theme_minimal(base_size = 10) +\n  theme(\n    legend.position = 'top', \n    panel.background = element_rect(color = 'black'),\n    panel.grid.minor = element_blank()\n  ) +\n  labs(\n    x = 'Body mass (in g)',\n    y = 'Bill length (in mm)'\n  )\n\n\n\n\n\n\n\n\n\n\n\\[\n\\int_0^1 f(x) \\ dx\n\\]\n\n\n\n\n\n\n\n\ngeom_density(\n  mapping = NULL,\n  data = NULL,\n  stat = \"density\",\n  position = \"identity\",\n  ...,\n  na.rm = FALSE,\n  orientation = NA,\n  show.legend = NA,\n  inherit.aes = TRUE,\n  outline.type = \"upper\"\n)\n\n\nstat_density(\n  mapping = NULL,\n  data = NULL,\n  geom = \"area\",\n  position = \"stack\",\n  ...,\n  bw = \"nrd0\",\n  adjust = 1,\n  kernel = \"gaussian\",\n  n = 512,\n  trim = FALSE,\n  na.rm = FALSE,\n  orientation = NA,\n  show.legend = NA,\n  inherit.aes = TRUE\n)\n\n\n\n\n\n\n\nggplot(data = gapminder::gapminder, mapping = aes(x = lifeExp, fill = continent)) +\n  stat_density(position = \"identity\", alpha = 0.5)\n\n\n\n\nBla bla bla. This is a caption in the margin. Super cool isn’t it?"
+  },
+  {
+    "objectID": "posts/new_blog_post/new_post.html#merriweather",
+    "href": "posts/new_blog_post/new_post.html#merriweather",
+    "title": "This is a dummy blog posts",
+    "section": "",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam suscipit est nec dui eleifend, at dictum elit ullamcorper. Aliquam feugiat dictum bibendum. Praesent fermentum laoreet quam, cursus volutpat odio dapibus in. Fusce luctus porttitor vehicula. Donec ac tortor nisi. Donec at lectus tortor. Morbi tempor, nibh non euismod viverra, metus arcu aliquet elit, sed fringilla urna leo vel purus.\n\n\nThis is inline code plus a small code chunk.\n\nlibrary(tidyverse)\n\nggplot(mpg) +\n  geom_jitter(aes(cty, hwy), size = 4, alpha = 0.5) \n\n\n\n\n\n\n\n\nTransforming OLS estimatesMaximizing likelihood\n\n\n\n\nCode\npreds_lm %&gt;% \n  ggplot(aes(body_mass_g, bill_length_mm, col = correct)) +\n  geom_jitter(size = 4, alpha = 0.6) +\n  facet_wrap(vars(species)) +\n  scale_color_manual(values = c('grey60', thematic::okabe_ito(3)[3])) +\n  scale_x_continuous(breaks = seq(3000, 6000, 1000)) +\n  theme_minimal(base_size = 12) +\n  theme(\n    legend.position = 'top', \n    panel.background = element_rect(color = 'black'),\n    panel.grid.minor = element_blank()\n  ) +\n  labs(\n    x = 'Body mass (in g)',\n    y = 'Bill length (in mm)'\n  )\n\n\n\n\n\n\n\n\n\nCode\nglm.mod &lt;- glm(sex ~ body_mass_g + bill_length_mm + species, family = binomial, data = dat)\n\npreds &lt;- dat %&gt;% \n  mutate(\n    prob.fit = glm.mod$fitted.values,\n    prediction = if_else(prob.fit &gt; 0.5, 'male', 'female'),\n    correct = if_else(sex == prediction, 'correct', 'incorrect')\n  )\n\n\npreds %&gt;% \n  ggplot(aes(body_mass_g, bill_length_mm, col = correct)) +\n  geom_jitter(size = 4, alpha = 0.6) +\n  facet_wrap(vars(species)) +\n  scale_x_continuous(breaks = seq(3000, 6000, 1000)) +\n  scale_color_manual(values = c('grey60', thematic::okabe_ito(3)[3])) +\n  theme_minimal(base_size = 10) +\n  theme(\n    legend.position = 'top', \n    panel.background = element_rect(color = 'black'),\n    panel.grid.minor = element_blank()\n  ) +\n  labs(\n    x = 'Body mass (in g)',\n    y = 'Bill length (in mm)'\n  )\n\n\n\n\n\n\n\n\n\n\n\\[\n\\int_0^1 f(x) \\ dx\n\\]"
+  },
+  {
+    "objectID": "posts/new_blog_post/new_post.html#columns",
+    "href": "posts/new_blog_post/new_post.html#columns",
+    "title": "This is a dummy blog posts",
+    "section": "",
+    "text": "geom_density(\n  mapping = NULL,\n  data = NULL,\n  stat = \"density\",\n  position = \"identity\",\n  ...,\n  na.rm = FALSE,\n  orientation = NA,\n  show.legend = NA,\n  inherit.aes = TRUE,\n  outline.type = \"upper\"\n)\n\n\nstat_density(\n  mapping = NULL,\n  data = NULL,\n  geom = \"area\",\n  position = \"stack\",\n  ...,\n  bw = \"nrd0\",\n  adjust = 1,\n  kernel = \"gaussian\",\n  n = 512,\n  trim = FALSE,\n  na.rm = FALSE,\n  orientation = NA,\n  show.legend = NA,\n  inherit.aes = TRUE\n)"
+  },
+  {
+    "objectID": "posts/new_blog_post/new_post.html#margin-captions",
+    "href": "posts/new_blog_post/new_post.html#margin-captions",
+    "title": "This is a dummy blog posts",
+    "section": "",
+    "text": "ggplot(data = gapminder::gapminder, mapping = aes(x = lifeExp, fill = continent)) +\n  stat_density(position = \"identity\", alpha = 0.5)\n\n\n\n\nBla bla bla. This is a caption in the margin. Super cool isn’t it?"
+  },
+  {
+    "objectID": "posts/confusion matrix/index.html",
+    "href": "posts/confusion matrix/index.html",
+    "title": "Confusion Matrix",
+    "section": "",
+    "text": "What is Machine Learning?\nMachine learning is the science (and art) of programming computers so they can learn from data.\nHere is a slightly more general definition:\n\n[Machine learning is the] field of study that gives computers the ability to learn without being explicitly programmed.\n-- Arthur Samuel, 1959\n\nAnd a more engineering-oriented one:\n\nA computer program is said to learn from experience E with respect to some task T and some performance measure P, if its performance on T, as measured by P, improves with experience E.\n-- Tom Mitchell, 1997\n\n\n\nLet’s make sure we have what we need\nPython version &gt;= 3.7 is required\n\nimport sys\nassert sys.version_info &gt;= (3, 7)\n\nLet’s print that out!\n\nsys.version_info\n\nsys.version_info(major=3, minor=11, micro=5, releaselevel='final', serial=0)\n\n\nScikit-Learn &gt;= 1.0.1 is required:\n\nfrom packaging import version\nimport sklearn\n\nassert version.parse(sklearn.__version__) &gt;= version.parse(\"1.0.1\")\n\nLet’s print that out!\n\nsklearn.__version__\n\n'1.3.1'"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "About",
+    "section": "",
+    "text": "Hannah Lyons Personal Blog"
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Series",
+    "section": "",
+    "text": "Series\nmachine-learning-series\nThis series contains a great deal of code and data visualizations for anyone new to machine learning.\n\n\nAll Blog Posts\n\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nOverfitting and Underfitting\n\n\n\n\n\n\n\ncode\n\n\n\n\nLets see what overfitting and underfitting is all about in machine learning terms\n\n\n\n\n\n\nSep 25, 2023\n\n\n1 min\n\n\n\n\n\n\n\n\nPrecision and Recall\n\n\n\n\n\n\n\ncode\n\n\n\n\nLets see what precision and recall is all about in machine learning terms\n\n\n\n\n\n\nSep 20, 2023\n\n\n1 min\n\n\n\n\n\n\n\n\nConfusion Matrix\n\n\n\n\n\n\n\ncode\n\n\n\n\nLets see what the confusion matrix is all about in machine learning terms\n\n\n\n\n\n\nSep 15, 2023\n\n\n1 min\n\n\n\n\n\n\n\n\nTetris and Machine Learning\n\n\n\n\n\n\n\ncode\n\n\n\n\nMachine Learning and its applications to the classic videogame: Tetris\n\n\n\n\n\n\nSep 12, 2023\n\n\n4 min\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nSep 9, 2023\n\n\n1 min\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nSep 6, 2023\n\n\n1 min\n\n\n\n\n\n\n\n\nThis is a dummy blog posts\n\n\n\n\n\n\n\nnews\n\n\n\n\nThis is a test post. In this post, I try out different functionalities\n\n\n\n\n\n\nJun 1, 2022\n\n\n3 min\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "archive.html",
+    "href": "archive.html",
+    "title": "Archive",
+    "section": "",
+    "text": "Overfitting and Underfitting\n\n\n\n\n\n\n\n\n\nSep 25, 2023\n\n\n\n\n\n\n\n\nPrecision and Recall\n\n\n\n\n\n\n\n\n\nSep 20, 2023\n\n\n\n\n\n\n\n\nConfusion Matrix\n\n\n\n\n\n\n\n\n\nSep 15, 2023\n\n\n\n\n\n\n\n\nTetris and Machine Learning\n\n\n\n\n\n\n\n\n\nSep 12, 2023\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\n\n\n\n\n\n\nSep 9, 2023\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\n\n\nSep 6, 2023\n\n\n\n\n\n\n\n\nThis is a dummy blog posts\n\n\n\n\n\n\n\n\n\nJun 1, 2022\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "ggplot-series.html",
+    "href": "ggplot-series.html",
+    "title": "Series: ggplot2-tips",
+    "section": "",
+    "text": "No matching items"
+  },
+  {
+    "objectID": "machine-learning-series.html",
+    "href": "machine-learning-series.html",
+    "title": "Series: Introductory Machine Learning",
+    "section": "",
+    "text": "No matching items"
+  },
+  {
+    "objectID": "posts/intro-to-ml/index.html",
+    "href": "posts/intro-to-ml/index.html",
+    "title": "Tetris and Machine Learning",
+    "section": "",
+    "text": "Little did I know, Tetris, the classic video game, can be related to machine learning and data analytics in various ways.\nI am a huge fan of the game, and I am obsessed with a newer version that facilitates multi-player options; Tetris® Effect: Connected.\n\n\n\n\n\nBelow is a video demonstrating one of the newer multiplayer options, Zone Battle. This is me playing in the video (tacobaco32) and I like to say I’m pretty good at the game.\nVIDEO DEMONSTRATING TETRIS EFFECT\nI decided to stream on twitch a few times… that didn’t go anywhere. There are several other players that I’ve seen stream online, like doremypuyotet, who is a Tetris expert; the video below is them playing.\n[]()\nAs you can see doremypuyotet has incredible technique and it is absolutely mind blowing watching them play the game.\nI wondered though, how would an Artificial Tetris Agent perform at a game of zone battle against someone like doremypuyotet? The agent would have to take several more aspects into consideration than it does in the classic video game. The dynamics of player interactions, adaptive game play, and the wealth of data generated present opportunities to enhance the gaming experience through data-driven insights and algorithmic optimization’s.\n\n\n\n\nAlgorithmic Efficiency: Tetris involves optimizing the placement of falling blocks to complete lines. This is analogous to optimization problems in machine learning where algorithms seek to minimize or maximize a certain objective function.\nHeuristics: Players often develop heuristics or rules of thumb to make decisions quickly. Similarly, in machine learning, heuristics can be used to guide algorithms toward solutions without exhaustive search.\n\n\n\nLearning from Experience: Reinforcement learning involves agents learning by interacting with an environment and receiving feedback in the form of rewards or penalties. In Tetris, players learn from the consequences of their moves, much like reinforcement learning algorithms learn from trial and error.\n\n\n\nFeature Extraction: In Tetris, players recognize patterns in the falling blocks to make decisions. In data analytics, feature extraction involves recognizing patterns in data to enhance the performance of algorithms.\nImage Recognition: Tetris can be framed as an image recognition problem where the goal is to identify patterns in the arrangement of blocks. Image recognition is a common application in machine learning.\n\n\n\nAnticipating Future States: In Tetris, players need to anticipate the future states of the game based on the current configuration of blocks. Predictive analytics in machine learning involves forecasting future trends or outcomes based on historical data.\n\n\n\nReal-time Decision Making: Tetris requires quick decision-making based on the constantly changing game state. In a similar vein, real-time data analytics involves making decisions based on rapidly changing data streams.\n\n\n\nSpatial Visualization: Tetris involves visualizing the spatial arrangement of blocks. Data visualization is a crucial aspect of data analytics, helping individuals understand complex patterns and trends in data through graphical representations.\n\n\n\nGenetic Algorithms: Tetris can be approached as a problem of evolving a strategy over time. Genetic algorithms, a type of evolutionary algorithm, involve evolving solutions to problems through processes inspired by natural selection.\n\n\n\nComplexity Analysis: Analyzing the complexity of Tetris strategies can be similar to analyzing the time and space complexity of algorithms in machine learning. Understanding the efficiency and scalability of algorithms is essential in both contexts.\n\n\n\nManaging Information Overload: Tetris speeds up as the game progresses, leading to an increasing amount of information to process. Dealing with information overload is a challenge in both Tetris and big data analytics.\n\n\n\nGame Theory: Tetris can be viewed through the lens of game theory, where players make strategic decisions to maximize their score. Game theory concepts are also applicable in various areas of machine learning, such as in competitive scenarios."
+  },
+  {
+    "objectID": "posts/intro-to-ml/index.html#tetris-applications-to-machine-learning",
+    "href": "posts/intro-to-ml/index.html#tetris-applications-to-machine-learning",
+    "title": "Tetris and Machine Learning",
+    "section": "",
+    "text": "Algorithmic Efficiency: Tetris involves optimizing the placement of falling blocks to complete lines. This is analogous to optimization problems in machine learning where algorithms seek to minimize or maximize a certain objective function.\nHeuristics: Players often develop heuristics or rules of thumb to make decisions quickly. Similarly, in machine learning, heuristics can be used to guide algorithms toward solutions without exhaustive search.\n\n\n\nLearning from Experience: Reinforcement learning involves agents learning by interacting with an environment and receiving feedback in the form of rewards or penalties. In Tetris, players learn from the consequences of their moves, much like reinforcement learning algorithms learn from trial and error.\n\n\n\nFeature Extraction: In Tetris, players recognize patterns in the falling blocks to make decisions. In data analytics, feature extraction involves recognizing patterns in data to enhance the performance of algorithms.\nImage Recognition: Tetris can be framed as an image recognition problem where the goal is to identify patterns in the arrangement of blocks. Image recognition is a common application in machine learning.\n\n\n\nAnticipating Future States: In Tetris, players need to anticipate the future states of the game based on the current configuration of blocks. Predictive analytics in machine learning involves forecasting future trends or outcomes based on historical data.\n\n\n\nReal-time Decision Making: Tetris requires quick decision-making based on the constantly changing game state. In a similar vein, real-time data analytics involves making decisions based on rapidly changing data streams.\n\n\n\nSpatial Visualization: Tetris involves visualizing the spatial arrangement of blocks. Data visualization is a crucial aspect of data analytics, helping individuals understand complex patterns and trends in data through graphical representations.\n\n\n\nGenetic Algorithms: Tetris can be approached as a problem of evolving a strategy over time. Genetic algorithms, a type of evolutionary algorithm, involve evolving solutions to problems through processes inspired by natural selection.\n\n\n\nComplexity Analysis: Analyzing the complexity of Tetris strategies can be similar to analyzing the time and space complexity of algorithms in machine learning. Understanding the efficiency and scalability of algorithms is essential in both contexts.\n\n\n\nManaging Information Overload: Tetris speeds up as the game progresses, leading to an increasing amount of information to process. Dealing with information overload is a challenge in both Tetris and big data analytics.\n\n\n\nGame Theory: Tetris can be viewed through the lens of game theory, where players make strategic decisions to maximize their score. Game theory concepts are also applicable in various areas of machine learning, such as in competitive scenarios."
+  },
+  {
+    "objectID": "posts/over-and-under/index.html",
+    "href": "posts/over-and-under/index.html",
+    "title": "Overfitting and Underfitting",
+    "section": "",
+    "text": "What is Machine Learning?\nMachine learning is the science (and art) of programming computers so they can learn from data.\nHere is a slightly more general definition:\n\n[Machine learning is the] field of study that gives computers the ability to learn without being explicitly programmed.\n-- Arthur Samuel, 1959\n\nAnd a more engineering-oriented one:\n\nA computer program is said to learn from experience E with respect to some task T and some performance measure P, if its performance on T, as measured by P, improves with experience E.\n-- Tom Mitchell, 1997\n\n\n\nLet’s make sure we have what we need\nPython version &gt;= 3.7 is required\n\nimport sys\nassert sys.version_info &gt;= (3, 7)\n\nLet’s print that out!\n\nsys.version_info\n\nsys.version_info(major=3, minor=11, micro=5, releaselevel='final', serial=0)\n\n\nScikit-Learn &gt;= 1.0.1 is required:\n\nfrom packaging import version\nimport sklearn\n\nassert version.parse(sklearn.__version__) &gt;= version.parse(\"1.0.1\")\n\nLet’s print that out!\n\nsklearn.__version__\n\n'1.3.1'"
+  },
+  {
+    "objectID": "posts/precision-and-recall/index.html",
+    "href": "posts/precision-and-recall/index.html",
+    "title": "Precision and Recall",
+    "section": "",
+    "text": "What is Machine Learning?\nMachine learning is the science (and art) of programming computers so they can learn from data.\nHere is a slightly more general definition:\n\n[Machine learning is the] field of study that gives computers the ability to learn without being explicitly programmed.\n-- Arthur Samuel, 1959\n\nAnd a more engineering-oriented one:\n\nA computer program is said to learn from experience E with respect to some task T and some performance measure P, if its performance on T, as measured by P, improves with experience E.\n-- Tom Mitchell, 1997\n\n\n\nLet’s make sure we have what we need\nPython version &gt;= 3.7 is required\n\nimport sys\nassert sys.version_info &gt;= (3, 7)\n\nLet’s print that out!\n\nsys.version_info\n\nsys.version_info(major=3, minor=11, micro=5, releaselevel='final', serial=0)\n\n\nScikit-Learn &gt;= 1.0.1 is required:\n\nfrom packaging import version\nimport sklearn\n\nassert version.parse(sklearn.__version__) &gt;= version.parse(\"1.0.1\")\n\nLet’s print that out!\n\nsklearn.__version__\n\n'1.3.1'"
+  }
+]
