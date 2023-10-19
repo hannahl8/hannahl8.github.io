@@ -7,10 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Hannah Lyons">
-<meta name="dcterms.date" content="2023-09-01">
-<meta name="description" content="Machine Learning and its applications to the classic videogame: Tetris">
+<meta name="dcterms.date" content="2023-10-05">
+<meta name="description" content="line on scatter plot">
 
-<title>Hannah Lyons - Tetris and Machine Learning</title>
+<title>Hannah Lyons - Linear and Nonlinear Regression</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,6 +22,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -117,10 +151,10 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Tetris and Machine Learning</h1>
+      <h1 class="title">Linear and Nonlinear Regression</h1>
                   <div>
         <div class="description">
-          Machine Learning and its applications to the classic videogame: Tetris
+          line on scatter plot
         </div>
       </div>
                           <div class="quarto-categories">
@@ -142,7 +176,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">September 1, 2023</p>
+        <p class="date">October 5, 2023</p>
       </div>
     </div>
     
@@ -158,10 +192,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#tetris" id="toc-tetris" class="nav-link active" data-scroll-target="#tetris">Tetris</a>
-  <ul class="collapse">
-  <li><a href="#tetris-applications-to-machine-learning" id="toc-tetris-applications-to-machine-learning" class="nav-link" data-scroll-target="#tetris-applications-to-machine-learning">Tetris Applications to Machine Learning</a></li>
-  </ul></li>
+  <li><a href="#what-is-machine-learning" id="toc-what-is-machine-learning" class="nav-link active" data-scroll-target="#what-is-machine-learning">What is Machine Learning?</a></li>
+  <li><a href="#lets-make-sure-we-have-what-we-need" id="toc-lets-make-sure-we-have-what-we-need" class="nav-link" data-scroll-target="#lets-make-sure-we-have-what-we-need">Let’s make sure we have what we need</a></li>
   </ul>
 </nav>
     </div>
@@ -171,68 +203,50 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="tetris" class="level1">
-<h1>Tetris</h1>
-<p>Little did I know, Tetris, the classic video game, can be related to machine learning and data analytics in various ways.</p>
-<p>I am a huge fan of the game, and I am obsessed with a newer version that facilitates multi-player options; Tetris® Effect: Connected.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="teriseffect.jpg" class="img-fluid figure-img"></p>
-</figure>
+<section id="what-is-machine-learning" class="level1">
+<h1>What is Machine Learning?</h1>
+<p>Machine learning is the science (and art) of programming computers so they can&nbsp;<em>learn from data</em>.</p>
+<p>Here is a slightly more general definition:</p>
+<blockquote class="blockquote">
+<p>[Machine learning is the] field of study that gives computers the ability to learn without being explicitly programmed.</p>
+<p>-- Arthur Samuel, 1959</p>
+</blockquote>
+<p>And a more engineering-oriented one:</p>
+<blockquote class="blockquote">
+<p>A computer program is said to learn from experience <em>E</em> with respect to some task <em>T</em> and some performance measure <em>P</em>, if its performance on <em>T</em>, as measured by <em>P</em>, improves with experience <em>E</em>.</p>
+<p>-- Tom Mitchell, 1997</p>
+</blockquote>
+</section>
+<section id="lets-make-sure-we-have-what-we-need" class="level1">
+<h1>Let’s make sure we have what we need</h1>
+<p>Python version &gt;= 3.7 is required</p>
+<div class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> sys </span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="cf">assert</span> sys.version_info <span class="op">&gt;=</span> (<span class="dv">3</span>, <span class="dv">7</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>Below is a video demonstrating one of the newer multiplayer options, Zone Battle. This is me playing in the video (tacobaco32) and I like to say I’m pretty good at the game.</p>
-<p>VIDEO DEMONSTRATING TETRIS EFFECT</p>
-<p>I decided to stream on twitch a few times… that didn’t go anywhere. There are several other players that I’ve seen stream online, like doremypuyotet, who is a Tetris expert; the video below is them playing.</p>
-<p>[](<iframe width="640" height="360" src="https://www.youtube.com/embed/z3aXzz2Ux84" title="[Tetris Effect: Connected] Zone Battle: Doremy vs. uyeshota (07-02-2021, PC)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>)</p>
-<p>As you can see doremypuyotet has incredible technique and it is absolutely mind blowing watching them play the game.</p>
-<p>I wondered though, how would an Artificial Tetris Agent perform at a game of zone battle against someone like doremypuyotet? The agent would have to take several more aspects into consideration than it does in the classic video game. The dynamics of player interactions, adaptive game play, and the wealth of data generated present opportunities to enhance the gaming experience through data-driven insights and algorithmic optimization’s.</p>
-<section id="tetris-applications-to-machine-learning" class="level2">
-<h2 class="anchored" data-anchor-id="tetris-applications-to-machine-learning">Tetris Applications to Machine Learning</h2>
-<section id="optimization-and-heuristics" class="level4">
-<h4 class="anchored" data-anchor-id="optimization-and-heuristics">Optimization and Heuristics</h4>
-<p>Algorithmic Efficiency: Tetris involves optimizing the placement of falling blocks to complete lines. This is analogous to optimization problems in machine learning where algorithms seek to minimize or maximize a certain objective function.</p>
-<p>Heuristics: Players often develop heuristics or rules of thumb to make decisions quickly. Similarly, in machine learning, heuristics can be used to guide algorithms toward solutions without exhaustive search.</p>
-</section>
-<section id="reinforcement-learning" class="level4">
-<h4 class="anchored" data-anchor-id="reinforcement-learning">Reinforcement Learning</h4>
-<p>Learning from Experience: Reinforcement learning involves agents learning by interacting with an environment and receiving feedback in the form of rewards or penalties. In Tetris, players learn from the consequences of their moves, much like reinforcement learning algorithms learn from trial and error.</p>
-</section>
-<section id="pattern-recognition" class="level4">
-<h4 class="anchored" data-anchor-id="pattern-recognition">Pattern Recognition</h4>
-<p>Feature Extraction: In Tetris, players recognize patterns in the falling blocks to make decisions. In data analytics, feature extraction involves recognizing patterns in data to enhance the performance of algorithms.</p>
-<p>Image Recognition: Tetris can be framed as an image recognition problem where the goal is to identify patterns in the arrangement of blocks. Image recognition is a common application in machine learning.</p>
-</section>
-<section id="predictive-analytics" class="level4">
-<h4 class="anchored" data-anchor-id="predictive-analytics">Predictive Analytics</h4>
-<p>Anticipating Future States: In Tetris, players need to anticipate the future states of the game based on the current configuration of blocks. Predictive analytics in machine learning involves forecasting future trends or outcomes based on historical data.</p>
-</section>
-<section id="data-driven-decision-making" class="level4">
-<h4 class="anchored" data-anchor-id="data-driven-decision-making">Data-driven Decision Making</h4>
-<p>Real-time Decision Making: Tetris requires quick decision-making based on the constantly changing game state. In a similar vein, real-time data analytics involves making decisions based on rapidly changing data streams.</p>
-</section>
-<section id="data-visualization" class="level4">
-<h4 class="anchored" data-anchor-id="data-visualization">Data Visualization</h4>
-<p>Spatial Visualization: Tetris involves visualizing the spatial arrangement of blocks. Data visualization is a crucial aspect of data analytics, helping individuals understand complex patterns and trends in data through graphical representations.</p>
-</section>
-<section id="evolutionary-algorithms" class="level4">
-<h4 class="anchored" data-anchor-id="evolutionary-algorithms">Evolutionary Algorithms</h4>
-<p>Genetic Algorithms: Tetris can be approached as a problem of evolving a strategy over time. Genetic algorithms, a type of evolutionary algorithm, involve evolving solutions to problems through processes inspired by natural selection.</p>
-</section>
-<section id="algorithmic-complexity" class="level4">
-<h4 class="anchored" data-anchor-id="algorithmic-complexity">Algorithmic Complexity</h4>
-<p>Complexity Analysis: Analyzing the complexity of Tetris strategies can be similar to analyzing the time and space complexity of algorithms in machine learning. Understanding the efficiency and scalability of algorithms is essential in both contexts.</p>
-</section>
-<section id="big-data" class="level4">
-<h4 class="anchored" data-anchor-id="big-data">Big Data</h4>
-<p>Managing Information Overload: Tetris speeds up as the game progresses, leading to an increasing amount of information to process. Dealing with information overload is a challenge in both Tetris and big data analytics.</p>
-</section>
-<section id="competition-and-strategy" class="level4">
-<h4 class="anchored" data-anchor-id="competition-and-strategy">Competition and Strategy</h4>
-<p>Game Theory: Tetris can be viewed through the lens of game theory, where players make strategic decisions to maximize their score. Game theory concepts are also applicable in various areas of machine learning, such as in competitive scenarios.</p>
+<p>Let’s print that out!</p>
+<div class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>sys.version_info</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="2">
+<pre><code>sys.version_info(major=3, minor=11, micro=5, releaselevel='final', serial=0)</code></pre>
+</div>
+</div>
+<p>Scikit-Learn &gt;= 1.0.1 is required:</p>
+<div class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> packaging <span class="im">import</span> version </span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> sklearn  </span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="cf">assert</span> version.parse(sklearn.__version__) <span class="op">&gt;=</span> version.parse(<span class="st">"1.0.1"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Let’s print that out!</p>
+<div class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>sklearn.__version__</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="4">
+<pre><code>'1.3.1'</code></pre>
+</div>
+</div>
 
 
-</section>
-</section>
 </section>
 
 </main> <!-- /main -->
