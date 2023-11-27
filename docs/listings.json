@@ -1,0 +1,39 @@
+[
+  {
+    "listing": "/machine-learning-series.html",
+    "items": [
+      "/posts/machine-learning-intro/anomaly/index.html",
+      "/posts/machine-learning-intro/classification/index.html",
+      "/posts/machine-learning-intro/regression/index.html",
+      "/posts/machine-learning-intro/clustering/index.html",
+      "/posts/machine-learning-intro/probability/index.html",
+      "/posts/machine-learning-intro/intro-to-ml/index.html"
+    ]
+  },
+  {
+    "listing": "/ggplot-series.html",
+    "items": []
+  },
+  {
+    "listing": "/archive.html",
+    "items": [
+      "/posts/machine-learning-intro/anomaly/index.html",
+      "/posts/machine-learning-intro/classification/index.html",
+      "/posts/machine-learning-intro/regression/index.html",
+      "/posts/machine-learning-intro/clustering/index.html",
+      "/posts/machine-learning-intro/probability/index.html",
+      "/posts/machine-learning-intro/intro-to-ml/index.html"
+    ]
+  },
+  {
+    "listing": "/blog.html",
+    "items": [
+      "/posts/machine-learning-intro/anomaly/index.html",
+      "/posts/machine-learning-intro/classification/index.html",
+      "/posts/machine-learning-intro/regression/index.html",
+      "/posts/machine-learning-intro/clustering/index.html",
+      "/posts/machine-learning-intro/probability/index.html",
+      "/posts/machine-learning-intro/intro-to-ml/index.html"
+    ]
+  }
+]
