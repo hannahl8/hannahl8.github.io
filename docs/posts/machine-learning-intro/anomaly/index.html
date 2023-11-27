@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Hannah Lyons">
-<meta name="dcterms.date" content="2023-11-05">
+<meta name="dcterms.date" content="2023-11-20">
 <meta name="description" content="Unveiling Anomalies with Outlier Detection in Machine Learning">
 
 <title>Hannah Lyons - Anomaly/Outlier Detection</title>
@@ -176,7 +176,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">November 5, 2023</p>
+        <p class="date">November 20, 2023</p>
       </div>
     </div>
     
@@ -192,10 +192,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a>
+  <ul class="collapse">
   <li><a href="#challenges-of-anomaly-detection" id="toc-challenges-of-anomaly-detection" class="nav-link" data-scroll-target="#challenges-of-anomaly-detection">Challenges of Anomaly Detection</a></li>
-  <li><a href="#dbscan-for-anomaly-detection" id="toc-dbscan-for-anomaly-detection" class="nav-link" data-scroll-target="#dbscan-for-anomaly-detection"><strong>DBSCAN for Anomaly Detection</strong></a></li>
-  <li><a href="#evaluation-metrics-for-anomaly-detection" id="toc-evaluation-metrics-for-anomaly-detection" class="nav-link" data-scroll-target="#evaluation-metrics-for-anomaly-detection"><strong>Evaluation Metrics for Anomaly Detection</strong></a></li>
+  </ul></li>
+  <li><a href="#data-visualization" id="toc-data-visualization" class="nav-link" data-scroll-target="#data-visualization">Data Visualization</a>
+  <ul class="collapse">
+  <li><a href="#dbscan-and-evaluation-metrics-for-anomaly-detection" id="toc-dbscan-and-evaluation-metrics-for-anomaly-detection" class="nav-link" data-scroll-target="#dbscan-and-evaluation-metrics-for-anomaly-detection"><strong>DBSCAN and Evaluation Metrics for Anomaly Detection</strong></a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -208,56 +212,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
 <p>Anomaly detection, a critical aspect of machine learning, involves identifying patterns in data that deviate significantly from the norm. This technique finds applications in various domains, from fraud detection in financial transactions to detecting anomalies in network traffic for cybersecurity.</p>
-</section>
-<section id="challenges-of-anomaly-detection" class="level2">
-<h2 class="anchored" data-anchor-id="challenges-of-anomaly-detection">Challenges of Anomaly Detection</h2>
+<section id="challenges-of-anomaly-detection" class="level3">
+<h3 class="anchored" data-anchor-id="challenges-of-anomaly-detection">Challenges of Anomaly Detection</h3>
 <p>While anomaly detection is a powerful tool, it comes with challenges. Real-world data often exhibits diverse distributions, and datasets can be imbalanced, making it tricky to identify rare anomalies accurately. Robust algorithms are essential to overcome these challenges.</p>
 </section>
-<section id="dbscan-for-anomaly-detection" class="level2">
-<h2 class="anchored" data-anchor-id="dbscan-for-anomaly-detection"><strong>DBSCAN for Anomaly Detection</strong></h2>
-<p>Density-Based Spatial Clustering of Applications with Noise (DBSCAN) emerges as a robust algorithm for anomaly detection. Unlike traditional methods, DBSCAN doesn’t assume a specific shape for clusters and can effectively isolate points in low-density regions as outliers.</p>
-<p>Let’s implement anomaly detection using DBSCAN in Python:</p>
-<div class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.cluster <span class="im">import</span> DBSCAN</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.datasets <span class="im">import</span> make_blobs</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Function to generate a synthetic dataset with outliers</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> generate_dataset_with_outliers(seed<span class="op">=</span><span class="dv">42</span>):</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    np.random.seed(seed)</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    X, _ <span class="op">=</span> make_blobs(n_samples<span class="op">=</span><span class="dv">300</span>, centers<span class="op">=</span><span class="dv">1</span>, cluster_std<span class="op">=</span><span class="dv">1</span>, random_state<span class="op">=</span><span class="dv">0</span>)</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    outliers <span class="op">=</span> np.random.uniform(low<span class="op">=-</span><span class="dv">10</span>, high<span class="op">=</span><span class="dv">10</span>, size<span class="op">=</span>(<span class="dv">20</span>, <span class="dv">2</span>))</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> np.concatenate([X, outliers]), np.concatenate([np.zeros(<span class="dv">300</span>), np.ones(<span class="dv">20</span>)])</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Function to visualize anomalies with DBSCAN labels</span></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> plot_anomalies(X, labels, title):</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    plt.figure(figsize<span class="op">=</span>(<span class="dv">8</span>, <span class="dv">6</span>))</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    plt.scatter(X[:, <span class="dv">0</span>], X[:, <span class="dv">1</span>], c<span class="op">=</span>labels, cmap<span class="op">=</span><span class="st">'viridis'</span>, edgecolor<span class="op">=</span><span class="st">'k'</span>, s<span class="op">=</span><span class="dv">50</span>)</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    plt.title(title)</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    plt.xlabel(<span class="st">'Feature 1'</span>)</span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    plt.ylabel(<span class="st">'Feature 2'</span>)</span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    plt.show()</span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="co"># Step 1: Generate a synthetic dataset with outliers</span></span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>X, y <span class="op">=</span> generate_dataset_with_outliers()</span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="co"># Step 2: Train a DBSCAN model for anomaly detection</span></span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>dbscan <span class="op">=</span> DBSCAN(eps<span class="op">=</span><span class="dv">1</span>, min_samples<span class="op">=</span><span class="dv">5</span>)</span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>labels <span class="op">=</span> dbscan.fit_predict(X)</span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="co"># Step 3: Visualize anomalies with DBSCAN labels</span></span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>plot_anomalies(X, labels, <span class="st">'Anomaly Detection with DBSCAN'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<p><img src="index_files/figure-html/cell-2-output-1.png" width="682" height="523"></p>
-</div>
-</div>
-<p>Visualizing anomalies is crucial for interpreting model results. Scatter plots with DBSCAN labels provide an intuitive representation of the identified anomalies in the dataset.</p>
 </section>
-<section id="evaluation-metrics-for-anomaly-detection" class="level2">
-<h2 class="anchored" data-anchor-id="evaluation-metrics-for-anomaly-detection"><strong>Evaluation Metrics for Anomaly Detection</strong></h2>
+<section id="data-visualization" class="level2">
+<h2 class="anchored" data-anchor-id="data-visualization">Data Visualization</h2>
+<p>I use the following colors in all of my blogs data visualizations</p>
+<div class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Define specific colors (same as CSS from quarto vapor theme)</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>background <span class="op">=</span> <span class="st">'#1b133a'</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>pink <span class="op">=</span> <span class="st">'#ea39b8'</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>purple <span class="op">=</span> <span class="st">'#6f42c1'</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>blue <span class="op">=</span> <span class="st">'#32fbe2'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="dbscan-and-evaluation-metrics-for-anomaly-detection" class="level3">
+<h3 class="anchored" data-anchor-id="dbscan-and-evaluation-metrics-for-anomaly-detection"><strong>DBSCAN and Evaluation Metrics for Anomaly Detection</strong></h3>
+<p>Density-Based Spatial Clustering of Applications with Noise (DBSCAN) emerges as a robust algorithm for anomaly detection. Unlike traditional methods, DBSCAN doesn’t assume a specific shape for clusters and can effectively isolate points in low-density regions as outliers.</p>
+<p>Visualizing anomalies is crucial for interpreting model results. Scatter plots with DBSCAN labels provide an intuitive representation of the identified anomalies in the dataset.</p>
 <p>Evaluating anomaly detection models poses challenges due to the scarcity of anomalies. Metrics such as precision, recall, and F1 score provide a nuanced understanding of the model’s performance.</p>
-<p>Let’s calculate precision, recall, and F1 score for anomaly detection results:</p>
 <div class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> precision_score, recall_score, f1_score</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.cluster <span class="im">import</span> DBSCAN</span>
@@ -272,35 +246,36 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>    outliers <span class="op">=</span> np.random.uniform(low<span class="op">=-</span><span class="dv">10</span>, high<span class="op">=</span><span class="dv">10</span>, size<span class="op">=</span>(<span class="dv">20</span>, <span class="dv">2</span>))</span>
 <span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> np.concatenate([X, outliers]), np.concatenate([np.zeros(<span class="dv">300</span>), <span class="op">-</span>np.ones(<span class="dv">20</span>)])</span>
 <span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Function to visualize anomalies with DBSCAN labels</span></span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> plot_anomalies(X, labels, title):</span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>    plt.figure(figsize<span class="op">=</span>(<span class="dv">8</span>, <span class="dv">6</span>))</span>
-<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>    plt.scatter(X[:, <span class="dv">0</span>], X[:, <span class="dv">1</span>], c<span class="op">=</span>labels, cmap<span class="op">=</span><span class="st">'viridis'</span>, edgecolor<span class="op">=</span><span class="st">'k'</span>, s<span class="op">=</span><span class="dv">50</span>)</span>
-<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>    plt.title(title)</span>
-<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>    plt.xlabel(<span class="st">'Feature 1'</span>)</span>
-<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>    plt.ylabel(<span class="st">'Feature 2'</span>)</span>
-<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>    plt.show()</span>
-<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a><span class="co"># Step 1: Generate a synthetic dataset with outliers</span></span>
-<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>X, y_true <span class="op">=</span> generate_dataset_with_outliers()</span>
-<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a><span class="co"># Step 2: Train a DBSCAN model for anomaly detection</span></span>
-<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>dbscan <span class="op">=</span> DBSCAN(eps<span class="op">=</span><span class="dv">1</span>, min_samples<span class="op">=</span><span class="dv">5</span>)</span>
-<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>predicted_labels <span class="op">=</span> dbscan.fit_predict(X)</span>
-<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a><span class="co"># Step 3: Visualize anomalies with DBSCAN labels</span></span>
-<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>plot_anomalies(X, predicted_labels, <span class="st">'Anomaly Detection with DBSCAN'</span>)</span>
-<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a><span class="co"># Step 4: Evaluate the model using precision, recall, and F1 score</span></span>
-<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>precision <span class="op">=</span> precision_score(y_true, predicted_labels, pos_label<span class="op">=-</span><span class="dv">1</span>)</span>
-<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>recall <span class="op">=</span> recall_score(y_true, predicted_labels, pos_label<span class="op">=-</span><span class="dv">1</span>)</span>
-<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>f1 <span class="op">=</span> f1_score(y_true, predicted_labels, pos_label<span class="op">=-</span><span class="dv">1</span>)</span>
-<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Precision: </span><span class="sc">{</span>precision<span class="sc">:.2f}</span><span class="ss">"</span>)</span>
-<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Recall: </span><span class="sc">{</span>recall<span class="sc">:.2f}</span><span class="ss">"</span>)</span>
-<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"F1 Score: </span><span class="sc">{</span>f1<span class="sc">:.2f}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Step 1: Generate a synthetic dataset with outliers</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>X, y_true <span class="op">=</span> generate_dataset_with_outliers()</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Step 2: Train a DBSCAN model for anomaly detection</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>dbscan <span class="op">=</span> DBSCAN(eps<span class="op">=</span><span class="dv">1</span>, min_samples<span class="op">=</span><span class="dv">5</span>)</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>predicted_labels <span class="op">=</span> dbscan.fit_predict(X)</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a><span class="co"># Step 3: Visualize anomalies with DBSCAN labels</span></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots()</span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>scatter <span class="op">=</span> ax.scatter(X[:, <span class="dv">0</span>], X[:, <span class="dv">1</span>], c<span class="op">=</span>predicted_labels, cmap<span class="op">=</span>plt.cm.cool, edgecolor<span class="op">=</span><span class="st">'black'</span>, s<span class="op">=</span><span class="dv">50</span>)</span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="st">'Anomaly Detection with DBSCAN'</span>, color<span class="op">=</span>purple)</span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>ax.set_xlabel(<span class="st">'Feature 1'</span>, color<span class="op">=</span>blue)</span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="st">'Feature 2'</span>, color<span class="op">=</span>blue)</span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>ax.grid(<span class="va">True</span>, linestyle<span class="op">=</span><span class="st">'--'</span>, alpha<span class="op">=</span><span class="fl">0.5</span>)</span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>ax.tick_params(axis<span class="op">=</span><span class="st">'x'</span>, colors<span class="op">=</span>blue)</span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>ax.tick_params(axis<span class="op">=</span><span class="st">'y'</span>, colors<span class="op">=</span>blue)</span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>ax.set_facecolor(pink)</span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>fig.set_facecolor(background)</span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a><span class="co"># Step 4: Evaluate the model using precision, recall, and F1 score</span></span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>precision <span class="op">=</span> precision_score(y_true, predicted_labels, pos_label<span class="op">=-</span><span class="dv">1</span>)</span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>recall <span class="op">=</span> recall_score(y_true, predicted_labels, pos_label<span class="op">=-</span><span class="dv">1</span>)</span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a>f1 <span class="op">=</span> f1_score(y_true, predicted_labels, pos_label<span class="op">=-</span><span class="dv">1</span>)</span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Precision: </span><span class="sc">{</span>precision<span class="sc">:.2f}</span><span class="ss">"</span>)</span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Recall: </span><span class="sc">{</span>recall<span class="sc">:.2f}</span><span class="ss">"</span>)</span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"F1 Score: </span><span class="sc">{</span>f1<span class="sc">:.2f}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
-<p><img src="index_files/figure-html/cell-3-output-1.png" width="682" height="523"></p>
+<p><img src="index_files/figure-html/cell-3-output-1.png" width="608" height="449"></p>
 </div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Precision: 1.00
@@ -311,6 +286,7 @@ F1 Score: 0.95</code></pre>
 <p>Anomaly detection, powered by algorithms like DBSCAN, plays a vital role in uncovering irregularities in data. The combination of effective visualizations and evaluation metrics enables us to gain insights into the anomalies present, providing a foundation for critical decision-making in various domains.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

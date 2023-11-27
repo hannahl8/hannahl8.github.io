@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Hannah Lyons">
-<meta name="dcterms.date" content="2023-09-20">
+<meta name="dcterms.date" content="2023-09-30">
 <meta name="description" content="Unraveling Patterns with Clustering in Machine Learning">
 
 <title>Hannah Lyons - Clustering</title>
@@ -176,7 +176,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">September 20, 2023</p>
+        <p class="date">September 30, 2023</p>
       </div>
     </div>
     
@@ -192,11 +192,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a>
+  <ul class="collapse">
   <li><a href="#types-of-clustering-algorithms" id="toc-types-of-clustering-algorithms" class="nav-link" data-scroll-target="#types-of-clustering-algorithms"><strong>Types of Clustering Algorithms</strong></a></li>
-  <li><a href="#dbscan-a-density-based-approach" id="toc-dbscan-a-density-based-approach" class="nav-link" data-scroll-target="#dbscan-a-density-based-approach"><strong>DBSCAN: A Density-Based Approach:</strong></a></li>
-  <li><a href="#dbscan-in-action" id="toc-dbscan-in-action" class="nav-link" data-scroll-target="#dbscan-in-action"><strong>DBSCAN in Action</strong></a></li>
-  <li><a href="#data-visualization-with-scatter-plots" id="toc-data-visualization-with-scatter-plots" class="nav-link" data-scroll-target="#data-visualization-with-scatter-plots"><strong>Data Visualization with Scatter Plots</strong></a></li>
+  </ul></li>
+  <li><a href="#data-visualization" id="toc-data-visualization" class="nav-link" data-scroll-target="#data-visualization"><strong>Data Visualization</strong></a></li>
   </ul>
 </nav>
     </div>
@@ -209,49 +209,58 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
 <p>Clustering, a fundamental technique in machine learning, is the process of grouping similar data points together. Its applications are diverse, ranging from customer segmentation in marketing to anomaly detection in cybersecurity. By identifying patterns within datasets, clustering enables us to gain valuable insights and make informed decisions.</p>
-</section>
-<section id="types-of-clustering-algorithms" class="level2">
-<h2 class="anchored" data-anchor-id="types-of-clustering-algorithms"><strong>Types of Clustering Algorithms</strong></h2>
+<section id="types-of-clustering-algorithms" class="level3">
+<h3 class="anchored" data-anchor-id="types-of-clustering-algorithms"><strong>Types of Clustering Algorithms</strong></h3>
 <p>Clustering algorithms come in various flavors, each with its unique approach to grouping data:</p>
 <ul>
 <li><p><strong>K-Means:</strong> Divides data into k clusters, where each cluster is represented by its centroid.</p></li>
 <li><p><strong>Hierarchical Clustering:</strong> Forms a tree of clusters, allowing for hierarchical organization.</p></li>
 <li><p><strong>DBSCAN (Density-Based Spatial Clustering of Applications with Noise):</strong> A density-based algorithm that identifies clusters based on the density of data points.</p></li>
 </ul>
-</section>
-<section id="dbscan-a-density-based-approach" class="level2">
-<h2 class="anchored" data-anchor-id="dbscan-a-density-based-approach"><strong>DBSCAN: A Density-Based Approach:</strong></h2>
 <p>DBSCAN stands out for its ability to discover clusters of arbitrary shapes. The algorithm works by identifying core points, which are densely packed, and expanding clusters by connecting core points. It also identifies noise points that do not belong to any cluster.</p>
 </section>
-<section id="dbscan-in-action" class="level2">
-<h2 class="anchored" data-anchor-id="dbscan-in-action"><strong>DBSCAN in Action</strong></h2>
+</section>
+<section id="data-visualization" class="level2">
+<h2 class="anchored" data-anchor-id="data-visualization"><strong>Data Visualization</strong></h2>
 <p>Let’s demonstrate the power of DBSCAN using Python and scikit-learn. We’ll start by generating a synthetic dataset:</p>
 <div class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.cluster <span class="im">import</span> DBSCAN</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.datasets <span class="im">import</span> make_blobs</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate a synthetic dataset</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>X, _ <span class="op">=</span> make_blobs(n_samples<span class="op">=</span><span class="dv">300</span>, centers<span class="op">=</span><span class="dv">4</span>, cluster_std<span class="op">=</span><span class="fl">0.60</span>, random_state<span class="op">=</span><span class="dv">0</span>)</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Apply DBSCAN</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>dbscan <span class="op">=</span> DBSCAN(eps<span class="op">=</span><span class="fl">0.3</span>, min_samples<span class="op">=</span><span class="dv">5</span>)</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>labels <span class="op">=</span> dbscan.fit_predict(X)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.cluster <span class="im">import</span> DBSCAN</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.datasets <span class="im">import</span> make_blobs</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate a synthetic dataset</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>X, _ <span class="op">=</span> make_blobs(n_samples<span class="op">=</span><span class="dv">300</span>, centers<span class="op">=</span><span class="dv">4</span>, cluster_std<span class="op">=</span><span class="fl">0.60</span>, random_state<span class="op">=</span><span class="dv">0</span>)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Apply DBSCAN</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>dbscan <span class="op">=</span> DBSCAN(eps<span class="op">=</span><span class="fl">0.3</span>, min_samples<span class="op">=</span><span class="dv">5</span>)</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>labels <span class="op">=</span> dbscan.fit_predict(X)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</section>
-<section id="data-visualization-with-scatter-plots" class="level2">
-<h2 class="anchored" data-anchor-id="data-visualization-with-scatter-plots"><strong>Data Visualization with Scatter Plots</strong></h2>
-<p>Visualizing the results of clustering is crucial for understanding the underlying structure of the data. Let’s create a scatter plot that represents the original data points with cluster labels:</p>
+<p>I use the following colors in all of my blogs data visualizations</p>
 <div class="cell" data-execution_count="2">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Visualize the clusters</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>plt.scatter(X[:, <span class="dv">0</span>], X[:, <span class="dv">1</span>], c<span class="op">=</span>labels, cmap<span class="op">=</span><span class="st">'viridis'</span>, edgecolor<span class="op">=</span><span class="st">'k'</span>, s<span class="op">=</span><span class="dv">50</span>)</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'DBSCAN Clustering'</span>)</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Feature 1'</span>)</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Feature 2'</span>)</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Define specific colors (same as CSS from quarto vapor theme)</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>background <span class="op">=</span> <span class="st">'#1b133a'</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>pink <span class="op">=</span> <span class="st">'#ea39b8'</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>purple <span class="op">=</span> <span class="st">'#6f42c1'</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>blue <span class="op">=</span> <span class="st">'#32fbe2'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Visualizing the results of clustering is crucial for understanding the underlying structure of the data. Let’s create a scatter plot that represents the original data points with cluster labels:</p>
+<div class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Visualize the clustering</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots()</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>scatter <span class="op">=</span> ax.scatter(X[:, <span class="dv">0</span>], X[:, <span class="dv">1</span>], c<span class="op">=</span>labels, cmap<span class="op">=</span>plt.cm.cool, edgecolor<span class="op">=</span><span class="st">'black'</span>, s<span class="op">=</span><span class="dv">50</span>)</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="st">'DBSCAN Clustering'</span>, color<span class="op">=</span>purple)</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>ax.set_xlabel(<span class="st">'Feature 1'</span>, color<span class="op">=</span>blue)</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="st">'Feature 2'</span>, color<span class="op">=</span>blue)</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>ax.grid(<span class="va">True</span>, linestyle<span class="op">=</span><span class="st">'--'</span>, alpha<span class="op">=</span><span class="fl">0.5</span>)</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>ax.tick_params(axis<span class="op">=</span><span class="st">'x'</span>, colors<span class="op">=</span>blue)</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>ax.tick_params(axis<span class="op">=</span><span class="st">'y'</span>, colors<span class="op">=</span>blue)</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>ax.set_facecolor(pink)</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>fig.set_facecolor(background)</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
-<p><img src="index_files/figure-html/cell-3-output-1.png" width="576" height="449"></p>
+<p><img src="index_files/figure-html/cell-4-output-1.png" width="576" height="449"></p>
 </div>
 </div>
 <p>Clustering, especially with the powerful DBSCAN algorithm, opens new avenues for extracting patterns from data. As we’ve seen, DBSCAN’s ability to identify clusters based on density makes it versatile for a wide range of applications. By visualizing the results, we gain a deeper understanding of the data’s inherent structure, providing a solid foundation for subsequent analysis and decision-making.</p>
