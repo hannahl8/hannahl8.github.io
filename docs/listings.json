@@ -11,11 +11,7 @@
     ]
   },
   {
-    "listing": "/ggplot-series.html",
-    "items": []
-  },
-  {
-    "listing": "/archive.html",
+    "listing": "/blog.html",
     "items": [
       "/posts/machine-learning-intro/anomaly/index.html",
       "/posts/machine-learning-intro/classification/index.html",
@@ -26,7 +22,7 @@
     ]
   },
   {
-    "listing": "/blog.html",
+    "listing": "/archive.html",
     "items": [
       "/posts/machine-learning-intro/anomaly/index.html",
       "/posts/machine-learning-intro/classification/index.html",
