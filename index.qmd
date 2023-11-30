@@ -1,0 +1,15 @@
+---
+title: "About"
+image: gradpic.jpg
+about:
+  template: jolla
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/hannah-lyons-l8/
+    - icon: github
+      text: Github
+      href: https://github.com/hannahl8
+---
+
+Hannah Lyons Personal Blog
