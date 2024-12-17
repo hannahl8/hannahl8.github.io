@@ -1,0 +1,71 @@
+---
+title: 'DIY Keezer Build'
+date: '2024-08-23'
+categories: ['DIY']
+description: 'Detailed instructions on how I built my Keezer!'
+execute: 
+  message: false
+  warning: false
+editor_options: 
+  chunk_output_type: console
+---
+
+# Introduction
+
+First I just gotta show her off along with some of my first bottled beer
+
+![](keezer%20dark.jpg)
+
+![](bottles.jpg)
+
+![](bottle.jpg)
+
+# Materials and Cost
+
+Unfortunately, I did not take any cheap routes for this build. I bought everything new.
+
+You could definitely use an old chest freezer, buy used kegs, and find a cheaper tap tower on Amazon. A lot of these things could probably also be found used on Craigslist or Facebook Marketplace.
+
+### Keezer Assembly Items
+
+| Item with link | Price |
+|:-----------------------------------------------------|:-----------------|
+| <a href="https://www.homedepot.com/p/Magic-Chef-5-0-cu-ft-Chest-Freezer-in-White-HMCF5W4/311895690" target="_blank">5.0 cu. ft. Chest Freezer</a> | \$169.00 |
+| <a href="https://www.northernbrewer.com/products/3-stainless-steel-dual-faucet-tower?variant=8486828638252" target="_blank">3" Stainless Steel Dual Faucet Draft Tower</a> | \$183.99 |
+| <a href="https://www.homedepot.com/p/Columbia-Forest-Products-3-4-in-x-2-ft-x-4-ft-PureBond-Red-Oak-Plywood-Project-Panel-Free-Custom-Cut-Available-2014/204311230#overlay" target="_blank">Red Oak Plywood 3/4 in. x 2 ft. x 4 ft. (2x)</a> | \$58.98 |
+| <a href="https://www.lowes.com/pd/Common-1-in-x-3-in-x-6-ft-Actual-0-75-in-x-2-5-in-x-6-ft-Red-Oak-Board/1000018121" target="_blank">Red Oak Lumbar 1-in x 3-in x 6-ft (2x)</a> | \$34.96 |
+| <a href="https://www.lowes.com/pd/Minwax-Wood-Finish-Red-Oak-Oil-Based-Interior-Stain-Actual-Net-Contents-32-fl-oz/999914205" target="_blank">Red Oak Stain</a> | \$12.98 |
+| <a href="https://www.lowes.com/pd/Minwax-32-fl-oz-Satin-Oil-Based-Polyurethane/999914537" target="_blank">Polyurethane</a> | \$16.48 |
+| <a href="https://www.lowes.com/pd/Rust-Oleum-2X-Ultra-Cover-Flat-Gray-Spray-Paint-and-Primer-In-One-NET-WT-12-oz/5014069651" target="_blank">Paint Primer</a> | \$6.48 |
+| <a href="https://www.lowes.com/configure/paint?catalog=Paint&omniItemId=5013851331&refinement=colorNumber--4011_5__colorName--Newport+Gray" target="_blank">Paint</a> | \$21.98 |
+| <a href="https://www.lowes.com/pd/3M-SandBlaster-Pro-8-Pack-3-66-in-W-x-9-in-L-220-Grit-Commercial-Finishing-Sandpaper/5001591523" target="_blank">220-Grit Sandpaper</a> | \$6.98 |
+| <a href="https://www.lowes.com/pd/Valspar-Natural-Bristle-Polyester-Blend-Angle-2-in-Paint-Brush/1002276692" target="_blank">Natural Bristle Brush</a> | \$10.48 |
+| <a href="https://www.lowes.com/pd/SELLARS-200-Pack-Paper-Towels/999982036" target="_blank">Rags</a> | \$13.98 |
+| <a href="https://www.lowes.com/pd/SHLA-Quart-Paint-Stick-30-Pack/5001844561" target="_blank">Paint Sticks</a> | \$1.98 |
+| <a href="https://www.homedepot.com/p/Liquid-Nails-Fuze-It-9-oz-Gray-All-Surface-Construction-Adhesive-LN-2000/206736831" target="_blank">Construction Adhesive</a> | \$8.98 |
+| <a href="https://www.homedepot.com/p/Everbilt-1-2-in-Zinc-Plated-Cut-Washer-807246/204633084" target="_blank">Washers for between lid and wood (10x)</a> | \$3.50 |
+| <a href="https://www.homedepot.com/p/Everbilt-1-4-in-x-1-1-4-in-Zinc-Plated-Fender-Washer-804796/204632767" target="_blank">Washers for screws inside lid (4x)</a> | \$0.76 |
+| <a href="https://www.homedepot.com/p/Everbilt-10-x-3-in-Zinc-Plated-Phillips-Round-Head-Wood-Screw-2-Pack-829851/317479681" target="_blank">Screws (4x)</a> | \$2.75 |
+| <a href="https://www.amazon.com/dp/B0CFW2NHV1?psc=1&smid=ATVPDKIKX0DER&ref_=chk_typ_imgToDp" target="_blank">Aluminum Composite Panel Brushed Silver</a> | \$9.93 |
+| <a href="https://www.amazon.com/dp/B0991Q94KP?smid=A2KZ7X05DCDJDL&ref_=chk_typ_imgToDp&th=1" target="_blank">LED Light Strips</a> | \$9.99 |
+| <a href="https://www.northernbrewer.com/products/inkbird-dual-stage-wifi-temp-controller?variant=32852692205673" target="_blank">Inkbird Dual-Stage WiFi Temp Controller</a> | \$49.99 |
+| <a href="https://www.amazon.com/dp/B09PDMDY1F?psc=1&ref=ppx_yo2ov_dt_b_product_details" target="_blank">USB Desk Fan</a> | \$8.99 |
+|  |  |
+| <strong>TOTAL:</strong> | <strong>\$633.16</strong> |
+
+### Homebrewing Kegging Items
+
+| Item with link | Price |
+|:-----------------------------------------------------|:-----------------|
+| <a href="https://www.northernbrewer.com/products/amcyl-5-gallon-keg-dual-rubber-handle?variant=8189879058476" target="_blank">5 Gallon Ball Lock Cornelius Keg (2x)</a> | \$183.98 |
+| <a href="https://www.northernbrewer.com/products/co2po-double-body-regulator" target="_blank">CO2PO® Double Body Regulator</a> | \$103.99 |
+| <a href="https://www.northernbrewer.com/products/gas-connector-kit-bl-ball-lock-version" target="_blank">Gas Connector Kit - Ball Lock Version (2x)</a> | \$20.78 |
+| <a href="5 lb CO2 Tank" target="_blank">5 lb CO2 Tank</a> | \$132 |
+|  |  |
+| <strong>TOTAL:</strong> | <strong>\$440.75</strong> |
+
+So in total, I spent **\$1,073.91**! Honestly, I wouldn't be surprised if I'm missing something here either. Let's just say this wasn't a cheap DIY and if this thing ever perishes I'll be quite devastated.
+
+Now that there's everything laid out of what I purchased, lets get into my build process!
+
+# Build Process
