@@ -67,7 +67,7 @@
     "href": "index.html",
     "title": "About",
     "section": "",
-    "text": "Hello all! My name is Hannah Lyons. I graduated from Virginia Tech with a Bachelor’s in Biochemistry, a minor in Computer Science, and a minor in Chemistry in May 2021. In August 2024, I completed my Master of Engineering in Computer Science with a specialization in Software Development and Applications at Virignia Tech. Below are links to a few projects I have worked on during my time as a graduate student!\nI am super passionate about both front and back end web development (full stack), as well as general software development for desktop applications, etc.\n\nProject Links\nHokie Housing Hub\nfocal\nBlog"
+    "text": "I am a Software Developer working for Naval Surface Warfare Center, Dahlgren Division. I work on an agile development team creating and improving features for a modeling and simulation software application. I am super passionate about front and back end web development (full stack), as well as general software development for desktop applications, etc. Below are some projects I have worked on during my academic career."
   },
   {
     "objectID": "archive.html",
@@ -88,7 +88,7 @@
     "href": "machine-learning-series.html",
     "title": "Series: Introductory Machine Learning",
     "section": "",
-    "text": "Anomaly/Outlier Detection\n\n\n\n\n\nUnveiling Anomalies with Outlier Detection in Machine Learning\n\n\n\n\n\n\nNov 20, 2023\n\n\n2 min\n\n\n\n\n\n\n\n\nClassification\n\n\n\n\n\nROC, PR, Confusion Matrix\n\n\n\n\n\n\nOct 30, 2023\n\n\n3 min\n\n\n\n\n\n\n\n\nLinear and Nonlinear Regression\n\n\n\n\n\nNavigating Trends with Linear and Nonlinear Regression in Machine Learning\n\n\n\n\n\n\nOct 20, 2023\n\n\n3 min\n\n\n\n\n\n\n\n\nClustering\n\n\n\n\n\nUnraveling Patterns with Clustering in Machine Learning\n\n\n\n\n\n\nSep 30, 2023\n\n\n2 min\n\n\n\n\n\n\n\n\nProbability Theory and Random Variables\n\n\n\n\n\nUnderstanding Probability Theory and Random Variables in the Context of Machine Learning\n\n\n\n\n\n\nSep 20, 2023\n\n\n4 min\n\n\n\n\n\n\n\n\nTetris and Machine Learning\n\n\n\n\n\nMachine Learning and its applications to the classic videogame: Tetris\n\n\n\n\n\n\nSep 1, 2023\n\n\n4 min\n\n\n\n\n\n\nNo matching items"
+    "text": "Anomaly/Outlier Detection\n\n\n\n\n\nUnveiling Anomalies with Outlier Detection in Machine Learning\n\n\n\n\n\nNov 20, 2023\n\n\n2 min\n\n\n\n\n\n\n\nClassification\n\n\n\n\n\nROC, PR, Confusion Matrix\n\n\n\n\n\nOct 30, 2023\n\n\n3 min\n\n\n\n\n\n\n\nLinear and Nonlinear Regression\n\n\n\n\n\nNavigating Trends with Linear and Nonlinear Regression in Machine Learning\n\n\n\n\n\nOct 20, 2023\n\n\n3 min\n\n\n\n\n\n\n\nClustering\n\n\n\n\n\nUnraveling Patterns with Clustering in Machine Learning\n\n\n\n\n\nSep 30, 2023\n\n\n2 min\n\n\n\n\n\n\n\nProbability Theory and Random Variables\n\n\n\n\n\nUnderstanding Probability Theory and Random Variables in the Context of Machine Learning\n\n\n\n\n\nSep 20, 2023\n\n\n4 min\n\n\n\n\n\n\n\nTetris and Machine Learning\n\n\n\n\n\nMachine Learning and its applications to the classic videogame: Tetris\n\n\n\n\n\nSep 1, 2023\n\n\n4 min\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/machine-learning-intro/anomaly/index.html",
@@ -166,5 +166,54 @@
     "title": "My DIY Keezer Build!",
     "section": "Table of everything I purchased",
     "text": "Table of everything I purchased\n\n\n\n\n\n\n\nItem with link\nPrice\n\n\n\n\n5.0 cu. ft. Chest Freezer\n$169.00\n\n\n3” Stainless Steel Dual Faucet Draft Tower\n$183.99\n\n\nRed Oak Plywood 3/4 in. x 2 ft. x 4 ft. (2x)\n$58.98\n\n\nRed Oak Lumbar 1-in x 3-in x 6-ft (2x)\n$34.96\n\n\n\n$.00\n\n\n\n$.00\n\n\n\n$.00\n\n\n\n$.00\n\n\n\n$.00\n\n\n\n$.00\n\n\n\n$.00\n\n\n\n$.00\n\n\n\n$.00"
+  },
+  {
+    "objectID": "timeline.html",
+    "href": "timeline.html",
+    "title": "My Academic & Career Timeline",
+    "section": "",
+    "text": "Descending\n\n\n\n\n\nSeptember 2024 - Present\n\nComputer Scientist at Naval Surface Warfare Center Dahlgren Division\n\n\nI am a software developer on a agile team creating and improving features for a modeling and simulation software application. Other responsibilities included leading code reviews, menotring junior developers, and contributing to technical design decisions.\n\n\n\n\n\nAugust 2024\n\nConferred the Master of Engineering\n\n\nConferred the Master of Engineering. Major – Computer Science and Applications on August 9th, 2024. Capstone Project showcased on VTechWorks.\n\n\n\n\n\nAugust 2023\n\nGraduate Student at Virginia Tech Innovation Campus\n\n\nI began as a graduate student at Virginia Tech. I was awarded the Boeing Graduate Scholarship which was highlighted on Virginia Tech News.\n\n\n\n\n\nJune 2021 - September 2024\n\nComputer Scientist at Naval Surface Warfare Center Indian Head Division\n\n\nI worked as the lead Software Developer on the Modeling and Simulations (M&S) Team. I worked with a team of developers on the creation of a Java-based software application over a multi-year period. Led the project management for several high–intensity, short duration funded efforts, delivering M&S support as requested by upper-level management.\n\n\n\n\n\nMay 2021\n\nConferred the Bachelor of Science\n\n\nConferred the Bachelor of Science. Major – Biochemistry. Magna Cum Laude, on May 15, 2021. Completed the Minor in Chemistry. Completed the Minor in Computer Science.\n\n\n\n\n\nJune 2020 - August 2020 & December 2020 - January 2021\n\nStudent Intern at Naval Surface Warfare Center Indian Head Division\n\n\nStarted as a student intern working with the Modeling & Simulations Team for Chemical, Biological, and Radiological (CBR) Defense. During my time as an intern, I conducted a comprehensive literature review and addressed foundational questions contributing to the successful initiation of their newly 3-year funded software application.\n\n\n\n\n\nAugust 2019\n\nComputer Science Minor\n\n\nI really liked biochemistry as a major (mostly just the chemistry classes), but I still wanted to broaden my knowledge! I realized I had enough open electives left to add a minor, and computer science was calling to me. The first class I ever took was an insane learning curve, but also an incredibly rewarding challenge. I knew after successfully completing that class, to have a career in the field of computer science would be beyond gratifying.\n\n\n\n\n\nMay 2019 - August 2019\n\nBookkeeper at Koons Chevy Buick GMC\n\n\nI worked in the accounting department as a bookkeeper. My daily tasks included things like preparing and handling legal data for vehicle registration and taxation. Lot’s of paper work! The car industry loves paper!\n\n\n\n\n\nAugust 2017\n\nUndergraduate Student at Virginia Tech\n\n\nI began as an undergraduate student at Virgina Tech. Many major changes later until I decided on Biochemestry! General Chemisty was my favorite class!\n\n\n\n\n\nJune 2017\n\nGraduated High School\n\n\nHappy to be done! I worked the rest of the summer to make money before starting college in August.\n\n\n\n\n\nMarch 2016 - August 2017\n\nStarted my First Job!\n\n\nStarted as an Associate at Potbelly Sandwich Works. Quickly promoted to be a certified trainer, training all new employees. Learned valuble teamwork and customer service skills."
+  },
+  {
+    "objectID": "timeline.html#timeline-of-accomplishments",
+    "href": "timeline.html#timeline-of-accomplishments",
+    "title": "My Accomplishments Timeline",
+    "section": "",
+    "text": "August 2017\n\n\nI began as an undergraduate student at Virgina Tech. Many major changes later until I decided on Biochemestry! General Chemisty was my favorite class!\n\n\n\n\n\n\n\nMay 2019 - August 2019\n\n\nxxx"
+  },
+  {
+    "objectID": "index.html#my-academic-career-timeline",
+    "href": "index.html#my-academic-career-timeline",
+    "title": "About",
+    "section": "My Academic & Career Timeline",
+    "text": "My Academic & Career Timeline\n\n\n\nDescending\n\n\n\n\n\nSeptember 2024 - Present\n\nComputer Scientist at Naval Surface Warfare Center Dahlgren Division\n\n\nLead software developer on an agile development team creating and improving features for a modeling and simulation software application. Other responsibilities include leading code reviews, mentoring junior developers, and contributing to technical design decisions.\n\n\n\n\n\nAugust 2024\n\nConferred the Master of Engineering\n\n\nConferred the Master of Engineering. Major – Computer Science and Applications on August 9th, 2024. Capstone Project showcased on VTechWorks.\n\n\n\n\n\nAugust 2023\n\nGraduate Student at Virginia Tech Innovation Campus\n\n\nI began as a graduate student at Virginia Tech. I was awarded the Boeing Graduate Scholarship which was highlighted on Virginia Tech News.\n\n\n\n\n\nJune 2021 - September 2024\n\nComputer Scientist at Naval Surface Warfare Center Indian Head Division\n\n\nI worked as the lead Software Developer on the Modeling and Simulations (M&S) Team. I worked with a team of developers on the creation of a Java-based software application over a multi-year period. Led the project management for several high–intensity, short duration funded efforts, delivering M&S support as requested by upper-level management.\n\n\n\n\n\nMay 2021\n\nConferred the Bachelor of Science\n\n\nConferred the Bachelor of Science. Major – Biochemistry. Magna Cum Laude, on May 15, 2021. Completed the Minor in Chemistry. Completed the Minor in Computer Science.\n\n\n\n\n\nJune 2020 - August 2020 & December 2020 - January 2021\n\nStudent Intern at Naval Surface Warfare Center Indian Head Division\n\n\nStarted as a student intern working with the Modeling & Simulations Team for Chemical, Biological, and Radiological (CBR) Defense. During my time as an intern, I conducted a comprehensive literature review and addressed foundational questions contributing to the successful initiation of their newly funded 3-year software development effors.\n\n\n\n\n\nAugust 2019\n\nComputer Science Minor\n\n\nI really liked biochemistry as a major (mostly just the chemistry classes), but I still wanted to broaden my knowledge! I realized I had enough open electives left to add a minor, and computer science was calling to me. The first class I ever took was an insane learning curve, but also an incredibly rewarding challenge. I knew after successfully completing that class, to have a career in the field of computer science would be beyond gratifying.\n\n\n\n\n\nMay 2019 - August 2019\n\nBookkeeper at Koons Chevy Buick GMC\n\n\nI worked in the accounting department as a bookkeeper. My daily tasks included things like preparing and handling legal data for vehicle registration and taxation. Lot’s of paper work! The car industry loves paper!\n\n\n\n\n\nAugust 2017\n\nUndergraduate Student at Virginia Tech\n\n\nI began as an undergraduate student at Virgina Tech. Many major changes later until I decided on Biochemestry! General Chemisty was my favorite class!\n\n\n\n\n\nJune 2017\n\nGraduated High School\n\n\nHappy to be done! I worked the rest of the summer to make money before starting college in August.\n\n\n\n\n\nMarch 2016 - August 2017\n\nStarted my First Job!\n\n\nStarted as an Associate at Potbelly Sandwich Works. Quickly promoted to be a certified trainer, training all new employees. Learned valuble teamwork and customer service skills."
+  },
+  {
+    "objectID": "index.html#project-links",
+    "href": "index.html#project-links",
+    "title": "About",
+    "section": "Project Links",
+    "text": "Project Links\n\n\n\nHeader\n\n\n\nPrimary Card title\n\n\nSome quick example text!\n\n\n\n\nHokie Housing Hub\nfocal\nBlog"
+  },
+  {
+    "objectID": "index.html#projects",
+    "href": "index.html#projects",
+    "title": "About",
+    "section": "Projects",
+    "text": "Projects\n\n\n\n\n\n\n\nProject Link\nSkills/Resources/Languages Used\n\n\n\n\nVT Research Connect\nReact, Typescript, Vite, SQL, Java, Jira, Python\n\n\nHokie Housing Hub\nHTML, CSS, JavaScript\n\n\nFocal\ndJango, python, HTML, CSS, JavaScript\n\n\nPersonal Blog\nQuarto, R, HTML, CSS, JavaScript"
+  },
+  {
+    "objectID": "index.html#section",
+    "href": "index.html#section",
+    "title": "About",
+    "section": "",
+    "text": "Header\n\n\nPrimary Card title\n\n\nSome quick example text!"
+  },
+  {
+    "objectID": "index.html#section-1",
+    "href": "index.html#section-1",
+    "title": "About",
+    "section": "",
+    "text": "Header\n\n\nPrimary Card title\n\n\nSome quick example text!\n\n\n\nHokie Housing Hub\nfocal\nBlog"
   }
 ]

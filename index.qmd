@@ -12,14 +12,167 @@ about:
       href: https://github.com/hannahl8
 ---
 
-Hello all! My name is Hannah Lyons. I graduated from Virginia Tech with a Bachelor's in Biochemistry, a minor in Computer Science, and a minor in Chemistry in May 2021. In August 2024, I completed my Master of Engineering in Computer Science with a specialization in Software Development and Applications at Virignia Tech. Below are links to a few projects I have worked on during my time as a graduate student!
+I am a Software Developer working for Naval Surface Warfare Center, Dahlgren Division. I work on an agile development team creating and improving features for a modeling and simulation software application. I am super passionate about front and back end web development (full stack), as well as general software development for desktop applications, etc. Below are some projects I have worked on during my academic career.
 
-I am super passionate about both front and back end web development (full stack), as well as general software development for desktop applications, etc.
+| Project Link | Skills/Resources/Languages Used |
+|------------------------------------|------------------------------------|
+| <a href="https://vtechworks.lib.vt.edu/items/257d0d9b-75f5-44b6-ac2d-b108a663a166" target="_blank">VT Research Connect</a> | React, Typescript, Vite, SQL, Java, Jira, Python |
+| <a href="https://people.cs.vt.edu/hannahl8/BIT4484/hokiehousinghub/base.html" target="_blank">Hokie Housing Hub</a> | HTML, CSS, JavaScript |
+| <a href="https://people.cs.vt.edu/hannahl8/cs5774/project3/homesignedout.html" target="_blank">Focal</a> | dJango, python, HTML, CSS, JavaScript |
+| <a href="https://hannahl8.github.io/blog.html">Personal Blog</a> | Quarto, R, HTML, CSS, JavaScript |
 
-### Project Links
+<br>
 
-[Hokie Housing Hub](https://people.cs.vt.edu/hannahl8/BIT4484/hokiehousinghub/base.html)
+## My Academic & Career Timeline
 
-[focal](https://people.cs.vt.edu/hannahl8/cs5774/project3/homesignedout.html)
+<div>
 
-[Blog](https://hannahl8.github.io/blog.html)
+::: center-button
+<button class="btn btn-primary" id="toggle-btn" onclick="toggleTimelineOrder()">
+
+Descending
+
+</button>
+:::
+
+::::::::::::::::::::::::: {#timeline .timeline}
+:::: {.timeline-item .left}
+::: timeline-content
+<small>September 2024 - Present</small>
+
+<h3>Computer Scientist at Naval Surface Warfare Center Dahlgren Division</h3>
+
+<p>Lead software developer on an agile development team creating and improving features for a modeling and simulation software application. Other responsibilities include leading code reviews, mentoring junior developers, and contributing to technical design decisions.</p>
+:::
+::::
+
+:::: {.timeline-item .right}
+::: timeline-content
+<small>August 2024</small>
+
+<h3>Conferred the Master of Engineering</h3>
+
+<p>Conferred the Master of Engineering. Major – Computer Science and Applications on August 9th, 2024. Capstone Project showcased on <a href="https://vtechworks.lib.vt.edu/items/257d0d9b-75f5-44b6-ac2d-b108a663a166" target="_blank">VTechWorks</a>.</p>
+:::
+::::
+
+:::: {.timeline-item .left}
+::: timeline-content
+<small>August 2023</small>
+
+<h3>Graduate Student at Virginia Tech Innovation Campus</h3>
+
+<p>I began as a graduate student at Virginia Tech. I was awarded the Boeing Graduate Scholarship which was highlighted on <a href="https://news.vt.edu/articles/2023/09/innovation-campus-boeing-scholars-2023.html" target="_blank">Virginia Tech News</a>.</p>
+:::
+::::
+
+:::: {.timeline-item .right}
+::: timeline-content
+<small>June 2021 - September 2024</small>
+
+<h3>Computer Scientist at Naval Surface Warfare Center Indian Head Division</h3>
+
+<p>I worked as the lead Software Developer on the Modeling and Simulations (M&S) Team. I worked with a team of developers on the creation of a Java-based software application over a multi-year period. Led the project management for several high–intensity, short duration funded efforts, delivering M&S support as requested by upper-level management.</p>
+:::
+::::
+
+:::: {.timeline-item .left}
+::: timeline-content
+<small>May 2021</small>
+
+<h3>Conferred the Bachelor of Science</h3>
+
+<p>Conferred the Bachelor of Science. Major -- Biochemistry. Magna Cum Laude, on May 15, 2021. Completed the Minor in Chemistry. Completed the Minor in Computer Science.</p>
+:::
+::::
+
+:::: {.timeline-item .right}
+::: timeline-content
+<small>June 2020 - August 2020 & December 2020 - January 2021</small>
+
+<h3>Student Intern at Naval Surface Warfare Center Indian Head Division</h3>
+
+<p>Started as a student intern working with the Modeling & Simulations Team for Chemical, Biological, and Radiological (CBR) Defense. During my time as an intern, I conducted a comprehensive literature review and addressed foundational questions contributing to the successful initiation of their newly funded 3-year software development effors.</p>
+:::
+::::
+
+:::: {.timeline-item .left}
+::: timeline-content
+<small>August 2019</small>
+
+<h3>Computer Science Minor</h3>
+
+<p>I really liked biochemistry as a major (mostly just the chemistry classes), but I still wanted to broaden my knowledge! I realized I had enough open electives left to add a minor, and computer science was calling to me. The first class I ever took was an insane learning curve, but also an incredibly rewarding challenge. I knew after successfully completing that class, to have a career in the field of computer science would be beyond gratifying.</p>
+:::
+::::
+
+:::: {.timeline-item .right}
+::: timeline-content
+<small>May 2019 - August 2019</small>
+
+<h3>Bookkeeper at Koons Chevy Buick GMC</h3>
+
+<p>I worked in the accounting department as a bookkeeper. My daily tasks included things like preparing and handling legal data for vehicle registration and taxation. Lot's of paper work! The car industry loves paper!</p>
+:::
+::::
+
+:::: {.timeline-item .left}
+::: timeline-content
+<small>August 2017</small>
+
+<h3>Undergraduate Student at Virginia Tech</h3>
+
+<p>I began as an undergraduate student at Virgina Tech. Many major changes later until I decided on Biochemestry! General Chemisty was my favorite class!</p>
+:::
+::::
+
+:::: {.timeline-item .right}
+::: timeline-content
+<small>June 2017</small>
+
+<h3>Graduated High School</h3>
+
+<p>Happy to be done! I worked the rest of the summer to make money before starting college in August.</p>
+:::
+::::
+
+:::: {.timeline-item .left}
+::: timeline-content
+<small>March 2016 - August 2017</small>
+
+<h3>Started my First Job!</h3>
+
+<p>Started as an Associate at Potbelly Sandwich Works. Quickly promoted to be a certified trainer, training all new employees. Learned valuble teamwork and customer service skills.</p>
+:::
+::::
+:::::::::::::::::::::::::
+
+```{=html}
+<script>
+let isDescending = true;
+
+function toggleTimelineOrder() {
+  const timeline = document.getElementById('timeline');
+  const items = Array.from(timeline.children);
+  items.reverse();
+
+  // Clear and re-append in reversed order
+  while (timeline.firstChild) {
+    timeline.removeChild(timeline.firstChild);
+  }
+
+  // Reassign left/right classes for alternating layout
+  items.forEach((item, index) => {
+    item.classList.remove('left', 'right');
+    item.classList.add(index % 2 === 0 ? 'left' : 'right');
+    timeline.appendChild(item);
+  });
+
+  // Toggle button label
+  isDescending = !isDescending;
+  document.getElementById('toggle-btn').textContent = isDescending ? "Descending" : "Ascending";
+}
+</script>
+```
+
+</div>
