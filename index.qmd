@@ -1,6 +1,6 @@
 ---
 title: "About"
-image: gradpic.JPEG
+image: Headshot.JPG
 about:
   template: jolla
   links:
