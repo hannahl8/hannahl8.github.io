@@ -1,7 +1,7 @@
 ---
-title: 'DIY Keezer Build'
-date: '2024-08-23'
-categories: ['DIY']
+title: 'Keezer Build'
+date: '2024-05-31'
+categories: ['DIY', 'Homebrewing']
 description: 'Detailed instructions on how I built my Keezer!'
 execute: 
   message: false
@@ -12,13 +12,9 @@ editor_options:
 
 # Introduction
 
-First I just gotta show her off along with some of my first bottled beer
+I just gotta show her off
 
-![](keezer%20dark.jpg)
-
-![](bottles.jpg)
-
-![](bottle.jpg)
+![](front_logo_and_tap_tower_installed.jpg){fig-align="center"}
 
 # Materials and Cost
 
@@ -29,7 +25,7 @@ You could definitely use an old chest freezer, buy used kegs, and find a cheaper
 ### Keezer Assembly Items
 
 | Item with link | Price |
-|:-----------------------------------------------------|:-----------------|
+|:----------------------------------------------|:------------------------|
 | <a href="https://www.homedepot.com/p/Magic-Chef-5-0-cu-ft-Chest-Freezer-in-White-HMCF5W4/311895690" target="_blank">5.0 cu. ft. Chest Freezer</a> | \$169.00 |
 | <a href="https://www.northernbrewer.com/products/3-stainless-steel-dual-faucet-tower?variant=8486828638252" target="_blank">3" Stainless Steel Dual Faucet Draft Tower</a> | \$183.99 |
 | <a href="https://www.homedepot.com/p/Columbia-Forest-Products-3-4-in-x-2-ft-x-4-ft-PureBond-Red-Oak-Plywood-Project-Panel-Free-Custom-Cut-Available-2014/204311230#overlay" target="_blank">Red Oak Plywood 3/4 in. x 2 ft. x 4 ft. (2x)</a> | \$58.98 |
@@ -56,7 +52,7 @@ You could definitely use an old chest freezer, buy used kegs, and find a cheaper
 ### Homebrewing Kegging Items
 
 | Item with link | Price |
-|:-----------------------------------------------------|:-----------------|
+|:----------------------------------------------|:------------------------|
 | <a href="https://www.northernbrewer.com/products/amcyl-5-gallon-keg-dual-rubber-handle?variant=8189879058476" target="_blank">5 Gallon Ball Lock Cornelius Keg (2x)</a> | \$183.98 |
 | <a href="https://www.northernbrewer.com/products/co2po-double-body-regulator" target="_blank">CO2PO® Double Body Regulator</a> | \$103.99 |
 | <a href="https://www.northernbrewer.com/products/gas-connector-kit-bl-ball-lock-version" target="_blank">Gas Connector Kit - Ball Lock Version (2x)</a> | \$20.78 |
@@ -69,3 +65,105 @@ So in total, I spent **\$1,073.91**! Honestly, I wouldn't be surprised if I'm mi
 Now that there's everything laid out of what I purchased, lets get into my build process!
 
 # Build Process
+
+## Paining the Chest Freezer
+
+Painting the chest freezer was definitely the easiest part. First I sanded the whole thing and put painters tape around the seal, drain hole, and the little green light that shows the freezer is on.
+
+![](sanded_freezer.jpg){fig-align="center"}
+
+Then I primed the freezer, I didn't prime the top because I wouldn't be painting that. I knew I was going to be adding the tabletop later on.
+
+![](primed_freezer.jpg){fig-align="center"}
+
+A day or two later I pained it this lovely blue color. The lid is also now removed because I was prepping for the tabletop to be added.
+
+![](painted_freezer.jpg){fig-align="center"}
+
+## Connecting the Wooden Tabletop and the Freezer Lid
+
+The first thing I had to do was drill a hole in the freezer lid, I used a hole saw to do this. Unfortunately, I drilled right through the wires that connected to the freezer light in the lid, but I carefully removed them so it wasn't an issue. And I didn't need the light anyways so I wasn't upset about it.
+
+![](drilled_hole_freezer_lid.jpg){fig-align="center"}
+
+Next I had to line up the hole in the freezer to the wooden piece. This was easy. I also added painters tape to show where the freezer lid will go.
+
+![](wooden_lid_hole_align.jpg){fig-align="center"}
+
+Here I laid out the 1/2" washers to go in between the wood and the freezer lid. This was because the lid had the smallest dip on the edges raising it, and I needed this lid to be as secure as possible to the wood.
+
+![](wooden_lid_hole_washers.jpg){fig-align="center"}
+
+Finally here's everything glued on to the wood and ready to have to freezer lid placed on top.
+
+![](wooden_lid_glue.jpg){fig-align="center"}
+
+Here's the lid glued on and with additional washers that I screwed through the freezer lid into the wood. I let this set for at least 48 hours before messing with it.
+
+![](glued_lid_to_wood_and_screwed_in.jpg){fig-align="center"}
+
+## Finishing the Wooden Tabletop
+
+I had to add tabletop edges to this thing. Let me tell you, using a table saw to cut 45 degree angled edges was not easy! And table saws are actually terrifying. Here I have the three pieces of wood ready to to be attached and make this baby look more elegant.
+
+![](prepping_tabletop_edges.jpg){fig-align="center"}
+
+So I am silly and only bought gray glue. I should have gotten one that matched the stain I was going to use, but I masking taped this baby up to help prevent any gray glue getting anywhere. I needed several hands for this, I was going to glue the edges on, and then also nail them in with really tiny nails.
+
+![](prepping_gluing_edges.jpg){fig-align="center"}
+
+Here she is with the edges 😍 This was definitely the most stressful part of this build. It didn't take long but I was so worried about the gluing and nailing and not having the edges aligned perfectly, but thankfully it all worked out!
+
+![](tabletop_edges_glued_and_nailed_in.jpg){fig-align="center"}
+
+There was some issues, I didn't have any really big clamps to push the wood super close together, so there are gaps between the top and the edges, and some places you could see glue. I ended up picking out the gray glue later on and filling those edges with red oak wood filler before I stained. This helped A LOT. If I were to redo this, I would definitely get big clamps so those gaps wouldn't be there.
+
+![](tabletop_edges_not_tight_enough_some_glue.jpg){fig-align="center"}
+
+I also filled all the nails in with red oak wood filler before I stained as well.
+
+![](tabletop_nailed_in.jpg){fig-align="center"}
+
+## Staining the Tabletop
+
+I obviously sanded the crap out of this before I stained. I LOVED how this stain turned out. I love the grain pattern for red oak wood, it is a pricier wood but it is just so beautiful.
+
+![](first_stain.jpg){fig-align="center"}
+
+Here is after the second stain.
+
+![](second_stain.jpg){fig-align="center"}
+
+I did some final touch ups with the red oak wood filler, did one more stain, and finished with polyurethane.
+
+![](poly_finish_with_red_oak_wood_filler_touchups.jpg){fig-align="center"}
+
+## Making the Logo
+
+The logo is probably my favorite part. When I started dating my boyfriend (Liam) back in 2020, I told him I wanted to have my own brewery one day. He doodled up an amazing logo.
+
+![](original_logo.JPG){fig-align="center"}
+
+Four years later, he recreated it using Adobe Illustrator, and he conveniently works at a print shop and printed the logo directly on to aluminum dibond.
+
+![](logo.PNG){fig-align="center"}
+
+{{< video logo_printing.mp4 >}}
+
+## Finishing Touches
+
+Finally after the wood was done drying (I waited 1 week) I attached the tap tower. I then glued small wooden pieces to the front of the freezer. Then I took the circular stained piece of wood (Liam got everything cut into circles at his job, I didn't have a tool for that) and glued that onto the smaller pieces of wood to make it look elevated off the wood. I also know you're really not supposed to have anything covering a freezer, because it needs to release heat, so I didn't want the big circular piece of wood directly glued onto the freezer. Then I just glued the logo onto the piece of wood!
+
+![](finished_product.jpg){fig-align="center"}
+
+Finally I added LED lights underneath the lid to illuminate this masterpiece at night!
+
+![](lights_installed.jpg){fig-align="center"}
+
+Then I added all the keg elements into the freezer, along with attaching the Inkbird temperature controller to keep the freezer at usually around 34 degrees, I like a crisp cold beer 😎
+
+![](kegs_and_co2_inside.jpg){fig-align="center"}
+
+And finally, at night 😏
+
+![](keezer%20dark.jpg){fig-align="center"}

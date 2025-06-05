@@ -10,9 +10,9 @@
 <atom:link href="https://hannahl8.github.io/blog.xml" rel="self" type="application/rss+xml"/>
 <description>This is Hannah Lyons Personal Blog</description>
 <generator>quarto-1.6.39</generator>
-<lastBuildDate>Fri, 23 Aug 2024 04:00:00 GMT</lastBuildDate>
+<lastBuildDate>Fri, 31 May 2024 04:00:00 GMT</lastBuildDate>
 <item>
-  <title>DIY Keezer Build</title>
+  <title>Keezer Build</title>
   <dc:creator>Hannah Lyons</dc:creator>
   <link>https://hannahl8.github.io/posts/diy/</link>
   <description><![CDATA[ 
@@ -23,10 +23,12 @@
 
 <section id="introduction" class="level1">
 <h1>Introduction</h1>
-<p>First I just gotta show her off along with some of my first bottled beer</p>
-<p><img src="https://hannahl8.github.io/posts/diy/keezer dark.jpg" class="img-fluid"></p>
-<p><img src="https://hannahl8.github.io/posts/diy/bottles.jpg" class="img-fluid"></p>
-<p><img src="https://hannahl8.github.io/posts/diy/bottle.jpg" class="img-fluid"></p>
+<p>I just gotta show her off</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hannahl8.github.io/posts/diy/front_logo_and_tap_tower_installed.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
 </section>
 <section id="materials-and-cost" class="level1">
 <h1>Materials and Cost</h1>
@@ -36,8 +38,8 @@
 <h3 class="anchored" data-anchor-id="keezer-assembly-items">Keezer Assembly Items</h3>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 75%">
-<col style="width: 25%">
+<col style="width: 65%">
+<col style="width: 34%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -141,8 +143,8 @@
 <h3 class="anchored" data-anchor-id="homebrewing-kegging-items">Homebrewing Kegging Items</h3>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 75%">
-<col style="width: 25%">
+<col style="width: 65%">
+<col style="width: 34%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -183,16 +185,168 @@
 </section>
 <section id="build-process" class="level1">
 <h1>Build Process</h1>
+<section id="paining-the-chest-freezer" class="level2">
+<h2 class="anchored" data-anchor-id="paining-the-chest-freezer">Paining the Chest Freezer</h2>
+<p>Painting the chest freezer was definitely the easiest part. First I sanded the whole thing and put painters tape around the seal, drain hole, and the little green light that shows the freezer is on.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hannahl8.github.io/posts/diy/sanded_freezer.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>Then I primed the freezer, I didn’t prime the top because I wouldn’t be painting that. I knew I was going to be adding the tabletop later on.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hannahl8.github.io/posts/diy/primed_freezer.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>A day or two later I pained it this lovely blue color. The lid is also now removed because I was prepping for the tabletop to be added.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hannahl8.github.io/posts/diy/painted_freezer.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+</section>
+<section id="connecting-the-wooden-tabletop-and-the-freezer-lid" class="level2">
+<h2 class="anchored" data-anchor-id="connecting-the-wooden-tabletop-and-the-freezer-lid">Connecting the Wooden Tabletop and the Freezer Lid</h2>
+<p>The first thing I had to do was drill a hole in the freezer lid, I used a hole saw to do this. Unfortunately, I drilled right through the wires that connected to the freezer light in the lid, but I carefully removed them so it wasn’t an issue. And I didn’t need the light anyways so I wasn’t upset about it.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hannahl8.github.io/posts/diy/drilled_hole_freezer_lid.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>Next I had to line up the hole in the freezer to the wooden piece. This was easy. I also added painters tape to show where the freezer lid will go.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hannahl8.github.io/posts/diy/wooden_lid_hole_align.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>Here I laid out the 1/2” washers to go in between the wood and the freezer lid. This was because the lid had the smallest dip on the edges raising it, and I needed this lid to be as secure as possible to the wood.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hannahl8.github.io/posts/diy/wooden_lid_hole_washers.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>Finally here’s everything glued on to the wood and ready to have to freezer lid placed on top.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hannahl8.github.io/posts/diy/wooden_lid_glue.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>Here’s the lid glued on and with additional washers that I screwed through the freezer lid into the wood. I let this set for at least 48 hours before messing with it.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hannahl8.github.io/posts/diy/glued_lid_to_wood_and_screwed_in.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+</section>
+<section id="finishing-the-wooden-tabletop" class="level2">
+<h2 class="anchored" data-anchor-id="finishing-the-wooden-tabletop">Finishing the Wooden Tabletop</h2>
+<p>I had to add tabletop edges to this thing. Let me tell you, using a table saw to cut 45 degree angled edges was not easy! And table saws are actually terrifying. Here I have the three pieces of wood ready to to be attached and make this baby look more elegant.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hannahl8.github.io/posts/diy/prepping_tabletop_edges.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>So I am silly and only bought gray glue. I should have gotten one that matched the stain I was going to use, but I masking taped this baby up to help prevent any gray glue getting anywhere. I needed several hands for this, I was going to glue the edges on, and then also nail them in with really tiny nails.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hannahl8.github.io/posts/diy/prepping_gluing_edges.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>Here she is with the edges 😍 This was definitely the most stressful part of this build. It didn’t take long but I was so worried about the gluing and nailing and not having the edges aligned perfectly, but thankfully it all worked out!</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hannahl8.github.io/posts/diy/tabletop_edges_glued_and_nailed_in.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>There was some issues, I didn’t have any really big clamps to push the wood super close together, so there are gaps between the top and the edges, and some places you could see glue. I ended up picking out the gray glue later on and filling those edges with red oak wood filler before I stained. This helped A LOT. If I were to redo this, I would definitely get big clamps so those gaps wouldn’t be there.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hannahl8.github.io/posts/diy/tabletop_edges_not_tight_enough_some_glue.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>I also filled all the nails in with red oak wood filler before I stained as well.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hannahl8.github.io/posts/diy/tabletop_nailed_in.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+</section>
+<section id="staining-the-tabletop" class="level2">
+<h2 class="anchored" data-anchor-id="staining-the-tabletop">Staining the Tabletop</h2>
+<p>I obviously sanded the crap out of this before I stained. I LOVED how this stain turned out. I love the grain pattern for red oak wood, it is a pricier wood but it is just so beautiful.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hannahl8.github.io/posts/diy/first_stain.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>Here is after the second stain.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hannahl8.github.io/posts/diy/second_stain.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>I did some final touch ups with the red oak wood filler, did one more stain, and finished with polyurethane.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hannahl8.github.io/posts/diy/poly_finish_with_red_oak_wood_filler_touchups.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+</section>
+<section id="making-the-logo" class="level2">
+<h2 class="anchored" data-anchor-id="making-the-logo">Making the Logo</h2>
+<p>The logo is probably my favorite part. When I started dating my boyfriend (Liam) back in 2020, I told him I wanted to have my own brewery one day. He doodled up an amazing logo.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hannahl8.github.io/posts/diy/original_logo.JPG" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>Four years later, he recreated it using Adobe Illustrator, and he conveniently works at a print shop and printed the logo directly on to aluminum dibond.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hannahl8.github.io/posts/diy/logo.PNG" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="logo_printing.mp4"></video></div>
+</section>
+<section id="finishing-touches" class="level2">
+<h2 class="anchored" data-anchor-id="finishing-touches">Finishing Touches</h2>
+<p>Finally after the wood was done drying (I waited 1 week) I attached the tap tower. I then glued small wooden pieces to the front of the freezer. Then I took the circular stained piece of wood (Liam got everything cut into circles at his job, I didn’t have a tool for that) and glued that onto the smaller pieces of wood to make it look elevated off the wood. I also know you’re really not supposed to have anything covering a freezer, because it needs to release heat, so I didn’t want the big circular piece of wood directly glued onto the freezer. Then I just glued the logo onto the piece of wood!</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hannahl8.github.io/posts/diy/finished_product.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>Finally I added LED lights underneath the lid to illuminate this masterpiece at night!</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hannahl8.github.io/posts/diy/lights_installed.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>Then I added all the keg elements into the freezer, along with attaching the Inkbird temperature controller to keep the freezer at usually around 34 degrees, I like a crisp cold beer 😎</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hannahl8.github.io/posts/diy/kegs_and_co2_inside.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>And finally, at night 😏</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hannahl8.github.io/posts/diy/keezer dark.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
 
 
 <!-- -->
 
 </section>
+</section>
 
  ]]></description>
   <category>DIY</category>
+  <category>Homebrewing</category>
   <guid>https://hannahl8.github.io/posts/diy/</guid>
-  <pubDate>Fri, 23 Aug 2024 04:00:00 GMT</pubDate>
+  <pubDate>Fri, 31 May 2024 04:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Anomaly/Outlier Detection</title>
