@@ -25,7 +25,7 @@ You could definitely use an old chest freezer, buy used kegs, and find a cheaper
 ### Keezer Assembly Items
 
 | Item with link | Price |
-|:---------------------------------------------|:------------------------|
+|:---------------------------------------------|:-------------------------|
 | <a href="https://www.homedepot.com/p/Magic-Chef-5-0-cu-ft-Chest-Freezer-in-White-HMCF5W4/311895690" target="_blank">5.0 cu. ft. Chest Freezer</a> | \$169.00 |
 | <a href="https://www.northernbrewer.com/products/3-stainless-steel-dual-faucet-tower?variant=8486828638252" target="_blank">3" Stainless Steel Dual Faucet Draft Tower</a> | \$183.99 |
 | <a href="https://www.homedepot.com/p/Columbia-Forest-Products-3-4-in-x-2-ft-x-4-ft-PureBond-Red-Oak-Plywood-Project-Panel-Free-Custom-Cut-Available-2014/204311230#overlay" target="_blank">Red Oak Plywood 3/4 in. x 2 ft. x 4 ft. (2x)</a> | \$58.98 |
@@ -52,7 +52,7 @@ You could definitely use an old chest freezer, buy used kegs, and find a cheaper
 ### Homebrewing Kegging Items
 
 | Item with link | Price |
-|:---------------------------------------------|:------------------------|
+|:---------------------------------------------|:-------------------------|
 | <a href="https://www.northernbrewer.com/products/amcyl-5-gallon-keg-dual-rubber-handle?variant=8189879058476" target="_blank">5 Gallon Ball Lock Cornelius Keg (2x)</a> | \$183.98 |
 | <a href="https://www.northernbrewer.com/products/co2po-double-body-regulator" target="_blank">CO2PO® Double Body Regulator</a> | \$103.99 |
 | <a href="https://www.northernbrewer.com/products/gas-connector-kit-bl-ball-lock-version" target="_blank">Gas Connector Kit - Ball Lock Version (2x)</a> | \$20.78 |
