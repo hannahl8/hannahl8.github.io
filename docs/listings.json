@@ -2,7 +2,7 @@
   {
     "listing": "/archive.html",
     "items": [
-      "/posts/diy/index.html",
+      "/posts/diy/keezer/index.html",
       "/posts/machine-learning-intro/anomaly/index.html",
       "/posts/machine-learning-intro/classification/index.html",
       "/posts/machine-learning-intro/regression/index.html",
@@ -14,7 +14,7 @@
   {
     "listing": "/blog.html",
     "items": [
-      "/posts/diy/index.html",
+      "/posts/diy/keezer/index.html",
       "/posts/machine-learning-intro/anomaly/index.html",
       "/posts/machine-learning-intro/classification/index.html",
       "/posts/machine-learning-intro/regression/index.html",
