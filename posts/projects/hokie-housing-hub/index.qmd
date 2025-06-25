@@ -1,0 +1,27 @@
+---
+title: "Hokie Housing Hub"
+date: '2024-04-14'
+categories: ['code', 'Academic']
+description: 'HTML, CSS, JavaScript'
+execute: 
+  message: false
+  warning: false
+editor_options: 
+  chunk_output_type: console
+---
+
+# Overview
+
+I completed this project as part of a Project Management course in my Master's program. I uploaded the files to the file system hosted by VT, so this [link](https://people.cs.vt.edu/hannahl8/BIT4484/hokiehousinghub/base.html){style="color: rgb(55, 148, 255) !important; text-decoration: underline;"} is purely a static site.
+
+# Links to Repositories
+
+[code](https://github.com/hannahl8/hokiehousinghub){target="_blank"}
+
+# Tech Stack
+
+HTML, CSS, JavaScript
+
+# Photos
+
+![Home Page](homepage.png){fig-align="center"}

@@ -1,0 +1,43 @@
+---
+title: "Focal"
+date: '2023-12-01'
+categories: ['code', 'Academic']
+description: 'Python (Django), PostgreSQL, HTML, CSS, JavaScript'
+execute: 
+  message: false
+  warning: false
+editor_options: 
+  chunk_output_type: console
+---
+
+# Overview
+
+I completed this project as part of a User Interface Software course in my Master's program.
+
+# Links to Repositories
+
+[code](https://github.com/hannahl8/focal){target="_blank"}
+
+# Website Link
+
+After completing the initial HTML, CSS, JavaScript for the project, we learned how to upload our information to just a file system hosted by VT, so this [link](https://people.cs.vt.edu/hannahl8/cs5774/project3/homesignedout.html) is purely a static site. Throughout the course we used Django to create a dynamic site, that is not hosted anywhere but the repository link has the most up to date code.
+
+# Tech Stack
+
+Backend: Python (Django)
+
+Database: PostgreSQL
+
+Frontend: HTML, CSS, JavaScript
+
+# Photos
+
+![Home Page](focal-home-signed-in.png){fig-align="center"}
+
+![Reviews Page](focal-reviews.png){fig-align="center"}
+
+![Add Review Page](focal-add-review.png)
+
+![Review Comments Page](focal-comments.png){fig-align="center"}
+
+![Edit Profile Page](focal-edit-profile.png){fig-align="center"}

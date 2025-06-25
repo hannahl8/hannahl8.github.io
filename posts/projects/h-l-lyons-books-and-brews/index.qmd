@@ -1,0 +1,41 @@
+---
+title: "H.L. Lyons Books & Brews"
+date: '2024-08-01'
+categories: ['code', 'Academic']
+description: 'Java (Jakarta EE), Tomcat Server, MySQL, React, Typescript, Vite'
+execute: 
+  message: false
+  warning: false
+editor_options: 
+  chunk_output_type: console
+---
+
+# Overview
+
+I completed this project as part of a Web Application Development course in my Master's program.
+
+# Links to Repositories
+
+[back-end](https://github.com/hannahl8/HannahLBookstore){target="_blank"}
+
+[front-end](https://github.com/hannahl8/hannahl-bookstore-react){target="_blank"}
+
+# Tech Stack
+
+Backend: Java (Jakarta EE), Tomcat Server
+
+Database: MySQL
+
+Frontend: React, TypeScript, Vite
+
+# Photos
+
+![Home Page](bookstore-homepage.png){fig-align="center"}
+
+![Categories Page](bookstore-categories.png){fig-align="center"}
+
+![Cart Page](bookstore-cart.png){fig-align="center"}
+
+![Checkout Page](bookestore-checkout.png)
+
+![Confirmation Page](bookestore-confirmation.png){fig-align="center"}

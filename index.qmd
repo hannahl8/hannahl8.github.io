@@ -12,14 +12,7 @@ about:
       href: https://github.com/hannahl8
 ---
 
-I am a Software Developer working for Naval Surface Warfare Center, Dahlgren Division. I work on an agile development team creating and improving features for a modeling and simulation software application. I am super passionate about front and back end web development (full stack), as well as general software development for desktop applications, etc. Below are some projects I have worked on during my academic career.
-
-| Project Link | Skills/Resources/Languages Used |
-|------------------------------------|------------------------------------|
-| <a href="https://vtechworks.lib.vt.edu/items/257d0d9b-75f5-44b6-ac2d-b108a663a166" target="_blank">VT Research Connect</a> | React, Typescript, Vite, SQL, Java, Jira, Python |
-| <a href="https://people.cs.vt.edu/hannahl8/BIT4484/hokiehousinghub/base.html" target="_blank">Hokie Housing Hub</a> | HTML, CSS, JavaScript |
-| <a href="https://people.cs.vt.edu/hannahl8/cs5774/project3/homesignedout.html" target="_blank">Focal</a> | dJango, python, HTML, CSS, JavaScript |
-| <a href="https://hannahl8.github.io/blog.html">Personal Blog</a> | Quarto, R, HTML, CSS, JavaScript |
+I am a Software Developer working for Naval Surface Warfare Center, Dahlgren Division. I work on an agile development team creating and improving features for a modeling and simulation software application. I am super passionate about front and back end web development (full stack), as well as general software development for desktop applications, etc. Please check out the [Blog](https://hannahl8.github.io/blog.html) page to see coding projects from both my personal and academic career.
 
 <br>
 

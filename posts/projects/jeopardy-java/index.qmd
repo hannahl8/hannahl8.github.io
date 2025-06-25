@@ -1,0 +1,33 @@
+---
+title: "Jeopardy - Java"
+date: '2025-01-01'
+categories: ['code', 'Personal']
+description: 'Java (Jakarta EE), Tomcat Server, MySQL, React, Typescript, Vite'
+execute: 
+  message: false
+  warning: false
+editor_options: 
+  chunk_output_type: console
+---
+
+# Overview
+
+I created a jeopardy game before using Python (Django), but then I learned tools like Jakarta EE and React which I liked much more, so I am continuously working on this project in my free time to recreate a jeopardy application to play with friends. I really enjoy coding like this in my free time.
+
+# Links to Repositories
+
+[back-end](https://github.com/hannahl8/Jeopardy/tree/main/MyApp){target="_blank"}
+
+[front-end](https://github.com/hannahl8/Jeopardy/tree/main/my-app){target="_blank"}
+
+# Tech Stack
+
+Backend: Java (Jakarta EE), Tomcat Server
+
+Database: MySQL
+
+Frontend: React, TypeScript, Vite
+
+# Pictures
+
+![Create New Game Page](create-new-game.png){fig-align="center"}

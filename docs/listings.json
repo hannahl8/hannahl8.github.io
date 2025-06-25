@@ -2,8 +2,14 @@
   {
     "listing": "/archive.html",
     "items": [
+      "/posts/projects/jeopardy-java/index.html",
+      "/posts/projects/vt-research-connect/index.html",
+      "/posts/projects/h-l-lyons-books-and-brews/index.html",
       "/posts/diy/keezer/index.html",
+      "/posts/projects/hokie-housing-hub/index.html",
       "/posts/homebrewing/shandy/index.html",
+      "/posts/projects/jeopardy-python/index.html",
+      "/posts/projects/focal/index.html",
       "/posts/machine-learning-intro/anomaly/index.html",
       "/posts/machine-learning-intro/classification/index.html",
       "/posts/machine-learning-intro/regression/index.html",
@@ -15,8 +21,14 @@
   {
     "listing": "/blog.html",
     "items": [
+      "/posts/projects/jeopardy-java/index.html",
+      "/posts/projects/vt-research-connect/index.html",
+      "/posts/projects/h-l-lyons-books-and-brews/index.html",
       "/posts/diy/keezer/index.html",
+      "/posts/projects/hokie-housing-hub/index.html",
       "/posts/homebrewing/shandy/index.html",
+      "/posts/projects/jeopardy-python/index.html",
+      "/posts/projects/focal/index.html",
       "/posts/machine-learning-intro/anomaly/index.html",
       "/posts/machine-learning-intro/classification/index.html",
       "/posts/machine-learning-intro/regression/index.html",

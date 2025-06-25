@@ -1,0 +1,15 @@
+---
+title: "H.L. Lyons Books & Brews"
+date: '2024-08-01'
+categories: ['Projects', 'Academic']
+description: 'Web Application Development Project: Java (Jakarta EE), Tomcat Server, MySQL database, React, Typescript, Vite'
+execute: 
+  message: false
+  warning: false
+editor_options: 
+  chunk_output_type: console
+---
+
+# H.L. Lyons Books & Brews
+
+This was a project I completed for a Web Development class during my Master's degree. Please see code to the [back-end](https://github.com/hannahl8/HannahLBookstore) and [front-end](https://github.com/hannahl8/hannahl-bookstore-react) code to this project.

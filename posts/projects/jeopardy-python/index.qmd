@@ -1,0 +1,35 @@
+---
+title: "Jeopardy - Python"
+date: '2024-02-15'
+categories: ['code', 'Personal']
+description: 'Python (Django), PostgreSQL, HTML, CSS, JavaScript'
+execute: 
+  message: false
+  warning: false
+editor_options: 
+  chunk_output_type: console
+---
+
+# Overview
+
+I created this project for fun because my best friend was finally moving to the same city as me, and I hosted her and her boyfriend a welcome party! I created this website in just two weeks, and I am proud of it for having only learned Django in school one semester before. I haven't touched this project since then, but it's definitely a fun little personalized game (I kind of turned it into a drinking game LOL). Everyone enjoyed it, I love being able to do small things like this with my coding abilities!
+
+# Links to Repositories
+
+[code](https://github.com/hannahl8/jeopardyDjango){target="_blank"}
+
+# Tech Stack
+
+Backend: Python (Django)
+
+Database: PostgreSQL
+
+Frontend: HTML, CSS, JavaScript
+
+# Photos
+
+![Home Page](homepage.png){fig-align="center"}
+
+![Jeopardy Board Page](jeopardy-board.png){fig-align="center"}
+
+![Question Page](question.png){fig-align="center"}

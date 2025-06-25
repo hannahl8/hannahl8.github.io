@@ -10,7 +10,157 @@
 <atom:link href="https://hannahl8.github.io/blog.xml" rel="self" type="application/rss+xml"/>
 <description>This is Hannah Lyons Personal Blog</description>
 <generator>quarto-1.6.39</generator>
-<lastBuildDate>Fri, 31 May 2024 04:00:00 GMT</lastBuildDate>
+<lastBuildDate>Wed, 01 Jan 2025 05:00:00 GMT</lastBuildDate>
+<item>
+  <title>Jeopardy - Java</title>
+  <dc:creator>Hannah Lyons</dc:creator>
+  <link>https://hannahl8.github.io/posts/projects/jeopardy-java/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="overview" class="level1">
+<h1>Overview</h1>
+<p>I created a jeopardy game before using Python (Django), but then I learned tools like Jakarta EE and React which I liked much more, so I am continuously working on this project in my free time to recreate a jeopardy application to play with friends. I really enjoy coding like this in my free time.</p>
+</section>
+<section id="links-to-repositories" class="level1">
+<h1>Links to Repositories</h1>
+<p><a href="https://github.com/hannahl8/Jeopardy/tree/main/MyApp" target="_blank">back-end</a></p>
+<p><a href="https://github.com/hannahl8/Jeopardy/tree/main/my-app" target="_blank">front-end</a></p>
+</section>
+<section id="tech-stack" class="level1">
+<h1>Tech Stack</h1>
+<p>Backend: Java (Jakarta EE), Tomcat Server</p>
+<p>Database: MySQL</p>
+<p>Frontend: React, TypeScript, Vite</p>
+</section>
+<section id="pictures" class="level1">
+<h1>Pictures</h1>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hannahl8.github.io/posts/projects/jeopardy-java/create-new-game.png" class="img-fluid figure-img"></p>
+<figcaption>Create New Game Page</figcaption>
+</figure>
+</div>
+
+
+<!-- -->
+
+</section>
+
+ ]]></description>
+  <category>code</category>
+  <category>Personal</category>
+  <guid>https://hannahl8.github.io/posts/projects/jeopardy-java/</guid>
+  <pubDate>Wed, 01 Jan 2025 05:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>VT Research Connect</title>
+  <dc:creator>Hannah Lyons</dc:creator>
+  <link>https://hannahl8.github.io/posts/projects/vt-research-connect/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="overview" class="level1">
+<h1>Overview</h1>
+<p>This was my groups capstone project completed for my Master’s program. Please see <a href="https://vtechworks.lib.vt.edu/items/257d0d9b-75f5-44b6-ac2d-b108a663a166">VTechWorks</a> for more information on the project and a video presentation.</p>
+</section>
+<section id="links-to-repositories" class="level1">
+<h1>Links to Repositories</h1>
+<p><a href="https://git.cs.vt.edu/cscapstone-group3/rc-backend/-/tree/main?ref_type=heads">back-end</a></p>
+<p><a href="https://git.cs.vt.edu/cscapstone-group3/vt-research-connect-frontend/-/tree/main?ref_type=heads">front-end</a></p>
+</section>
+<section id="tech-stack" class="level1">
+<h1>Tech Stack</h1>
+<p>Backend: Java (Spring Boot)</p>
+<p>Database: PostgresSQL</p>
+<p>Frontend: React, TypeScript, Vite</p>
+
+
+<!-- -->
+
+</section>
+
+ ]]></description>
+  <category>code</category>
+  <category>Academic</category>
+  <guid>https://hannahl8.github.io/posts/projects/vt-research-connect/</guid>
+  <pubDate>Tue, 06 Aug 2024 04:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>H.L. Lyons Books &amp; Brews</title>
+  <dc:creator>Hannah Lyons</dc:creator>
+  <link>https://hannahl8.github.io/posts/projects/h-l-lyons-books-and-brews/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="overview" class="level1">
+<h1>Overview</h1>
+<p>I completed this project as part of a Web Application Development course in my Master’s program.</p>
+</section>
+<section id="links-to-repositories" class="level1">
+<h1>Links to Repositories</h1>
+<p><a href="https://github.com/hannahl8/HannahLBookstore" target="_blank">back-end</a></p>
+<p><a href="https://github.com/hannahl8/hannahl-bookstore-react" target="_blank">front-end</a></p>
+</section>
+<section id="tech-stack" class="level1">
+<h1>Tech Stack</h1>
+<p>Backend: Java (Jakarta EE), Tomcat Server</p>
+<p>Database: MySQL</p>
+<p>Frontend: React, TypeScript, Vite</p>
+</section>
+<section id="photos" class="level1">
+<h1>Photos</h1>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hannahl8.github.io/posts/projects/h-l-lyons-books-and-brews/bookstore-homepage.png" class="img-fluid figure-img"></p>
+<figcaption>Home Page</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hannahl8.github.io/posts/projects/h-l-lyons-books-and-brews/bookstore-categories.png" class="img-fluid figure-img"></p>
+<figcaption>Categories Page</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hannahl8.github.io/posts/projects/h-l-lyons-books-and-brews/bookstore-cart.png" class="img-fluid figure-img"></p>
+<figcaption>Cart Page</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hannahl8.github.io/posts/projects/h-l-lyons-books-and-brews/bookestore-checkout.png" class="img-fluid figure-img"></p>
+<figcaption>Checkout Page</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hannahl8.github.io/posts/projects/h-l-lyons-books-and-brews/bookestore-confirmation.png" class="img-fluid figure-img"></p>
+<figcaption>Confirmation Page</figcaption>
+</figure>
+</div>
+
+
+<!-- -->
+
+</section>
+
+ ]]></description>
+  <category>code</category>
+  <category>Academic</category>
+  <guid>https://hannahl8.github.io/posts/projects/h-l-lyons-books-and-brews/</guid>
+  <pubDate>Thu, 01 Aug 2024 04:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Keezer Build</title>
   <dc:creator>Hannah Lyons</dc:creator>
@@ -38,8 +188,8 @@
 <h3 class="anchored" data-anchor-id="keezer-assembly-items">Keezer Assembly Items</h3>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 64%">
-<col style="width: 35%">
+<col style="width: 63%">
+<col style="width: 36%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -143,8 +293,8 @@
 <h3 class="anchored" data-anchor-id="homebrewing-kegging-items">Homebrewing Kegging Items</h3>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 64%">
-<col style="width: 35%">
+<col style="width: 63%">
+<col style="width: 36%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -185,8 +335,8 @@
 </section>
 <section id="build-process" class="level1">
 <h1>Build Process</h1>
-<section id="paining-the-chest-freezer" class="level2">
-<h2 class="anchored" data-anchor-id="paining-the-chest-freezer">Paining the Chest Freezer</h2>
+<section id="painting-the-chest-freezer" class="level2">
+<h2 class="anchored" data-anchor-id="painting-the-chest-freezer">Painting the Chest Freezer</h2>
 <p>Painting the chest freezer was definitely the easiest part. First I sanded the whole thing and put painters tape around the seal, drain hole, and the little green light that shows the freezer is on.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -347,6 +497,48 @@
   <category>Homebrewing</category>
   <guid>https://hannahl8.github.io/posts/diy/keezer/</guid>
   <pubDate>Fri, 31 May 2024 04:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Hokie Housing Hub</title>
+  <dc:creator>Hannah Lyons</dc:creator>
+  <link>https://hannahl8.github.io/posts/projects/hokie-housing-hub/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="overview" class="level1">
+<h1>Overview</h1>
+<p>I completed this project as part of a Project Management course in my Master’s program. I uploaded the files to the file system hosted by VT, so this <a href="https://people.cs.vt.edu/hannahl8/BIT4484/hokiehousinghub/base.html" style="color: rgb(55, 148, 255) !important; text-decoration: underline;">link</a> is purely a static site.</p>
+</section>
+<section id="links-to-repositories" class="level1">
+<h1>Links to Repositories</h1>
+<p><a href="https://github.com/hannahl8/hokiehousinghub" target="_blank">code</a></p>
+</section>
+<section id="tech-stack" class="level1">
+<h1>Tech Stack</h1>
+<p>HTML, CSS, JavaScript</p>
+</section>
+<section id="photos" class="level1">
+<h1>Photos</h1>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hannahl8.github.io/posts/projects/hokie-housing-hub/homepage.png" class="img-fluid figure-img"></p>
+<figcaption>Home Page</figcaption>
+</figure>
+</div>
+
+
+<!-- -->
+
+</section>
+
+ ]]></description>
+  <category>code</category>
+  <category>Academic</category>
+  <guid>https://hannahl8.github.io/posts/projects/hokie-housing-hub/</guid>
+  <pubDate>Sun, 14 Apr 2024 04:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Hanny’s Shandy</title>
@@ -511,6 +703,134 @@
   <category>Homebrewing</category>
   <guid>https://hannahl8.github.io/posts/homebrewing/shandy/</guid>
   <pubDate>Fri, 12 Apr 2024 04:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Jeopardy - Python</title>
+  <dc:creator>Hannah Lyons</dc:creator>
+  <link>https://hannahl8.github.io/posts/projects/jeopardy-python/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="overview" class="level1">
+<h1>Overview</h1>
+<p>I created this project for fun because my best friend was finally moving to the same city as me, and I hosted her and her boyfriend a welcome party! I created this website in just two weeks, and I am proud of it for having only learned Django in school one semester before. I haven’t touched this project since then, but it’s definitely a fun little personalized game (I kind of turned it into a drinking game LOL). Everyone enjoyed it, I love being able to do small things like this with my coding abilities!</p>
+</section>
+<section id="links-to-repositories" class="level1">
+<h1>Links to Repositories</h1>
+<p><a href="https://github.com/hannahl8/jeopardyDjango" target="_blank">code</a></p>
+</section>
+<section id="tech-stack" class="level1">
+<h1>Tech Stack</h1>
+<p>Backend: Python (Django)</p>
+<p>Database: PostgreSQL</p>
+<p>Frontend: HTML, CSS, JavaScript</p>
+</section>
+<section id="photos" class="level1">
+<h1>Photos</h1>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hannahl8.github.io/posts/projects/jeopardy-python/homepage.png" class="img-fluid figure-img"></p>
+<figcaption>Home Page</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hannahl8.github.io/posts/projects/jeopardy-python/jeopardy-board.png" class="img-fluid figure-img"></p>
+<figcaption>Jeopardy Board Page</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hannahl8.github.io/posts/projects/jeopardy-python/question.png" class="img-fluid figure-img"></p>
+<figcaption>Question Page</figcaption>
+</figure>
+</div>
+
+
+<!-- -->
+
+</section>
+
+ ]]></description>
+  <category>code</category>
+  <category>Personal</category>
+  <guid>https://hannahl8.github.io/posts/projects/jeopardy-python/</guid>
+  <pubDate>Thu, 15 Feb 2024 05:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Focal</title>
+  <dc:creator>Hannah Lyons</dc:creator>
+  <link>https://hannahl8.github.io/posts/projects/focal/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="overview" class="level1">
+<h1>Overview</h1>
+<p>I completed this project as part of a User Interface Software course in my Master’s program.</p>
+</section>
+<section id="links-to-repositories" class="level1">
+<h1>Links to Repositories</h1>
+<p><a href="https://github.com/hannahl8/focal" target="_blank">code</a></p>
+</section>
+<section id="website-link" class="level1">
+<h1>Website Link</h1>
+<p>After completing the initial HTML, CSS, JavaScript for the project, we learned how to upload our information to just a file system hosted by VT, so this <a href="https://people.cs.vt.edu/hannahl8/cs5774/project3/homesignedout.html">link</a> is purely a static site. Throughout the course we used Django to create a dynamic site, that is not hosted anywhere but the repository link has the most up to date code.</p>
+</section>
+<section id="tech-stack" class="level1">
+<h1>Tech Stack</h1>
+<p>Backend: Python (Django)</p>
+<p>Database: PostgreSQL</p>
+<p>Frontend: HTML, CSS, JavaScript</p>
+</section>
+<section id="photos" class="level1">
+<h1>Photos</h1>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hannahl8.github.io/posts/projects/focal/focal-home-signed-in.png" class="img-fluid figure-img"></p>
+<figcaption>Home Page</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hannahl8.github.io/posts/projects/focal/focal-reviews.png" class="img-fluid figure-img"></p>
+<figcaption>Reviews Page</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hannahl8.github.io/posts/projects/focal/focal-add-review.png" class="img-fluid figure-img"></p>
+<figcaption>Add Review Page</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hannahl8.github.io/posts/projects/focal/focal-comments.png" class="img-fluid figure-img"></p>
+<figcaption>Review Comments Page</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hannahl8.github.io/posts/projects/focal/focal-edit-profile.png" class="img-fluid figure-img"></p>
+<figcaption>Edit Profile Page</figcaption>
+</figure>
+</div>
+
+
+<!-- -->
+
+</section>
+
+ ]]></description>
+  <category>code</category>
+  <category>Academic</category>
+  <guid>https://hannahl8.github.io/posts/projects/focal/</guid>
+  <pubDate>Fri, 01 Dec 2023 05:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Anomaly/Outlier Detection</title>
