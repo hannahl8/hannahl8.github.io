@@ -1,7 +1,7 @@
 ---
 title: 'Clustering'
 date: '2023-09-30'
-categories: ['code']
+categories: ['Code', 'Academic']
 description: 'Unraveling Patterns with Clustering in Machine Learning'
 execute: 
   message: false

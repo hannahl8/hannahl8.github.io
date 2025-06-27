@@ -1,7 +1,7 @@
 ---
 title: "H.L. Lyons Books & Brews"
 date: '2024-08-01'
-categories: ['code', 'Academic']
+categories: ['Code', 'Academic']
 description: 'Java (Jakarta EE), Tomcat Server, MySQL, React, Typescript, Vite'
 execute: 
   message: false

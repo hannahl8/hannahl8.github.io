@@ -1,7 +1,7 @@
 ---
 title: "Focal"
 date: '2023-12-01'
-categories: ['code', 'Academic']
+categories: ['Code', 'Academic']
 description: 'Python (Django), PostgreSQL, HTML, CSS, JavaScript'
 execute: 
   message: false

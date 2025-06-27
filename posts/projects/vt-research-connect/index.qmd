@@ -1,7 +1,7 @@
 ---
 title: "VT Research Connect"
 date: '2024-08-06'
-categories: ['code', 'Academic']
+categories: ['Code', 'Academic']
 description: 'Java (Spring Boot), PostgreSQL, React, Typescript, Vite'
 execute: 
   message: false
@@ -22,8 +22,65 @@ This was my groups capstone project completed for my Master's program. Please se
 
 # Tech Stack
 
+UI Design: Figma
+
 Backend: Java (Spring Boot)
 
-Database: PostgresSQL
+Database: PostgreSQL
 
 Frontend: React, TypeScript, Vite
+
+# My Contributions
+
+I was the front-end lead for this project. I suggested we used React/TypeScript/Vite for the front end code, which integrated well with our Java (Spring Boot) back-end. I completed all of the front-end code, including services, components, contexts, and pages. I also created all of the original UI design using Figma for each of the pages.
+
+For a fun little short side piece of the project, I also wrote python code to generate a neat geometric shape for the logo.
+
+``` python
+import matplotlib.pyplot as plt
+import numpy as np
+
+theta = np.linspace(0, 2. * np.pi, 1000)
+colors = ['white', '#861F41', '#E5751F', '#AB637A']
+fig = plt.figure(figsize=(6, 6), dpi=300)
+fig.set_facecolor('black')
+ax = fig.add_subplot(111, polar=True)
+for i, color in enumerate(colors):
+    r = np.abs(np.sin((i + 2) * theta))
+    ax.plot(theta, r, color=color, linewidth=2)
+ax.set_title('')
+ax.grid(False)
+ax.set_yticklabels([])
+ax.set_xticklabels([])
+ax.spines['polar'].set_visible(False)
+ax.set_facecolor('black')
+plt.show()
+```
+
+Running the above python code creates the following image, we used as our projects logo.
+
+![VT Research Connect Logo](logo.png){fig-align="center"}
+
+# Photos
+
+![Home Page](home.png){fig-align="center"}
+
+![Login Page (Not Signed Up Yet)](login-invalid.png){fig-align="center"}
+
+![Sign Up Page](signup.png){fig-align="center"}
+
+![Sign Up Confirmation Page](signup-confirmation.png){fig-align="center"}
+
+![Confirmation Email](confirmation-email.png){fig-align="center"}
+
+![Labs Page](labs.png){fig-align="center"}
+
+![About Lab Popup](about-lab.png){fig-align="center"}
+
+![Discussions Page](discussion.png){fig-align="center"}
+
+![Create Discussion Popup](create-discussion.png){fig-align="center"}
+
+![Profile Page](profile.png){fig-align="center"}
+
+![Edit Profile Page](edit-profile.png){fig-align="center"}

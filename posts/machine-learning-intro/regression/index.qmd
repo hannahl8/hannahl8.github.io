@@ -1,7 +1,7 @@
 ---
 title: 'Linear and Nonlinear Regression'
 date: '2023-10-20'
-categories: ['code']
+categories: ['Code', 'Academic']
 description: 'Navigating Trends with Linear and Nonlinear Regression in Machine Learning'
 execute: 
   message: false

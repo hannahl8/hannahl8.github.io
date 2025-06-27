@@ -1,7 +1,7 @@
 ---
 title: 'Probability Theory and Random Variables'
 date: '2023-09-20'
-categories: ['code']
+categories: ['Code', 'Academic']
 description: 'Understanding Probability Theory and Random Variables in the Context of Machine Learning'
 execute: 
   message: false

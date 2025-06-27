@@ -51,7 +51,7 @@
 </section>
 
  ]]></description>
-  <category>code</category>
+  <category>Code</category>
   <category>Personal</category>
   <guid>https://hannahl8.github.io/posts/projects/jeopardy-java/</guid>
   <pubDate>Wed, 01 Jan 2025 05:00:00 GMT</pubDate>
@@ -77,9 +77,193 @@
 </section>
 <section id="tech-stack" class="level1">
 <h1>Tech Stack</h1>
+<p>UI Design: Figma</p>
 <p>Backend: Java (Spring Boot)</p>
-<p>Database: PostgresSQL</p>
+<p>Database: PostgreSQL</p>
 <p>Frontend: React, TypeScript, Vite</p>
+</section>
+<section id="my-contributions" class="level1">
+<h1>My Contributions</h1>
+<p>I was the front-end lead for this project. I suggested we used React/TypeScript/Vite for the front end code, which integrated well with our Java (Spring Boot) back-end. I completed all of the front-end code, including services, components, contexts, and pages. I also created all of the original UI design using Figma for each of the pages.</p>
+<p>For a fun little short side piece of the project, I also wrote python code to generate a neat geometric shape for the logo.</p>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> matplotlib.pyplot <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> plt</span>
+<span id="cb1-2"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> numpy <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> np</span>
+<span id="cb1-3"></span>
+<span id="cb1-4">theta <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> np.linspace(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>, <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2.</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> np.pi, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1000</span>)</span>
+<span id="cb1-5">colors <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> [<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'white'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'#861F41'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'#E5751F'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'#AB637A'</span>]</span>
+<span id="cb1-6">fig <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> plt.figure(figsize<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">6</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">6</span>), dpi<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">300</span>)</span>
+<span id="cb1-7">fig.set_facecolor(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'black'</span>)</span>
+<span id="cb1-8">ax <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> fig.add_subplot(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">111</span>, polar<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">True</span>)</span>
+<span id="cb1-9"><span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">for</span> i, color <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">enumerate</span>(colors):</span>
+<span id="cb1-10">    r <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> np.<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">abs</span>(np.sin((i <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> theta))</span>
+<span id="cb1-11">    ax.plot(theta, r, color<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>color, linewidth<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>)</span>
+<span id="cb1-12">ax.set_title(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">''</span>)</span>
+<span id="cb1-13">ax.grid(<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">False</span>)</span>
+<span id="cb1-14">ax.set_yticklabels([])</span>
+<span id="cb1-15">ax.set_xticklabels([])</span>
+<span id="cb1-16">ax.spines[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'polar'</span>].set_visible(<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">False</span>)</span>
+<span id="cb1-17">ax.set_facecolor(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'black'</span>)</span>
+<span id="cb1-18">plt.show()</span></code></pre></div>
+<p>Running the above python code creates the following image, we used as our projects logo.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hannahl8.github.io/posts/projects/vt-research-connect/logo.png" class="img-fluid figure-img"></p>
+<figcaption>VT Research Connect Logo</figcaption>
+</figure>
+</div>
+</section>
+<section id="photos" class="level1">
+<h1>Photos</h1>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hannahl8.github.io/posts/projects/vt-research-connect/home.png" class="img-fluid figure-img"></p>
+<figcaption>Home Page</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hannahl8.github.io/posts/projects/vt-research-connect/login-invalid.png" class="img-fluid figure-img"></p>
+<figcaption>Login Page (Not Signed Up Yet)</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hannahl8.github.io/posts/projects/vt-research-connect/signup.png" class="img-fluid figure-img"></p>
+<figcaption>Sign Up Page</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hannahl8.github.io/posts/projects/vt-research-connect/signup-confirmation.png" class="img-fluid figure-img"></p>
+<figcaption>Sign Up Confirmation Page</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hannahl8.github.io/posts/projects/vt-research-connect/confirmation-email.png" class="img-fluid figure-img"></p>
+<figcaption>Confirmation Email</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hannahl8.github.io/posts/projects/vt-research-connect/labs.png" class="img-fluid figure-img"></p>
+<figcaption>Labs Page</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hannahl8.github.io/posts/projects/vt-research-connect/about-lab.png" class="img-fluid figure-img"></p>
+<figcaption>About Lab Popup</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hannahl8.github.io/posts/projects/vt-research-connect/discussion.png" class="img-fluid figure-img"></p>
+<figcaption>Discussions Page</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hannahl8.github.io/posts/projects/vt-research-connect/create-discussion.png" class="img-fluid figure-img"></p>
+<figcaption>Create Discussion Popup</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hannahl8.github.io/posts/projects/vt-research-connect/profile.png" class="img-fluid figure-img"></p>
+<figcaption>Profile Page</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hannahl8.github.io/posts/projects/vt-research-connect/edit-profile.png" class="img-fluid figure-img"></p>
+<figcaption>Edit Profile Page</figcaption>
+</figure>
+</div>
 
 
 <!-- -->
@@ -87,7 +271,7 @@
 </section>
 
  ]]></description>
-  <category>code</category>
+  <category>Code</category>
   <category>Academic</category>
   <guid>https://hannahl8.github.io/posts/projects/vt-research-connect/</guid>
   <pubDate>Tue, 06 Aug 2024 04:00:00 GMT</pubDate>
@@ -156,7 +340,7 @@
 </section>
 
  ]]></description>
-  <category>code</category>
+  <category>Code</category>
   <category>Academic</category>
   <guid>https://hannahl8.github.io/posts/projects/h-l-lyons-books-and-brews/</guid>
   <pubDate>Thu, 01 Aug 2024 04:00:00 GMT</pubDate>
@@ -528,6 +712,30 @@
 <figcaption>Home Page</figcaption>
 </figure>
 </div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hannahl8.github.io/posts/projects/hokie-housing-hub/login.png" class="img-fluid figure-img"></p>
+<figcaption>Login Page</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hannahl8.github.io/posts/projects/hokie-housing-hub/on-campus.png" class="img-fluid figure-img"></p>
+<figcaption>On Campus Page</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hannahl8.github.io/posts/projects/hokie-housing-hub/reviews.png" class="img-fluid figure-img"></p>
+<figcaption>Reviews Page</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hannahl8.github.io/posts/projects/hokie-housing-hub/add-review.png" class="img-fluid figure-img"></p>
+<figcaption>Add Review Page</figcaption>
+</figure>
+</div>
 
 
 <!-- -->
@@ -535,7 +743,7 @@
 </section>
 
  ]]></description>
-  <category>code</category>
+  <category>Code</category>
   <category>Academic</category>
   <guid>https://hannahl8.github.io/posts/projects/hokie-housing-hub/</guid>
   <pubDate>Sun, 14 Apr 2024 04:00:00 GMT</pubDate>
@@ -755,7 +963,7 @@
 </section>
 
  ]]></description>
-  <category>code</category>
+  <category>Code</category>
   <category>Personal</category>
   <guid>https://hannahl8.github.io/posts/projects/jeopardy-python/</guid>
   <pubDate>Thu, 15 Feb 2024 05:00:00 GMT</pubDate>
@@ -827,7 +1035,7 @@
 </section>
 
  ]]></description>
-  <category>code</category>
+  <category>Code</category>
   <category>Academic</category>
   <guid>https://hannahl8.github.io/posts/projects/focal/</guid>
   <pubDate>Fri, 01 Dec 2023 05:00:00 GMT</pubDate>
@@ -1143,7 +1351,8 @@ F1 Score: 0.95</code></pre>
 </section>
 
  ]]></description>
-  <category>code</category>
+  <category>Code</category>
+  <category>Academic</category>
   <guid>https://hannahl8.github.io/posts/machine-learning-intro/anomaly/</guid>
   <pubDate>Mon, 20 Nov 2023 05:00:00 GMT</pubDate>
 </item>
@@ -1152,6 +1361,7 @@ F1 Score: 0.95</code></pre>
   <dc:creator>Hannah Lyons</dc:creator>
   <link>https://hannahl8.github.io/posts/machine-learning-intro/classification/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -1366,7 +1576,11 @@ font-style: inherit;">=</span>blue)</span>
 <span id="cb3-15">fig.set_facecolor(background)</span>
 <span id="cb3-16">plt.show()</span></code></pre></div>
 <div class="cell-output cell-output-display">
-<p><img src="https://hannahl8.github.io/posts/machine-learning-intro/classification/index_files/figure-html/cell-4-output-1.png" width="589" height="449"></p>
+<div>
+<figure class="figure">
+<p><img src="https://hannahl8.github.io/posts/machine-learning-intro/classification/index_files/figure-html/cell-4-output-1.png" width="589" height="449" class="figure-img"></p>
+</figure>
+</div>
 </div>
 </div>
 </section>
@@ -1432,7 +1646,11 @@ font-style: inherit;">=</span>blue)</span>
 <span id="cb4-12">fig.set_facecolor(background)</span>
 <span id="cb4-13">plt.show()</span></code></pre></div>
 <div class="cell-output cell-output-display">
-<p><img src="https://hannahl8.github.io/posts/machine-learning-intro/classification/index_files/figure-html/cell-5-output-1.png" width="589" height="449"></p>
+<div>
+<figure class="figure">
+<p><img src="https://hannahl8.github.io/posts/machine-learning-intro/classification/index_files/figure-html/cell-5-output-1.png" width="589" height="449" class="figure-img"></p>
+</figure>
+</div>
 </div>
 </div>
 </section>
@@ -1518,7 +1736,11 @@ font-style: inherit;">=</span>blue)</span>
 <span id="cb5-22">fig.set_facecolor(background)</span>
 <span id="cb5-23">plt.show()</span></code></pre></div>
 <div class="cell-output cell-output-display">
-<p><img src="https://hannahl8.github.io/posts/machine-learning-intro/classification/index_files/figure-html/cell-6-output-1.png" width="535" height="479"></p>
+<div>
+<figure class="figure">
+<p><img src="https://hannahl8.github.io/posts/machine-learning-intro/classification/index_files/figure-html/cell-6-output-1.png" width="535" height="479" class="figure-img"></p>
+</figure>
+</div>
 </div>
 </div>
 <p>In conclusion, classification in machine learning is a powerful tool for automating decision-making processes. By implementing and evaluating classification models, we gain insights into their performance through metrics like ROC curves, PR curves, and confusion matrices. These visualizations provide a nuanced understanding of a model’s strengths and weaknesses, facilitating informed decision-making in real-world applications.</p>
@@ -1530,7 +1752,8 @@ font-style: inherit;">=</span>blue)</span>
 </section>
 
  ]]></description>
-  <category>code</category>
+  <category>Code</category>
+  <category>Academic</category>
   <guid>https://hannahl8.github.io/posts/machine-learning-intro/classification/</guid>
   <pubDate>Mon, 30 Oct 2023 04:00:00 GMT</pubDate>
 </item>
@@ -1539,6 +1762,7 @@ font-style: inherit;">=</span>blue)</span>
   <dc:creator>Hannah Lyons</dc:creator>
   <link>https://hannahl8.github.io/posts/machine-learning-intro/regression/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -1721,7 +1945,11 @@ font-style: inherit;">=</span> linear_reg.predict(X)</span>
 background-color: null;
 font-style: inherit;">'Linear Regression'</span>)</span></code></pre></div>
 <div class="cell-output cell-output-display">
-<p><img src="https://hannahl8.github.io/posts/machine-learning-intro/regression/index_files/figure-html/cell-4-output-1.png" width="585" height="449"></p>
+<div>
+<figure class="figure">
+<p><img src="https://hannahl8.github.io/posts/machine-learning-intro/regression/index_files/figure-html/cell-4-output-1.png" width="585" height="449" class="figure-img"></p>
+</figure>
+</div>
 </div>
 </div>
 </section>
@@ -1831,7 +2059,11 @@ font-style: inherit;">=</span>  poly_reg.predict(X_range)</span>
 background-color: null;
 font-style: inherit;">'Nonlinear Regression (Polynomial)'</span>)</span></code></pre></div>
 <div class="cell-output cell-output-display">
-<p><img src="https://hannahl8.github.io/posts/machine-learning-intro/regression/index_files/figure-html/cell-5-output-1.png" width="585" height="449"></p>
+<div>
+<figure class="figure">
+<p><img src="https://hannahl8.github.io/posts/machine-learning-intro/regression/index_files/figure-html/cell-5-output-1.png" width="585" height="449" class="figure-img"></p>
+</figure>
+</div>
 </div>
 </div>
 <p>The power of regression becomes evident when we visualize the results. Scatter plots with regression lines or curves help us understand how well the model captures the underlying patterns in the data.</p>
@@ -1844,7 +2076,8 @@ font-style: inherit;">'Nonlinear Regression (Polynomial)'</span>)</span></code><
 </section>
 
  ]]></description>
-  <category>code</category>
+  <category>Code</category>
+  <category>Academic</category>
   <guid>https://hannahl8.github.io/posts/machine-learning-intro/regression/</guid>
   <pubDate>Fri, 20 Oct 2023 04:00:00 GMT</pubDate>
 </item>
@@ -1853,6 +2086,7 @@ font-style: inherit;">'Nonlinear Regression (Polynomial)'</span>)</span></code><
   <dc:creator>Hannah Lyons</dc:creator>
   <link>https://hannahl8.github.io/posts/machine-learning-intro/clustering/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -2035,7 +2269,11 @@ font-style: inherit;">=</span>blue)</span>
 <span id="cb3-13">fig.set_facecolor(background)</span>
 <span id="cb3-14">plt.show()</span></code></pre></div>
 <div class="cell-output cell-output-display">
-<p><img src="https://hannahl8.github.io/posts/machine-learning-intro/clustering/index_files/figure-html/cell-4-output-1.png" width="576" height="449"></p>
+<div>
+<figure class="figure">
+<p><img src="https://hannahl8.github.io/posts/machine-learning-intro/clustering/index_files/figure-html/cell-4-output-1.png" width="576" height="449" class="figure-img"></p>
+</figure>
+</div>
 </div>
 </div>
 <p>Clustering, especially with the powerful DBSCAN algorithm, opens new avenues for extracting patterns from data. As we’ve seen, DBSCAN’s ability to identify clusters based on density makes it versatile for a wide range of applications. By visualizing the results, we gain a deeper understanding of the data’s inherent structure, providing a solid foundation for subsequent analysis and decision-making.</p>
@@ -2046,7 +2284,8 @@ font-style: inherit;">=</span>blue)</span>
 </section>
 
  ]]></description>
-  <category>code</category>
+  <category>Code</category>
+  <category>Academic</category>
   <guid>https://hannahl8.github.io/posts/machine-learning-intro/clustering/</guid>
   <pubDate>Sat, 30 Sep 2023 04:00:00 GMT</pubDate>
 </item>
@@ -2055,6 +2294,7 @@ font-style: inherit;">=</span>blue)</span>
   <dc:creator>Hannah Lyons</dc:creator>
   <link>https://hannahl8.github.io/posts/machine-learning-intro/probability/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -2216,7 +2456,11 @@ font-style: inherit;">1000</span>)</span>
 background-color: null;
 font-style: inherit;">'Histogram of Random Variable'</span>)</span></code></pre></div>
 <div class="cell-output cell-output-display">
-<p><img src="https://hannahl8.github.io/posts/machine-learning-intro/probability/index_files/figure-html/cell-4-output-1.png" width="593" height="449"></p>
+<div>
+<figure class="figure">
+<p><img src="https://hannahl8.github.io/posts/machine-learning-intro/probability/index_files/figure-html/cell-4-output-1.png" width="593" height="449" class="figure-img"></p>
+</figure>
+</div>
 </div>
 </div>
 <p>Probability theory and random variables are not just theoretical concepts; they are integral to the practical application of machine learning. Models are built upon the assumptions of probability distributions, and the visualization of data through histograms aids in model interpretation and validation. As you dive deeper into machine learning, a solid understanding of these foundational concepts will empower you to make more informed decisions in model selection, training, and evaluation.</p>
@@ -2399,10 +2643,18 @@ font-style: inherit;">'Dataset after Machine Learning'</span>)</span></code></pr
 <pre><code>Accuracy of the model: 89.00%</code></pre>
 </div>
 <div class="cell-output cell-output-display">
-<p><img src="https://hannahl8.github.io/posts/machine-learning-intro/probability/index_files/figure-html/cell-5-output-2.png" width="585" height="449"></p>
+<div>
+<figure class="figure">
+<p><img src="https://hannahl8.github.io/posts/machine-learning-intro/probability/index_files/figure-html/cell-5-output-2.png" width="585" height="449" class="figure-img"></p>
+</figure>
+</div>
 </div>
 <div class="cell-output cell-output-display">
-<p><img src="https://hannahl8.github.io/posts/machine-learning-intro/probability/index_files/figure-html/cell-5-output-3.png" width="593" height="449"></p>
+<div>
+<figure class="figure">
+<p><img src="https://hannahl8.github.io/posts/machine-learning-intro/probability/index_files/figure-html/cell-5-output-3.png" width="593" height="449" class="figure-img"></p>
+</figure>
+</div>
 </div>
 </div>
 
@@ -2412,7 +2664,8 @@ font-style: inherit;">'Dataset after Machine Learning'</span>)</span></code></pr
 </section>
 
  ]]></description>
-  <category>code</category>
+  <category>Code</category>
+  <category>Academic</category>
   <guid>https://hannahl8.github.io/posts/machine-learning-intro/probability/</guid>
   <pubDate>Wed, 20 Sep 2023 04:00:00 GMT</pubDate>
 </item>
@@ -2425,13 +2678,14 @@ font-style: inherit;">'Dataset after Machine Learning'</span>)</span></code></pr
 
 
 
+
 <section id="tetris" class="level1">
 <h1>Tetris</h1>
 <p>Little did I know, Tetris, the classic video game, can be related to machine learning and data analytics in various ways.</p>
 <p>I am a huge fan of the game, and I am obsessed with a newer version that facilitates multi-player options; Tetris® Effect: Connected.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://hannahl8.github.io/posts/machine-learning-intro/intro-to-ml/teriseffect.jpg" class="img-fluid figure-img"></p>
+<p><img src="https://hannahl8.github.io/posts/machine-learning-intro/intro-to-ml/teriseffect.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
 <p>I decided to stream on twitch a few times… that didn’t go anywhere. There are several other players that I’ve seen stream online, like doremypuyotet, who is a Tetris expert; the video below is them playing.</p>
@@ -2490,7 +2744,8 @@ font-style: inherit;">'Dataset after Machine Learning'</span>)</span></code></pr
 </section>
 
  ]]></description>
-  <category>tetris</category>
+  <category>Code</category>
+  <category>Academic</category>
   <guid>https://hannahl8.github.io/posts/machine-learning-intro/intro-to-ml/</guid>
   <pubDate>Fri, 01 Sep 2023 04:00:00 GMT</pubDate>
 </item>
