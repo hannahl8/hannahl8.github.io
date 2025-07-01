@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>About – Hannah Lyons</title>
+<title>Series: Coding Projects – Hannah Lyons</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,11 +30,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/cookie-consent/cookie-consent.js"></script>
 <link href="site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-d166b450ba5a8e9f7a0ab969bf6592c1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
@@ -67,6 +70,35 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-reading-time','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BMHFVF8XE9"></script>
 
 <script type="text/plain" cookie-consent="tracking">
@@ -95,14 +127,43 @@ cookieconsent.run({
 </script> 
   
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
@@ -121,7 +182,7 @@ cookieconsent.run({
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
@@ -146,193 +207,182 @@ cookieconsent.run({
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-page">
+      <h1 class="title">Series: Coding Projects</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta column-page">
+
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<div class="quarto-about-jolla">
-  <img src="Headshot.JPG" class="about-image
-  round " style="height: 15em; width: 15em;">
- <header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">About</h1>
-</div>
-<div class="quarto-title-meta">
-  </div>
-</header><main class="content" id="quarto-document-content">
-<p>I am a Software Developer working for Naval Surface Warfare Center, Dahlgren Division. I work on an agile development team creating and improving features for a modeling and simulation software application. I am super passionate about front and back end web development (full stack), as well as general software development for desktop applications, etc. Please check out the <a href="https://hannahl8.github.io/blog.html">Blog</a> page to see coding projects from both my personal and academic career.</p>
-<p><br></p>
-<section id="my-academic-career-timeline" class="level2">
-<h2 data-anchor-id="my-academic-career-timeline">My Academic &amp; Career Timeline</h2>
-<div>
-<div class="center-button">
-<button class="btn btn-primary" id="toggle-btn" onclick="toggleTimelineOrder()">
-<p>Descending</p>
-</button>
-</div>
-<div id="timeline" class="timeline">
-<div class="timeline-item left">
-<div class="timeline-content">
-<p><small>September 2024 - Present</small></p>
-<h3>
-Computer Scientist at Naval Surface Warfare Center Dahlgren Division
-</h3>
-<p>
-Lead software developer on an agile development team creating and improving features for a modeling and simulation software application. Other responsibilities include leading code reviews, mentoring junior developers, and contributing to technical design decisions.
-</p>
-</div>
-</div>
-<div class="timeline-item right">
-<div class="timeline-content">
-<p><small>August 2024</small></p>
-<h3>
-Conferred the Master of Engineering
-</h3>
-<p>
-Conferred the Master of Engineering. Major – Computer Science and Applications on August 9th, 2024. Capstone Project showcased on <a href="https://vtechworks.lib.vt.edu/items/257d0d9b-75f5-44b6-ac2d-b108a663a166" target="_blank">VTechWorks</a>.
-</p>
-</div>
-</div>
-<div class="timeline-item left">
-<div class="timeline-content">
-<p><small>August 2023</small></p>
-<h3>
-Graduate Student at Virginia Tech Innovation Campus
-</h3>
-<p>
-I began as a graduate student at Virginia Tech. I was awarded the Boeing Graduate Scholarship which was highlighted on <a href="https://news.vt.edu/articles/2023/09/innovation-campus-boeing-scholars-2023.html" target="_blank">Virginia Tech News</a>.
-</p>
-</div>
-</div>
-<div class="timeline-item right">
-<div class="timeline-content">
-<p><small>June 2021 - September 2024</small></p>
-<h3>
-Computer Scientist at Naval Surface Warfare Center Indian Head Division
-</h3>
-<p>
-I worked as the lead Software Developer on the Modeling and Simulations (M&amp;S) Team. I worked with a team of developers on the creation of a Java-based software application over a multi-year period. Led the project management for several high–intensity, short duration funded efforts, delivering M&amp;S support as requested by upper-level management.
-</p>
-</div>
-</div>
-<div class="timeline-item left">
-<div class="timeline-content">
-<p><small>May 2021</small></p>
-<h3>
-Conferred the Bachelor of Science
-</h3>
-<p>
-Conferred the Bachelor of Science. Major – Biochemistry. Magna Cum Laude, on May 15, 2021. Completed the Minor in Chemistry. Completed the Minor in Computer Science.
-</p>
-</div>
-</div>
-<div class="timeline-item right">
-<div class="timeline-content">
-<p><small>June 2020 - August 2020 &amp; December 2020 - January 2021</small></p>
-<h3>
-Student Intern at Naval Surface Warfare Center Indian Head Division
-</h3>
-<p>
-Started as a student intern working with the Modeling &amp; Simulations Team for Chemical, Biological, and Radiological (CBR) Defense. During my time as an intern, I conducted a comprehensive literature review and addressed foundational questions contributing to the successful initiation of their newly funded 3-year software development effors.
-</p>
-</div>
-</div>
-<div class="timeline-item left">
-<div class="timeline-content">
-<p><small>August 2019</small></p>
-<h3>
-Computer Science Minor
-</h3>
-<p>
-I really liked biochemistry as a major (mostly just the chemistry classes), but I still wanted to broaden my knowledge! I realized I had enough open electives left to add a minor, and computer science was calling to me. The first class I ever took was an insane learning curve, but also an incredibly rewarding challenge. I knew after successfully completing that class, to have a career in the field of computer science would be beyond gratifying.
-</p>
-</div>
-</div>
-<div class="timeline-item right">
-<div class="timeline-content">
-<p><small>May 2019 - August 2019</small></p>
-<h3>
-Bookkeeper at Koons Chevy Buick GMC
-</h3>
-<p>
-I worked in the accounting department as a bookkeeper. My daily tasks included things like preparing and handling legal data for vehicle registration and taxation. Lot’s of paper work! The car industry loves paper!
-</p>
-</div>
-</div>
-<div class="timeline-item left">
-<div class="timeline-content">
-<p><small>August 2017</small></p>
-<h3>
-Undergraduate Student at Virginia Tech
-</h3>
-<p>
-I began as an undergraduate student at Virgina Tech. Many major changes later until I decided on Biochemestry! General Chemisty was my favorite class!
-</p>
-</div>
-</div>
-<div class="timeline-item right">
-<div class="timeline-content">
-<p><small>June 2017</small></p>
-<h3>
-Graduated High School
-</h3>
-<p>
-Happy to be done! I worked the rest of the summer to make money before starting college in August.
-</p>
-</div>
-</div>
-<div class="timeline-item left">
-<div class="timeline-content">
-<p><small>March 2016 - August 2017</small></p>
-<h3>
-Started my First Job!
-</h3>
-<p>
-Started as an Associate at Potbelly Sandwich Works. Quickly promoted to be a certified trainer, training all new employees. Learned valuble teamwork and customer service skills.
-</p>
-</div>
-</div>
-</div>
-<script>
-let isDescending = true;
-function toggleTimelineOrder() {
-  const timeline = document.getElementById('timeline');
-  const items = Array.from(timeline.children);
-  items.reverse();
-  // Clear and re-append in reversed order
-  while (timeline.firstChild) {
-    timeline.removeChild(timeline.firstChild);
-  }
-  // Reassign left/right classes for alternating layout
-  items.forEach((item, index) => {
-    item.classList.remove('left', 'right');
-    item.classList.add(index % 2 === 0 ? 'left' : 'right');
-    timeline.appendChild(item);
-  });
-  // Toggle button label
-  isDescending = !isDescending;
-  document.getElementById('toggle-btn').textContent = isDescending ? "Descending" : "Ascending";
-}
-</script>
-</div>
+<main class="content quarto-banner-title-block column-page" id="quarto-document-content">
 
 
-</section>
-</main> 
-  <hr class="about-sep">
-   <div class="about-links">
-  <a href="https://www.linkedin.com/in/hannah-lyons-l8/" class="about-link" rel="" target="">
-    <i class="bi bi-linkedin"></i>
-     <span class="about-link-text">LinkedIn</span>
-  </a>
-  <a href="https://github.com/hannahl8" class="about-link" rel="" target="">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">Github</span>
-  </a>
+
+
+
+
+
+
+
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="Q29kZSUyQ1BlcnNvbmFs" data-listing-date-sort="1735707600000" data-listing-file-modified-sort="1751038953507" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="73">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/projects/jeopardy-java/index.html" class="no-external">Jeopardy - Java</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/projects/jeopardy-java/index.html" class="no-external"></a>
+</div>
+<div class="listing-description">
+<a href="./posts/projects/jeopardy-java/index.html" class="no-external">Java (Jakarta EE), Tomcat Server, MySQL, React, Typescript, Vite</a>
 </div>
 </div>
- <!-- /main -->
+<div class="metadata">
+<a href="./posts/projects/jeopardy-java/index.html" class="no-external">
+<div class="listing-date">
+Jan 1, 2025
+</div>
+<div class="listing-reading-time">
+1 min
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="Q29kZSUyQ0FjYWRlbWlj" data-listing-date-sort="1722916800000" data-listing-file-modified-sort="1751041006435" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="203">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/projects/vt-research-connect/index.html" class="no-external">VT Research Connect</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/projects/vt-research-connect/index.html" class="no-external"></a>
+</div>
+<div class="listing-description">
+<a href="./posts/projects/vt-research-connect/index.html" class="no-external">Java (Spring Boot), PostgreSQL, React, Typescript, Vite</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/projects/vt-research-connect/index.html" class="no-external">
+<div class="listing-date">
+Aug 6, 2024
+</div>
+<div class="listing-reading-time">
+2 min
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="Q29kZSUyQ0FjYWRlbWlj" data-listing-date-sort="1722484800000" data-listing-file-modified-sort="1751038912554" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="36">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/projects/h-l-lyons-books-and-brews/index.html" class="no-external">H.L. Lyons Books &amp; Brews</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/projects/h-l-lyons-books-and-brews/index.html" class="no-external"></a>
+</div>
+<div class="listing-description">
+<a href="./posts/projects/h-l-lyons-books-and-brews/index.html" class="no-external">Java (Jakarta EE), Tomcat Server, MySQL, React, Typescript, Vite</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/projects/h-l-lyons-books-and-brews/index.html" class="no-external">
+<div class="listing-date">
+Aug 1, 2024
+</div>
+<div class="listing-reading-time">
+1 min
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="3" data-categories="Q29kZSUyQ0FjYWRlbWlj" data-listing-date-sort="1713067200000" data-listing-file-modified-sort="1751038925976" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="55">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/projects/hokie-housing-hub/index.html" class="no-external">Hokie Housing Hub</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/projects/hokie-housing-hub/index.html" class="no-external"></a>
+</div>
+<div class="listing-description">
+<a href="./posts/projects/hokie-housing-hub/index.html" class="no-external">HTML, CSS, JavaScript</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/projects/hokie-housing-hub/index.html" class="no-external">
+<div class="listing-date">
+Apr 14, 2024
+</div>
+<div class="listing-reading-time">
+1 min
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="4" data-categories="Q29kZSUyQ1BlcnNvbmFs" data-listing-date-sort="1707973200000" data-listing-file-modified-sort="1751038971529" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="111">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/projects/jeopardy-python/index.html" class="no-external">Jeopardy - Python</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/projects/jeopardy-python/index.html" class="no-external"></a>
+</div>
+<div class="listing-description">
+<a href="./posts/projects/jeopardy-python/index.html" class="no-external">Python (Django), PostgreSQL, HTML, CSS, JavaScript</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/projects/jeopardy-python/index.html" class="no-external">
+<div class="listing-date">
+Feb 15, 2024
+</div>
+<div class="listing-reading-time">
+1 min
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="5" data-categories="Q29kZSUyQ0FjYWRlbWlj" data-listing-date-sort="1701406800000" data-listing-file-modified-sort="1751038897676" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="97">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/projects/focal/index.html" class="no-external">Focal</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/projects/focal/index.html" class="no-external"></a>
+</div>
+<div class="listing-description">
+<a href="./posts/projects/focal/index.html" class="no-external">Python (Django), PostgreSQL, HTML, CSS, JavaScript</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/projects/focal/index.html" class="no-external">
+<div class="listing-date">
+Dec 1, 2023
+</div>
+<div class="listing-reading-time">
+1 min
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -353,6 +403,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     
@@ -751,7 +808,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>   
     <div class="nav-footer-center">
 
-<div class="toc-actions"><ul><li><a href="https://github.com/hannahl8/hannahl8.github.io/blob/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li></ul></div><div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
+<div class="toc-actions"><ul><li><a href="https://github.com/hannahl8/hannahl8.github.io/blob/main/code-projects-series.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li></ul></div><div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>

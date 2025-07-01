@@ -47,5 +47,16 @@
       "/posts/machine-learning-intro/probability/index.html",
       "/posts/machine-learning-intro/intro-to-ml/index.html"
     ]
+  },
+  {
+    "listing": "/code-projects-series.html",
+    "items": [
+      "/posts/projects/jeopardy-java/index.html",
+      "/posts/projects/vt-research-connect/index.html",
+      "/posts/projects/h-l-lyons-books-and-brews/index.html",
+      "/posts/projects/hokie-housing-hub/index.html",
+      "/posts/projects/jeopardy-python/index.html",
+      "/posts/projects/focal/index.html"
+    ]
   }
 ]

@@ -1,0 +1,183 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "---\n",
+        "title: 'Probability Theory and Random Variables'\n",
+        "date: '2023-09-20'\n",
+        "categories: ['Code', 'Academic']\n",
+        "description: 'Understanding Probability Theory and Random Variables in the Context of Machine Learning'\n",
+        "execute: \n",
+        "  message: false\n",
+        "  warning: false\n",
+        "editor_options: \n",
+        "  chunk_output_type: console\n",
+        "---\n",
+        "\n",
+        "\n",
+        "## Introduction\n",
+        "\n",
+        "In the realm of machine learning, uncertainty is inherent. Models make predictions based on patterns learned from data, and probability theory provides a formal framework for dealing with uncertainty. Random variables are employed to represent uncertain quantities, making probability theory a cornerstone for building and interpreting machine learning models.\n",
+        "\n",
+        "Machine learning algorithms often assume specific probability distributions. For instance:\n",
+        "\n",
+        "-   The normal distribution is frequently assumed in linear regression and Gaussian processes.\n",
+        "\n",
+        "-   The binomial distribution is relevant for problems involving binary outcomes, such as classification tasks.\n",
+        "\n",
+        "Understanding the characteristics of these distributions is vital when selecting appropriate models and interpreting results.\n",
+        "\n",
+        "Random variables represent various aspects of data. Features can be modeled as random variables, and understanding their distribution is crucial for feature engineering. Additionally, the uncertainty associated with predictions is often expressed through probability distributions, making random variables central to the prediction process.\n",
+        "\n",
+        "## Data Visualization\n",
+        "\n",
+        "I use the following colors in all of my blogs data visualizations\n"
+      ],
+      "id": "9b3cbf1f"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "# Define specific colors (same as CSS from quarto vapor theme)\n",
+        "background = '#1b133a'\n",
+        "pink = '#ea39b8'\n",
+        "purple = '#6f42c1'\n",
+        "blue = '#32fbe2'"
+      ],
+      "id": "b60af07c",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "I will use the following **`plot_histograms`** function to create the data visualizations on this page\n"
+      ],
+      "id": "cad02f83"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "import matplotlib.pyplot as plt\n",
+        "\n",
+        "# Function to plot histograms\n",
+        "def plot_histograms(data, title):\n",
+        "    # Create a histogram\n",
+        "    fig, ax = plt.subplots()\n",
+        "    hist = ax.hist(data, bins=30, edgecolor='black', alpha=0.7, color=purple, ec=blue)\n",
+        "    ax.set_title(title, color=purple)\n",
+        "    ax.set_xlabel('Values', color=blue)\n",
+        "    ax.set_ylabel('Frequency', color=blue)\n",
+        "    ax.grid(True, linestyle='--', alpha=0.5)\n",
+        "    ax.tick_params(axis='x', colors=blue)\n",
+        "    ax.tick_params(axis='y', colors=blue)\n",
+        "    \n",
+        "    ax.set_facecolor(pink)\n",
+        "    fig.set_facecolor(background)\n",
+        "    \n",
+        "    # Show the plot\n",
+        "    plt.show()"
+      ],
+      "id": "3e3141f4",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "Let's use Python to create a histogram of a simulated random variable:\n"
+      ],
+      "id": "85970e92"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "import numpy as np\n",
+        "\n",
+        "# Sets the seed for the random number generator to 42\n",
+        "np.random.seed(42)\n",
+        "# Generates an array of 1000 random numbers drawn from a normal distribution\n",
+        "# using the random number generated defined above\n",
+        "data = np.random.normal(size=1000)\n",
+        "plot_histograms(data, 'Histogram of Random Variable')"
+      ],
+      "id": "f790e6df",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "Probability theory and random variables are not just theoretical concepts; they are integral to the practical application of machine learning. Models are built upon the assumptions of probability distributions, and the visualization of data through histograms aids in model interpretation and validation. As you dive deeper into machine learning, a solid understanding of these foundational concepts will empower you to make more informed decisions in model selection, training, and evaluation.\n",
+        "\n",
+        "The following code generates a dataset with two classes, trains a Random Forest Classifier on the data, and then generates predictions on a test set. The histograms before and after applying the machine learning model are plotted on top of one another for comparison.\n",
+        "\n",
+        "The **`generate_dataset`** function creates a synthetic dataset with two classes, and the **`plot_histograms`** function is used to visualize the distribution before and after applying the machine learning model. The accuracy of the model is also printed to give an idea of its performance.\n"
+      ],
+      "id": "30cf74fb"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "from sklearn.model_selection import train_test_split\n",
+        "from sklearn.ensemble import RandomForestClassifier\n",
+        "from sklearn.metrics import accuracy_score\n",
+        "\n",
+        "# Function to generate a random dataset with two classes\n",
+        "def generate_dataset(seed=42):\n",
+        "    np.random.seed(seed)\n",
+        "    class1 = np.random.normal(loc=0, scale=1, size=500)\n",
+        "    class2 = np.random.normal(loc=3, scale=1, size=500)\n",
+        "    labels = [0] * 500 + [1] * 500\n",
+        "    data = np.concatenate([class1, class2])\n",
+        "    return data, labels\n",
+        "\n",
+        "# Step 1: Generate a random dataset\n",
+        "data_before, labels = generate_dataset()\n",
+        "\n",
+        "# Step 2: Split the data into training and testing sets\n",
+        "X_train, X_test, y_train, y_test = train_test_split(data_before.reshape(-1, 1), labels, test_size=0.2, random_state=42)\n",
+        "\n",
+        "# Step 3: Train a Random Forest Classifier\n",
+        "clf = RandomForestClassifier(n_estimators=100, random_state=42)\n",
+        "clf.fit(X_train, y_train)\n",
+        "\n",
+        "# Step 4: Make predictions on the test set\n",
+        "predictions = clf.predict(X_test)\n",
+        "\n",
+        "# Step 5: Assess accuracy\n",
+        "accuracy = accuracy_score(y_test, predictions)\n",
+        "print(f\"Accuracy of the model: {accuracy:.2%}\")\n",
+        "\n",
+        "# Step 6: Generate a dataset after applying the machine learning model\n",
+        "data_after = np.concatenate([clf.predict_proba(X_test)[:, 0], clf.predict_proba(X_test)[:, 1]])\n",
+        "\n",
+        "# Step 7: Plot histograms to compare before and after\n",
+        "plot_histograms(data_before, 'Original Dataset')\n",
+        "plot_histograms(data_after, 'Dataset after Machine Learning')"
+      ],
+      "id": "184543ea",
+      "execution_count": null,
+      "outputs": []
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "name": "python3",
+      "language": "python",
+      "display_name": "Python 3 (ipykernel)",
+      "path": "C:\\Users\\ibhan\\AppData\\Roaming\\Python\\share\\jupyter\\kernels\\python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 5
+}

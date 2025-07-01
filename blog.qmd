@@ -14,8 +14,8 @@ title-block-banner: false
 
 # Series
 
-[machine-learning-series](machine-learning-series.html){style="font-weight: bold;"}
+[coding-projects](code-projects-series.html){style="font-weight: bold;"}
 
-This series contains a great deal of code and data visualizations for anyone new to machine learning.
+This series contains a great deal of coding projects completed in both my academic and personal life.
 
 # All Blog Posts

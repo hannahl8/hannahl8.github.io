@@ -3,6 +3,14 @@ project:
   output-dir: docs
 
 website:
+  cookie-consent:
+    type: express
+    style: simple
+    palette: dark
+  google-analytics:
+    tracking-id: "G-BMHFVF8XE9"
+    anonymize-ip: true
+    storage: cookies
   title: "Hannah Lyons"
   site-url: https://hannahl8.github.io/
   description: "This is Hannah Lyons Personal Blog"
