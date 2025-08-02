@@ -1,75 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://hannahl8.github.io/code-projects-series.html</loc>
-    <lastmod>2025-07-01T16:10:36.081Z</lastmod>
-  </url>
-  <url>
-    <loc>https://hannahl8.github.io/archive.html</loc>
-    <lastmod>2025-04-13T13:14:21.122Z</lastmod>
-  </url>
-  <url>
-    <loc>https://hannahl8.github.io/posts/projects/jeopardy-python/index.html</loc>
-    <lastmod>2025-06-27T15:42:51.529Z</lastmod>
-  </url>
-  <url>
-    <loc>https://hannahl8.github.io/posts/projects/hokie-housing-hub/index.html</loc>
-    <lastmod>2025-06-27T15:42:05.976Z</lastmod>
-  </url>
-  <url>
-    <loc>https://hannahl8.github.io/posts/projects/focal/index.html</loc>
-    <lastmod>2025-06-27T15:41:37.676Z</lastmod>
-  </url>
-  <url>
-    <loc>https://hannahl8.github.io/posts/machine-learning-intro/probability/index.html</loc>
-    <lastmod>2025-06-27T15:40:41.722Z</lastmod>
-  </url>
-  <url>
-    <loc>https://hannahl8.github.io/posts/machine-learning-intro/clustering/index.html</loc>
-    <lastmod>2025-06-27T15:40:20.785Z</lastmod>
-  </url>
-  <url>
-    <loc>https://hannahl8.github.io/posts/machine-learning-intro/anomaly/index.html</loc>
-    <lastmod>2025-06-27T15:40:05.842Z</lastmod>
-  </url>
-  <url>
-    <loc>https://hannahl8.github.io/posts/diy/keezer/index.html</loc>
-    <lastmod>2025-06-25T19:57:35.990Z</lastmod>
-  </url>
-  <url>
-    <loc>https://hannahl8.github.io/index.html</loc>
-    <lastmod>2025-07-01T18:09:22.199Z</lastmod>
-  </url>
-  <url>
-    <loc>https://hannahl8.github.io/posts/homebrewing/shandy/index.html</loc>
-    <lastmod>2025-06-13T17:28:17.874Z</lastmod>
-  </url>
-  <url>
-    <loc>https://hannahl8.github.io/posts/machine-learning-intro/classification/index.html</loc>
-    <lastmod>2025-06-27T15:40:01.108Z</lastmod>
-  </url>
-  <url>
-    <loc>https://hannahl8.github.io/posts/machine-learning-intro/intro-to-ml/index.html</loc>
-    <lastmod>2025-06-27T15:40:32.619Z</lastmod>
-  </url>
-  <url>
-    <loc>https://hannahl8.github.io/posts/machine-learning-intro/regression/index.html</loc>
-    <lastmod>2025-06-27T15:40:50.412Z</lastmod>
-  </url>
-  <url>
-    <loc>https://hannahl8.github.io/posts/projects/h-l-lyons-books-and-brews/index.html</loc>
-    <lastmod>2025-06-27T15:41:52.554Z</lastmod>
+    <loc>https://hannahl8.github.io/posts/projects/vt-research-connect/index.html</loc>
+    <lastmod>2025-07-01T16:12:38.543Z</lastmod>
   </url>
   <url>
     <loc>https://hannahl8.github.io/posts/projects/jeopardy-java/index.html</loc>
     <lastmod>2025-06-27T15:42:33.507Z</lastmod>
   </url>
   <url>
-    <loc>https://hannahl8.github.io/posts/projects/vt-research-connect/index.html</loc>
-    <lastmod>2025-07-01T16:12:38.543Z</lastmod>
+    <loc>https://hannahl8.github.io/posts/projects/h-l-lyons-books-and-brews/index.html</loc>
+    <lastmod>2025-06-27T15:41:52.554Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hannahl8.github.io/posts/machine-learning-intro/regression/index.html</loc>
+    <lastmod>2025-06-27T15:40:50.412Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hannahl8.github.io/posts/machine-learning-intro/intro-to-ml/index.html</loc>
+    <lastmod>2025-06-27T15:40:32.619Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hannahl8.github.io/posts/machine-learning-intro/classification/index.html</loc>
+    <lastmod>2025-06-27T15:40:01.108Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hannahl8.github.io/posts/homebrewing/shandy/index.html</loc>
+    <lastmod>2025-06-13T17:28:17.874Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hannahl8.github.io/index.html</loc>
+    <lastmod>2025-08-02T17:08:24.836Z</lastmod>
   </url>
   <url>
     <loc>https://hannahl8.github.io/blog.html</loc>
     <lastmod>2025-07-01T16:12:31.997Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hannahl8.github.io/archive.html</loc>
+    <lastmod>2025-04-13T13:14:21.122Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hannahl8.github.io/code-projects-series.html</loc>
+    <lastmod>2025-07-01T16:10:36.081Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hannahl8.github.io/posts/diy/keezer/index.html</loc>
+    <lastmod>2025-06-25T19:57:35.990Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hannahl8.github.io/posts/machine-learning-intro/anomaly/index.html</loc>
+    <lastmod>2025-06-27T15:40:05.842Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hannahl8.github.io/posts/machine-learning-intro/clustering/index.html</loc>
+    <lastmod>2025-06-27T15:40:20.785Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hannahl8.github.io/posts/machine-learning-intro/probability/index.html</loc>
+    <lastmod>2025-06-27T15:40:41.722Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hannahl8.github.io/posts/projects/focal/index.html</loc>
+    <lastmod>2025-06-27T15:41:37.676Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hannahl8.github.io/posts/projects/hokie-housing-hub/index.html</loc>
+    <lastmod>2025-06-27T15:42:05.976Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hannahl8.github.io/posts/projects/jeopardy-python/index.html</loc>
+    <lastmod>2025-06-27T15:42:51.529Z</lastmod>
   </url>
 </urlset>
