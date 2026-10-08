@@ -1,6 +1,6 @@
 ---
 title: "About"
-image: Headshot.JPG
+image: headshot-480.jpg
 about:
   template: jolla
   links:
@@ -21,11 +21,11 @@ I am a Software Engineer working for Estes Express Lines. I work on an agile dev
 <div>
 
 ::: center-button
-<button class="btn btn-primary" id="toggle-btn" onclick="toggleTimelineOrder()">
-
-Descending
-
+```{=html}
+<button type="button" class="btn btn-primary" id="toggle-btn" onclick="toggleTimelineOrder()">
+<i class="bi bi-arrow-down-up" aria-hidden="true"></i> <span id="toggle-label">Show oldest first</span>
 </button>
+```
 :::
 
 ::::::::::::::::::::::::::: {#timeline .timeline}
@@ -75,7 +75,7 @@ Descending
 
 <h3>Software Developer at Naval Surface Warfare Center Indian Head Division</h3>
 
-<p>I worked as the technical lead software developer on the Modeling and Simulations (M&S) Team. I worked with a team of developers on the creation of a Java-based software application over a multi-year period. Led the project management for several high–intensity, short duration funded efforts, delivering M&S support as requested by upper-level management.</p>
+<p>I worked as the technical lead software developer on the Modeling and Simulations (M&S) Team. I worked with a team of developers on the creation of a Java-based software application over a multi-year period. Led the project management for several high-intensity, short-duration funded efforts, delivering M&S support as requested by upper-level management.</p>
 :::
 ::::
 
@@ -115,7 +115,7 @@ Descending
 
 <h3>Bookkeeper at Koons Chevy Buick GMC</h3>
 
-<p>I worked in the accounting department as a bookkeeper. My daily tasks included things like preparing and handling legal data for vehicle registration and taxation. Lot's of paper work! The car industry loves paper!</p>
+<p>I worked in the accounting department as a bookkeeper. My daily tasks included things like preparing and handling legal data for vehicle registration and taxation. Lots of paperwork! The car industry loves paper!</p>
 :::
 ::::
 
@@ -125,7 +125,7 @@ Descending
 
 <h3>Undergraduate Student at Virginia Tech</h3>
 
-<p>I began as an undergraduate student at Virgina Tech. Many major changes later until I decided on Biochemestry! General Chemisty was my favorite class!</p>
+<p>I began as an undergraduate student at Virginia Tech. After many major changes, I decided on Biochemistry! General Chemistry was my favorite class!</p>
 :::
 ::::
 
@@ -152,7 +152,7 @@ Descending
 
 ```{=html}
 <script>
-let isDescending = true;
+let isNewestFirst = true;
 
 function toggleTimelineOrder() {
   const timeline = document.getElementById('timeline');
@@ -164,16 +164,16 @@ function toggleTimelineOrder() {
     timeline.removeChild(timeline.firstChild);
   }
 
-  // Reassign left/right classes for alternating layout
+  // Reassign left/right classes for alternating layout (first item on the right)
   items.forEach((item, index) => {
     item.classList.remove('left', 'right');
-    item.classList.add(index % 2 === 0 ? 'left' : 'right');
+    item.classList.add(index % 2 === 0 ? 'right' : 'left');
     timeline.appendChild(item);
   });
 
-  // Toggle button label
-  isDescending = !isDescending;
-  document.getElementById('toggle-btn').textContent = isDescending ? "Descending" : "Ascending";
+  // Button names the order you'll get on the next click
+  isNewestFirst = !isNewestFirst;
+  document.getElementById('toggle-label').textContent = isNewestFirst ? "Show oldest first" : "Show newest first";
 }
 </script>
 ```

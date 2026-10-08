@@ -13,7 +13,10 @@ website:
     storage: cookies
   title: "Hannah Lyons"
   site-url: https://hannahl8.github.io/
-  description: "This is Hannah Lyons Personal Blog"
+  description: "Hannah Lyons is a software engineer building full-stack web and desktop applications. Projects, notes, and career timeline."
+  image: headshot-480.jpg
+  open-graph: true
+  twitter-card: true
   repo-url: https://github.com/hannahl8/hannahl8.github.io
   repo-actions: [source]
   navbar:

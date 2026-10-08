@@ -8,7 +8,12 @@
 <title>Hannah Lyons</title>
 <link>https://hannahl8.github.io/blog.html</link>
 <atom:link href="https://hannahl8.github.io/blog.xml" rel="self" type="application/rss+xml"/>
-<description>This is Hannah Lyons Personal Blog</description>
+<description>Hannah Lyons is a software engineer building full-stack web and desktop applications. Projects, notes, and career timeline.</description>
+<image>
+<url>https://hannahl8.github.io/headshot-480.jpg</url>
+<title>Hannah Lyons</title>
+<link>https://hannahl8.github.io/blog.html</link>
+</image>
 <generator>quarto-1.10.19</generator>
 <lastBuildDate>Wed, 01 Jan 2025 05:00:00 GMT</lastBuildDate>
 <item>

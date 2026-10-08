@@ -87,6 +87,13 @@ body {
     overflow-wrap: anywhere;
 }
 
+/* About page: keep the neon glow on headings, but drop it from body text so it reads crisply */
+.quarto-about-jolla p,
+.quarto-about-jolla small,
+.quarto-about-jolla li {
+    text-shadow: none;
+}
+
 /* Tablets and phones: collapse the alternating timeline into a single column */
 @media (max-width: 768px) {
     .timeline {

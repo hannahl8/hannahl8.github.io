@@ -104,6 +104,14 @@ cookieconsent.run({
 
 
 <link rel="stylesheet" href="styles.css">
+<meta property="og:title" content="About – Hannah Lyons">
+<meta property="og:description" content="Hannah Lyons is a software engineer building full-stack web and desktop applications. Projects, notes, and career timeline.">
+<meta property="og:image" content="https://hannahl8.github.io/headshot-480.jpg">
+<meta property="og:site_name" content="Hannah Lyons">
+<meta name="twitter:title" content="About – Hannah Lyons">
+<meta name="twitter:description" content="Hannah Lyons is a software engineer building full-stack web and desktop applications. Projects, notes, and career timeline.">
+<meta name="twitter:image" content="https://hannahl8.github.io/headshot-480.jpg">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
@@ -159,7 +167,7 @@ cookieconsent.run({
     
 <!-- main -->
 <div class="quarto-about-jolla">
-  <img src="Headshot.JPG" class="about-image
+  <img src="headshot-480.jpg" class="about-image
   round " style="height: 15em; width: 15em;">
  <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -174,8 +182,8 @@ cookieconsent.run({
 <h2 data-anchor-id="my-academic-career-timeline">My Academic &amp; Career Timeline</h2>
 <div>
 <div class="center-button">
-<button class="btn btn-primary" id="toggle-btn" onclick="toggleTimelineOrder()">
-<p>Descending</p>
+<button type="button" class="btn btn-primary" id="toggle-btn" onclick="toggleTimelineOrder()">
+<i class="bi bi-arrow-down-up" aria-hidden="true"></i> <span id="toggle-label">Show oldest first</span>
 </button>
 </div>
 <div id="timeline" class="timeline">
@@ -230,7 +238,7 @@ I began as a graduate student at Virginia Tech. I was awarded the Boeing Graduat
 Software Developer at Naval Surface Warfare Center Indian Head Division
 </h3>
 <p>
-I worked as the technical lead software developer on the Modeling and Simulations (M&amp;S) Team. I worked with a team of developers on the creation of a Java-based software application over a multi-year period. Led the project management for several high–intensity, short duration funded efforts, delivering M&amp;S support as requested by upper-level management.
+I worked as the technical lead software developer on the Modeling and Simulations (M&amp;S) Team. I worked with a team of developers on the creation of a Java-based software application over a multi-year period. Led the project management for several high-intensity, short-duration funded efforts, delivering M&amp;S support as requested by upper-level management.
 </p>
 </div>
 </div>
@@ -274,7 +282,7 @@ I really liked biochemistry as a major (mostly just the chemistry classes), but 
 Bookkeeper at Koons Chevy Buick GMC
 </h3>
 <p>
-I worked in the accounting department as a bookkeeper. My daily tasks included things like preparing and handling legal data for vehicle registration and taxation. Lot’s of paper work! The car industry loves paper!
+I worked in the accounting department as a bookkeeper. My daily tasks included things like preparing and handling legal data for vehicle registration and taxation. Lots of paperwork! The car industry loves paper!
 </p>
 </div>
 </div>
@@ -285,7 +293,7 @@ I worked in the accounting department as a bookkeeper. My daily tasks included t
 Undergraduate Student at Virginia Tech
 </h3>
 <p>
-I began as an undergraduate student at Virgina Tech. Many major changes later until I decided on Biochemestry! General Chemisty was my favorite class!
+I began as an undergraduate student at Virginia Tech. After many major changes, I decided on Biochemistry! General Chemistry was my favorite class!
 </p>
 </div>
 </div>
@@ -313,7 +321,7 @@ Started as an Associate at Potbelly Sandwich Works. Quickly promoted to be a cer
 </div>
 </div>
 <script>
-let isDescending = true;
+let isNewestFirst = true;
 function toggleTimelineOrder() {
   const timeline = document.getElementById('timeline');
   const items = Array.from(timeline.children);
@@ -322,15 +330,15 @@ function toggleTimelineOrder() {
   while (timeline.firstChild) {
     timeline.removeChild(timeline.firstChild);
   }
-  // Reassign left/right classes for alternating layout
+  // Reassign left/right classes for alternating layout (first item on the right)
   items.forEach((item, index) => {
     item.classList.remove('left', 'right');
-    item.classList.add(index % 2 === 0 ? 'left' : 'right');
+    item.classList.add(index % 2 === 0 ? 'right' : 'left');
     timeline.appendChild(item);
   });
-  // Toggle button label
-  isDescending = !isDescending;
-  document.getElementById('toggle-btn').textContent = isDescending ? "Descending" : "Ascending";
+  // Button names the order you'll get on the next click
+  isNewestFirst = !isNewestFirst;
+  document.getElementById('toggle-label').textContent = isNewestFirst ? "Show oldest first" : "Show newest first";
 }
 </script>
 </div>
