@@ -126,6 +126,13 @@
     "text": "I am a Software Engineer working for Estes Express Lines. I work on an agile development team creating and improving features for software applications. I am super passionate about front and back end web development (full stack), as well as general software development for desktop applications, etc. Please check out the Blog page to see coding projects from both my personal and academic career."
   },
   {
+    "objectID": "index.html#skills",
+    "href": "index.html#skills",
+    "title": "About",
+    "section": "Skills",
+    "text": "Skills\n\n\nFront-End\n\nReact\nTypeScript\nVite\nJavaScript\nHTML5\nCSS3\nFigma\n\n\n\nBack-End\n\nJava\nSpring Boot\nJakarta EE\nPython\nDjango\nRESTful APIs\n\n\n\nCloud & DevOps\n\nAWS\nAzure\nGCP\nDocker\nGitOps\nTerraform\nCI/CD\n\n\n\nMobile\n\nSwift (iOS)\nKotlin (Android)\n\n\n\nTools & Practices\n\nGit\nGitLab\nJira\nAgile/Scrum\nOAuth2 (Microsoft Entra)\nAPI security\n\n\n\nAI Tools\n\nClaude Code (CLI)\nGitLab Duo"
+  },
+  {
     "objectID": "index.html#my-academic-career-timeline",
     "href": "index.html#my-academic-career-timeline",
     "title": "About",

@@ -25,10 +25,78 @@ I am a Software Engineer working for Estes Express Lines. I work on an agile dev
 
 <br>
 
+## Skills
+
+```{=html}
+<div class="skills" id="skills">
+<div class="skill-group">
+<h3>Front-End</h3>
+<ul class="skill-badges">
+<li>React</li>
+<li>TypeScript</li>
+<li>Vite</li>
+<li>JavaScript</li>
+<li>HTML5</li>
+<li>CSS3</li>
+<li>Figma</li>
+</ul>
+</div>
+<div class="skill-group">
+<h3>Back-End</h3>
+<ul class="skill-badges">
+<li>Java</li>
+<li>Spring Boot</li>
+<li>Jakarta EE</li>
+<li>Python</li>
+<li>Django</li>
+<li>RESTful APIs</li>
+</ul>
+</div>
+<div class="skill-group">
+<h3>Cloud &amp; DevOps</h3>
+<ul class="skill-badges">
+<li>AWS</li>
+<li>Azure</li>
+<li>GCP</li>
+<li>Docker</li>
+<li>GitOps</li>
+<li>Terraform</li>
+<li>CI/CD</li>
+</ul>
+</div>
+<div class="skill-group">
+<h3>Mobile</h3>
+<ul class="skill-badges">
+<li>Swift (iOS)</li>
+<li>Kotlin (Android)</li>
+</ul>
+</div>
+<div class="skill-group">
+<h3>Tools &amp; Practices</h3>
+<ul class="skill-badges">
+<li>Git</li>
+<li>GitLab</li>
+<li>Jira</li>
+<li>Agile/Scrum</li>
+<li>OAuth2 (Microsoft Entra)</li>
+<li>API security</li>
+</ul>
+</div>
+<div class="skill-group">
+<h3>AI Tools</h3>
+<ul class="skill-badges">
+<li>Claude Code (CLI)</li>
+<li>GitLab Duo</li>
+</ul>
+</div>
+</div>
+```
+
+<br>
+
 ## My Academic & Career Timeline
 
-<div>
-
+::::::::::::::::::::::::::::: {}
 ::: center-button
 ```{=html}
 <button type="button" class="btn btn-primary" id="toggle-btn" onclick="toggleTimelineOrder()">
@@ -205,6 +273,27 @@ if (canAnimate) {
   updateLine();
 }
 
+// Skills: badges pop in one after another when their group scrolls into view
+if (canAnimate) {
+  const skills = document.getElementById('skills');
+  skills.classList.add('reveal-ready');
+  skills.querySelectorAll('.skill-badges').forEach((list) => {
+    Array.from(list.children).forEach((badge, i) => badge.style.setProperty('--badge-index', i));
+  });
+
+  const skillsObserver = new IntersectionObserver((entries) => {
+    entries
+      .filter((entry) => entry.isIntersecting)
+      .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top || a.boundingClientRect.left - b.boundingClientRect.left)
+      .forEach((entry, i) => {
+        entry.target.style.setProperty('--group-delay', `${i * 200}ms`);
+        entry.target.classList.add('is-visible');
+        skillsObserver.unobserve(entry.target);
+      });
+  }, { rootMargin: '0px 0px -10% 0px', threshold: 0.2 });
+  skills.querySelectorAll('.skill-group').forEach((group) => skillsObserver.observe(group));
+}
+
 function toggleTimelineOrder() {
   const items = Array.from(timeline.children);
   const before = new Map(items.map((item) => [item, item.getBoundingClientRect()]));
@@ -240,5 +329,4 @@ function toggleTimelineOrder() {
 }
 </script>
 ```
-
-</div>
+:::::::::::::::::::::::::::::

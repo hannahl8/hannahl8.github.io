@@ -236,3 +236,83 @@ body {
         box-shadow: 0 0 0 14px rgba(50, 251, 226, 0);
     }
 }
+
+/* ---------- About page skills ---------- */
+.skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
+    /* Don't let the grid's natural two-column width stretch the About page's shrink-to-fit column on phones */
+    contain: inline-size;
+    gap: 28px 32px;
+    max-width: 800px;
+    margin: 24px auto 0;
+}
+
+.skill-group h3 {
+    font-size: 1.1rem;
+    margin: 0 0 12px;
+    text-align: center;
+}
+
+.skill-badges {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.skill-badges li {
+    padding: 4px 12px;
+    border: 1px solid rgba(50, 251, 226, 0.6);
+    border-radius: 999px;
+    background-color: rgba(110, 67, 187, 0.35);
+    color: white;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    text-shadow: none;
+}
+
+@media (max-width: 400px) {
+    .skill-badges li {
+        font-size: 0.85rem;
+        padding: 3px 10px;
+    }
+}
+
+/* .reveal-ready / .is-visible are added by the script in index.qmd */
+@media (prefers-reduced-motion: no-preference) {
+    .skill-badges li {
+        transition:
+            opacity 0.4s ease calc(var(--group-delay, 0ms) + var(--badge-index, 0) * 70ms),
+            translate 0.5s cubic-bezier(0.3, 1.5, 0.5, 1) calc(var(--group-delay, 0ms) + var(--badge-index, 0) * 70ms),
+            scale 0.5s cubic-bezier(0.3, 1.5, 0.5, 1) calc(var(--group-delay, 0ms) + var(--badge-index, 0) * 70ms),
+            transform 0.2s ease,
+            box-shadow 0.2s ease,
+            border-color 0.2s ease;
+    }
+
+    .skills.reveal-ready .skill-group:not(.is-visible) li {
+        opacity: 0;
+        translate: 0 12px;
+        scale: 0.8;
+    }
+
+    .skills.reveal-ready .skill-group h3 {
+        transition: opacity 0.5s ease var(--group-delay, 0ms);
+    }
+
+    .skills.reveal-ready .skill-group:not(.is-visible) h3 {
+        opacity: 0;
+    }
+
+    @media (hover: hover) {
+        .skill-badges li:hover {
+            transform: translateY(-2px);
+            border-color: #32fbe2;
+            box-shadow: 0 0 10px rgba(50, 251, 226, 0.5);
+        }
+    }
+}
