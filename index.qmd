@@ -29,7 +29,7 @@ I am a Software Engineer working for Estes Express Lines. I work on an agile dev
 :::
 
 ::::::::::::::::::::::::::: {#timeline .timeline}
-:::: {.timeline-item .right}
+:::: {.timeline-item .right .current}
 ::: timeline-content
 <small>July 2025</small>
 
@@ -152,24 +152,78 @@ I am a Software Engineer working for Estes Express Lines. I work on an agile dev
 
 ```{=html}
 <script>
+const timeline = document.getElementById('timeline');
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const canAnimate = !reduceMotion && 'IntersectionObserver' in window;
 let isNewestFirst = true;
+let revealObserver = null;
+
+function revealItem(item, delayMs) {
+  item.style.setProperty('--reveal-delay', `${delayMs}ms`);
+  item.classList.add('is-visible');
+  if (revealObserver) revealObserver.unobserve(item);
+}
+
+if (canAnimate) {
+  timeline.classList.add('reveal-ready');
+
+  // Fade/slide each card in the first time it scrolls into view, staggering cards that arrive together
+  revealObserver = new IntersectionObserver((entries) => {
+    entries
+      .filter((entry) => entry.isIntersecting)
+      .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)
+      .forEach((entry, i) => revealItem(entry.target, i * 120));
+  }, { rootMargin: '0px 0px -15% 0px', threshold: 0.15 });
+  Array.from(timeline.children).forEach((item) => revealObserver.observe(item));
+
+  // Draw the center line down to the same point where cards are revealed
+  let ticking = false;
+  function updateLine() {
+    ticking = false;
+    const rect = timeline.getBoundingClientRect();
+    const atBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2;
+    const progress = atBottom ? 1 : (window.innerHeight * 0.85 - rect.top) / rect.height;
+    timeline.style.setProperty('--line-progress', Math.min(Math.max(progress, 0), 1));
+  }
+  function requestLineUpdate() {
+    if (!ticking) {
+      ticking = true;
+      requestAnimationFrame(updateLine);
+    }
+  }
+  window.addEventListener('scroll', requestLineUpdate, { passive: true });
+  window.addEventListener('resize', requestLineUpdate);
+  updateLine();
+}
 
 function toggleTimelineOrder() {
-  const timeline = document.getElementById('timeline');
   const items = Array.from(timeline.children);
+  const before = new Map(items.map((item) => [item, item.getBoundingClientRect()]));
   items.reverse();
 
-  // Clear and re-append in reversed order
-  while (timeline.firstChild) {
-    timeline.removeChild(timeline.firstChild);
-  }
-
-  // Reassign left/right classes for alternating layout (first item on the right)
+  // Re-append in reversed order and reassign left/right classes for alternating layout (first item on the right)
   items.forEach((item, index) => {
     item.classList.remove('left', 'right');
     item.classList.add(index % 2 === 0 ? 'right' : 'left');
     timeline.appendChild(item);
   });
+
+  // Slide each card from its old position to its new one (FLIP)
+  if (canAnimate) {
+    items.forEach((item) => {
+      revealItem(item, 0);
+      const from = before.get(item);
+      const to = item.getBoundingClientRect();
+      const dx = from.left - to.left;
+      const dy = from.top - to.top;
+      if (dx || dy) {
+        item.animate(
+          [{ transform: `translate(${dx}px, ${dy}px)` }, { transform: 'none' }],
+          { duration: 700, easing: 'cubic-bezier(0.2, 0.8, 0.2, 1)' }
+        );
+      }
+    });
+  }
 
   // Button names the order you'll get on the next click
   isNewestFirst = !isNewestFirst;

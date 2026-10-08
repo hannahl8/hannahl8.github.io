@@ -150,3 +150,89 @@ body {
         font-size: 1.05rem;
     }
 }
+
+/* ---------- About page timeline animations ----------
+   .reveal-ready / .is-visible are added by the script in index.qmd.
+   Without JS, or with reduced motion turned on, the timeline shows fully and stays still. */
+@media (prefers-reduced-motion: no-preference) {
+    /* Center line draws downward as you scroll */
+    .timeline.reveal-ready::after {
+        transform: scaleY(var(--line-progress, 0));
+        transform-origin: top;
+        box-shadow: 0 0 8px rgba(110, 67, 187, 0.8);
+    }
+
+    /* Cards fade and slide in from their side of the line; `translate` is kept separate from
+       `transform` so the reveal and the hover lift don't fight each other */
+    .timeline-content {
+        transition:
+            opacity 0.7s ease var(--reveal-delay, 0s),
+            translate 0.7s cubic-bezier(0.2, 0.8, 0.2, 1) var(--reveal-delay, 0s),
+            transform 0.25s ease,
+            box-shadow 0.25s ease,
+            border-color 0.25s ease;
+    }
+
+    .timeline.reveal-ready .timeline-item:not(.is-visible) .timeline-content {
+        opacity: 0;
+    }
+
+    .timeline.reveal-ready .timeline-item.left:not(.is-visible) .timeline-content {
+        translate: -30px 0;
+    }
+
+    .timeline.reveal-ready .timeline-item.right:not(.is-visible) .timeline-content {
+        translate: 30px 0;
+    }
+
+    /* Dots pop in with a neon ring */
+    .timeline.reveal-ready .timeline-item::after {
+        transition: transform 0.4s cubic-bezier(0.3, 1.6, 0.5, 1) var(--reveal-delay, 0s);
+    }
+
+    .timeline.reveal-ready .timeline-item:not(.is-visible)::after {
+        transform: scale(0);
+    }
+
+    .timeline.reveal-ready .timeline-item.is-visible::after {
+        animation: timeline-dot-glow 1.2s ease-out var(--reveal-delay, 0s);
+    }
+
+    /* Current role keeps a slow pulse */
+    .timeline .timeline-item.current::after,
+    .timeline.reveal-ready .timeline-item.current.is-visible::after {
+        animation:
+            timeline-dot-glow 1.2s ease-out var(--reveal-delay, 0s),
+            timeline-dot-glow 2.4s ease-out 1.2s infinite;
+    }
+
+    /* Hover lift + glow (only on devices with a real pointer, so taps on phones don't stick) */
+    @media (hover: hover) {
+        .timeline-content:hover {
+            transform: translateY(-4px);
+            border-color: #32fbe2;
+            box-shadow: 0 0 14px rgba(50, 251, 226, 0.45), inset 0 0 10px rgba(50, 251, 226, 0.1);
+        }
+    }
+
+    /* Single-column layout: every card comes in from the line on the left */
+    @media (max-width: 768px) {
+        .timeline.reveal-ready .timeline-item.right:not(.is-visible) .timeline-content {
+            translate: -24px 0;
+        }
+
+        .timeline.reveal-ready .timeline-item.left:not(.is-visible) .timeline-content {
+            translate: -24px 0;
+        }
+    }
+}
+
+@keyframes timeline-dot-glow {
+    0% {
+        box-shadow: 0 0 0 0 rgba(50, 251, 226, 0.8);
+    }
+
+    100% {
+        box-shadow: 0 0 0 14px rgba(50, 251, 226, 0);
+    }
+}
