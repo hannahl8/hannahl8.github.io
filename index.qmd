@@ -1,6 +1,9 @@
 ---
 title: "About"
 image: headshot-480.jpg
+resources:
+  - resume/Hannah-Lyons-Resume.pdf
+  - resume/Hannah-Lyons-Resume.docx
 about:
   template: jolla
   links:
@@ -10,6 +13,12 @@ about:
     - icon: github
       text: Github
       href: https://github.com/hannahl8
+    - icon: file-earmark-pdf
+      text: Resume (PDF)
+      href: resume/Hannah-Lyons-Resume.pdf
+    - icon: file-earmark-word
+      text: Resume (Word)
+      href: resume/Hannah-Lyons-Resume.docx
 ---
 
 I am a Software Engineer working for Estes Express Lines. I work on an agile development team creating and improving features for software applications. I am super passionate about front and back end web development (full stack), as well as general software development for desktop applications, etc. Please check out the [Blog](https://hannahl8.github.io/blog.html) page to see coding projects from both my personal and academic career.
