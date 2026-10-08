@@ -83,3 +83,63 @@ body {
 .center-button p {
     margin: 0;
 }
+.timeline-content {
+    overflow-wrap: anywhere;
+}
+
+/* Tablets and phones: collapse the alternating timeline into a single column */
+@media (max-width: 768px) {
+    .timeline {
+        padding: 20px 0;
+    }
+
+    .timeline::after {
+        left: 20px;
+    }
+
+    .timeline .timeline-item {
+        width: 100%;
+        left: 0;
+        padding: 10px 0 10px 50px;
+    }
+
+    .timeline .timeline-item::after {
+        left: 10px;
+        right: auto;
+        top: 22px;
+    }
+
+    .timeline-content {
+        padding: 15px;
+    }
+
+    .timeline h3 {
+        font-size: 1.15rem;
+    }
+}
+
+/* Small phones (e.g. iPhone SE / mini) */
+@media (max-width: 400px) {
+    .timeline::after {
+        left: 12px;
+    }
+
+    .timeline .timeline-item {
+        padding-left: 34px;
+    }
+
+    .timeline .timeline-item::after {
+        left: 4px;
+        width: 16px;
+        height: 16px;
+        border-width: 3px;
+    }
+
+    .timeline-content {
+        padding: 12px;
+    }
+
+    .timeline h3 {
+        font-size: 1.05rem;
+    }
+}

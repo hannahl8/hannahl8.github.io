@@ -9,7 +9,7 @@
 <link>https://hannahl8.github.io/blog.html</link>
 <atom:link href="https://hannahl8.github.io/blog.xml" rel="self" type="application/rss+xml"/>
 <description>This is Hannah Lyons Personal Blog</description>
-<generator>quarto-1.6.39</generator>
+<generator>quarto-1.10.19</generator>
 <lastBuildDate>Wed, 01 Jan 2025 05:00:00 GMT</lastBuildDate>
 <item>
   <title>Jeopardy - Java</title>
@@ -86,7 +86,7 @@
 <h1>My Contributions</h1>
 <p>I was the front-end lead for this project. I suggested we used React/TypeScript/Vite for the front end code, which integrated well with our Java (Spring Boot) back-end. I completed all of the front-end code, including services, components, contexts, and pages. I also created all of the original UI design using Figma for each of the pages.</p>
 <p>For a fun little short side piece of the project, I also wrote python code to generate a neat geometric shape for the logo.</p>
-<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="im" style="color: #00769E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="im" style="color: #00769E;
 background-color: null;
 font-style: inherit;">import</span> matplotlib.pyplot <span class="im" style="color: #00769E;
 background-color: null;
@@ -187,7 +187,7 @@ font-style: inherit;">False</span>)</span>
 <span id="cb1-17">ax.set_facecolor(<span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">'black'</span>)</span>
-<span id="cb1-18">plt.show()</span></code></pre></div>
+<span id="cb1-18">plt.show()</span></code></pre></div></div>
 <p>Running the above python code creates the following image, we used as our projects logo.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -641,7 +641,7 @@ font-style: inherit;">'black'</span>)</span>
 <p><img src="https://hannahl8.github.io/posts/diy/keezer/logo.PNG" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
-<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="logo_printing.mp4"></video></div>
+<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-big-play-centered vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="logo_printing.mp4"></video></div>
 </section>
 <section id="finishing-touches" class="level2">
 <h2 class="anchored" data-anchor-id="finishing-touches">Finishing Touches</h2>
@@ -1062,7 +1062,7 @@ font-style: inherit;">'black'</span>)</span>
 <h2 class="anchored" data-anchor-id="data-visualization">Data Visualization</h2>
 <p>I use the following colors in all of my blogs data visualizations</p>
 <div class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="co" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># Define specific colors (same as CSS from quarto vapor theme)</span></span>
 <span id="cb1-2">background <span class="op" style="color: #5E5E5E;
@@ -1084,7 +1084,7 @@ font-style: inherit;">'#6f42c1'</span></span>
 background-color: null;
 font-style: inherit;">=</span> <span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">'#32fbe2'</span></span></code></pre></div>
+font-style: inherit;">'#32fbe2'</span></span></code></pre></div></div>
 </div>
 <section id="dbscan-and-evaluation-metrics-for-anomaly-detection" class="level3">
 <h3 class="anchored" data-anchor-id="dbscan-and-evaluation-metrics-for-anomaly-detection"><strong>DBSCAN and Evaluation Metrics for Anomaly Detection</strong></h3>
@@ -1092,7 +1092,7 @@ font-style: inherit;">'#32fbe2'</span></span></code></pre></div>
 <p>Visualizing anomalies is crucial for interpreting model results. Scatter plots with DBSCAN labels provide an intuitive representation of the identified anomalies in the dataset.</p>
 <p>Evaluating anomaly detection models poses challenges due to the scarcity of anomalies. Metrics such as precision, recall, and F1 score provide a nuanced understanding of the model’s performance.</p>
 <div class="cell" data-execution_count="2">
-<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="im" style="color: #00769E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="im" style="color: #00769E;
 background-color: null;
 font-style: inherit;">from</span> sklearn.metrics <span class="im" style="color: #00769E;
 background-color: null;
@@ -1328,7 +1328,7 @@ font-style: inherit;">{</span>f1<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">:.2f}</span><span class="ss" style="color: #20794D;
 background-color: null;
-font-style: inherit;">"</span>)</span></code></pre></div>
+font-style: inherit;">"</span>)</span></code></pre></div></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -1379,7 +1379,7 @@ F1 Score: 0.95</code></pre>
 </ul>
 <p>Let’s implement a simple classification model using logistic regression in Python:</p>
 <div class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="im" style="color: #00769E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="im" style="color: #00769E;
 background-color: null;
 font-style: inherit;">import</span> numpy <span class="im" style="color: #00769E;
 background-color: null;
@@ -1453,7 +1453,7 @@ font-style: inherit;"># Predict probabilities on the test set</span></span>
 background-color: null;
 font-style: inherit;">=</span> logreg.predict_proba(X_test)[:, <span class="dv" style="color: #AD0000;
 background-color: null;
-font-style: inherit;">1</span>]</span></code></pre></div>
+font-style: inherit;">1</span>]</span></code></pre></div></div>
 </div>
 </section>
 </section>
@@ -1461,7 +1461,7 @@ font-style: inherit;">1</span>]</span></code></pre></div>
 <h2 class="anchored" data-anchor-id="data-visualization">Data Visualization</h2>
 <p>I use the following colors in all of my blogs data visualizations</p>
 <div class="cell" data-execution_count="2">
-<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="co" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># Define specific colors (same as CSS from quarto vapor theme)</span></span>
 <span id="cb2-2">background <span class="op" style="color: #5E5E5E;
@@ -1483,13 +1483,13 @@ font-style: inherit;">'#6f42c1'</span></span>
 background-color: null;
 font-style: inherit;">=</span> <span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">'#32fbe2'</span></span></code></pre></div>
+font-style: inherit;">'#32fbe2'</span></span></code></pre></div></div>
 </div>
 <section id="receiver-operating-characteristic-roc-curve" class="level3">
 <h3 class="anchored" data-anchor-id="receiver-operating-characteristic-roc-curve"><strong>Receiver Operating Characteristic (ROC) Curve</strong></h3>
 <p>ROC curves visualize the trade-off between true positive rate (sensitivity) and false positive rate. The area under the ROC curve (AUC-ROC) is a valuable metric for model performance.</p>
 <div class="cell" data-execution_count="3">
-<div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><span class="im" style="color: #00769E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><span class="im" style="color: #00769E;
 background-color: null;
 font-style: inherit;">import</span> matplotlib.pyplot <span class="im" style="color: #00769E;
 background-color: null;
@@ -1574,7 +1574,7 @@ background-color: null;
 font-style: inherit;">=</span>blue)</span>
 <span id="cb3-14">ax.set_facecolor(pink)</span>
 <span id="cb3-15">fig.set_facecolor(background)</span>
-<span id="cb3-16">plt.show()</span></code></pre></div>
+<span id="cb3-16">plt.show()</span></code></pre></div></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -1588,7 +1588,7 @@ font-style: inherit;">=</span>blue)</span>
 <h3 class="anchored" data-anchor-id="precision-recall-pr-curve"><strong>Precision-Recall (PR) Curve</strong></h3>
 <p>PR curves focus on the trade-off between precision and recall, particularly valuable in imbalanced datasets.</p>
 <div class="cell" data-execution_count="4">
-<div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><span class="co" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># Visualize the Precision-Recall curve</span></span>
 <span id="cb4-2">precision, recall, _ <span class="op" style="color: #5E5E5E;
@@ -1644,7 +1644,7 @@ background-color: null;
 font-style: inherit;">=</span>blue)</span>
 <span id="cb4-11">ax.set_facecolor(pink)</span>
 <span id="cb4-12">fig.set_facecolor(background)</span>
-<span id="cb4-13">plt.show()</span></code></pre></div>
+<span id="cb4-13">plt.show()</span></code></pre></div></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -1658,7 +1658,7 @@ font-style: inherit;">=</span>blue)</span>
 <h3 class="anchored" data-anchor-id="confusion-matrix"><strong>Confusion Matrix</strong></h3>
 <p>The confusion matrix provides a detailed understanding of a classification model’s performance, breaking down predictions into true positives, true negatives, false positives, and false negatives.</p>
 <div class="cell" data-execution_count="5">
-<div class="sourceCode cell-code" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><span class="im" style="color: #00769E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><span class="im" style="color: #00769E;
 background-color: null;
 font-style: inherit;">from</span> sklearn.metrics <span class="im" style="color: #00769E;
 background-color: null;
@@ -1734,7 +1734,7 @@ font-style: inherit;">'True label'</span>, color<span class="op" style="color: #
 background-color: null;
 font-style: inherit;">=</span>blue)</span>
 <span id="cb5-22">fig.set_facecolor(background)</span>
-<span id="cb5-23">plt.show()</span></code></pre></div>
+<span id="cb5-23">plt.show()</span></code></pre></div></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -1775,7 +1775,7 @@ font-style: inherit;">=</span>blue)</span>
 <h2 class="anchored" data-anchor-id="data-visualization">Data Visualization</h2>
 <p>I use the following colors in all of my blogs data visualizations</p>
 <div class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="co" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># Define specific colors (same as CSS from quarto vapor theme)</span></span>
 <span id="cb1-2">background <span class="op" style="color: #5E5E5E;
@@ -1797,11 +1797,11 @@ font-style: inherit;">'#6f42c1'</span></span>
 background-color: null;
 font-style: inherit;">=</span> <span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">'#32fbe2'</span></span></code></pre></div>
+font-style: inherit;">'#32fbe2'</span></span></code></pre></div></div>
 </div>
 <p>I will use the following <strong><code>plot_scatter</code></strong> function to create the data visualizations on this page</p>
 <div class="cell" data-execution_count="2">
-<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="im" style="color: #00769E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="im" style="color: #00769E;
 background-color: null;
 font-style: inherit;">import</span> matplotlib.pyplot <span class="im" style="color: #00769E;
 background-color: null;
@@ -1874,14 +1874,14 @@ background-color: null;
 font-style: inherit;">=</span>blue)</span>
 <span id="cb2-13">  ax.set_facecolor(pink)</span>
 <span id="cb2-14">  fig.set_facecolor(background)</span>
-<span id="cb2-15">  plt.show()</span></code></pre></div>
+<span id="cb2-15">  plt.show()</span></code></pre></div></div>
 </div>
 <section id="linear-regression" class="level3">
 <h3 class="anchored" data-anchor-id="linear-regression"><strong>Linear Regression</strong></h3>
 <p>Linear regression is a straightforward method for modeling linear relationships between variables. In a simple linear regression model, the relationship is expressed as <img src="https://latex.codecogs.com/png.latex?y=mx+b"> where <img src="https://latex.codecogs.com/png.latex?y"> is the target variable, <img src="https://latex.codecogs.com/png.latex?x"> is the feature, <img src="https://latex.codecogs.com/png.latex?m"> is the slope, and <img src="https://latex.codecogs.com/png.latex?b"> is the intercept. For multiple features, the equation becomes a linear combination.</p>
 <p>Linear regression can be implemented effortlessly using Python’s scikit-learn library. Let’s generate a synthetic dataset and visualize the linear regression line:</p>
 <div class="cell" data-execution_count="3">
-<div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><span class="im" style="color: #00769E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><span class="im" style="color: #00769E;
 background-color: null;
 font-style: inherit;">import</span> numpy <span class="im" style="color: #00769E;
 background-color: null;
@@ -1943,7 +1943,7 @@ background-color: null;
 font-style: inherit;">=</span> linear_reg.predict(X)</span>
 <span id="cb3-15">plot_scatter(X, X, ax_plot, <span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">'Linear Regression'</span>)</span></code></pre></div>
+font-style: inherit;">'Linear Regression'</span>)</span></code></pre></div></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -1958,7 +1958,7 @@ font-style: inherit;">'Linear Regression'</span>)</span></code></pre></div>
 <p>While linear regression is powerful, not all relationships are linear. Nonlinear regression extends the concept by accommodating more complex patterns. Polynomial regression is a common technique, where the relationship between variables is expressed as a polynomial equation.</p>
 <p>Let’s use Python to implement nonlinear regression through polynomial regression. This time, we’ll generate a synthetic dataset with a nonlinear relationship:</p>
 <div class="cell" data-execution_count="4">
-<div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><span class="im" style="color: #00769E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><span class="im" style="color: #00769E;
 background-color: null;
 font-style: inherit;">from</span> sklearn.preprocessing <span class="im" style="color: #00769E;
 background-color: null;
@@ -2057,7 +2057,7 @@ background-color: null;
 font-style: inherit;">=</span>  poly_reg.predict(X_range)</span>
 <span id="cb4-18">plot_scatter(X, X_range, ax_plot, <span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">'Nonlinear Regression (Polynomial)'</span>)</span></code></pre></div>
+font-style: inherit;">'Nonlinear Regression (Polynomial)'</span>)</span></code></pre></div></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -2109,7 +2109,7 @@ font-style: inherit;">'Nonlinear Regression (Polynomial)'</span>)</span></code><
 <h2 class="anchored" data-anchor-id="data-visualization"><strong>Data Visualization</strong></h2>
 <p>Let’s demonstrate the power of DBSCAN using Python and scikit-learn. We’ll start by generating a synthetic dataset:</p>
 <div class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="im" style="color: #00769E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="im" style="color: #00769E;
 background-color: null;
 font-style: inherit;">import</span> numpy <span class="im" style="color: #00769E;
 background-color: null;
@@ -2164,11 +2164,11 @@ background-color: null;
 font-style: inherit;">5</span>)</span>
 <span id="cb1-10">labels <span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">=</span> dbscan.fit_predict(X)</span></code></pre></div>
+font-style: inherit;">=</span> dbscan.fit_predict(X)</span></code></pre></div></div>
 </div>
 <p>I use the following colors in all of my blogs data visualizations</p>
 <div class="cell" data-execution_count="2">
-<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="co" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># Define specific colors (same as CSS from quarto vapor theme)</span></span>
 <span id="cb2-2">background <span class="op" style="color: #5E5E5E;
@@ -2190,11 +2190,11 @@ font-style: inherit;">'#6f42c1'</span></span>
 background-color: null;
 font-style: inherit;">=</span> <span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">'#32fbe2'</span></span></code></pre></div>
+font-style: inherit;">'#32fbe2'</span></span></code></pre></div></div>
 </div>
 <p>Visualizing the results of clustering is crucial for understanding the underlying structure of the data. Let’s create a scatter plot that represents the original data points with cluster labels:</p>
 <div class="cell" data-execution_count="3">
-<div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><span class="im" style="color: #00769E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><span class="im" style="color: #00769E;
 background-color: null;
 font-style: inherit;">import</span> matplotlib.pyplot <span class="im" style="color: #00769E;
 background-color: null;
@@ -2267,7 +2267,7 @@ background-color: null;
 font-style: inherit;">=</span>blue)</span>
 <span id="cb3-12">ax.set_facecolor(pink)</span>
 <span id="cb3-13">fig.set_facecolor(background)</span>
-<span id="cb3-14">plt.show()</span></code></pre></div>
+<span id="cb3-14">plt.show()</span></code></pre></div></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -2314,7 +2314,7 @@ font-style: inherit;">=</span>blue)</span>
 <h2 class="anchored" data-anchor-id="data-visualization">Data Visualization</h2>
 <p>I use the following colors in all of my blogs data visualizations</p>
 <div class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="co" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># Define specific colors (same as CSS from quarto vapor theme)</span></span>
 <span id="cb1-2">background <span class="op" style="color: #5E5E5E;
@@ -2336,11 +2336,11 @@ font-style: inherit;">'#6f42c1'</span></span>
 background-color: null;
 font-style: inherit;">=</span> <span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">'#32fbe2'</span></span></code></pre></div>
+font-style: inherit;">'#32fbe2'</span></span></code></pre></div></div>
 </div>
 <p>I will use the following <strong><code>plot_histograms</code></strong> function to create the data visualizations on this page</p>
 <div class="cell" data-execution_count="2">
-<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="im" style="color: #00769E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="im" style="color: #00769E;
 background-color: null;
 font-style: inherit;">import</span> matplotlib.pyplot <span class="im" style="color: #00769E;
 background-color: null;
@@ -2423,11 +2423,11 @@ font-style: inherit;">=</span>blue)</span>
 <span id="cb2-18">    <span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># Show the plot</span></span>
-<span id="cb2-19">    plt.show()</span></code></pre></div>
+<span id="cb2-19">    plt.show()</span></code></pre></div></div>
 </div>
 <p>Let’s use Python to create a histogram of a simulated random variable:</p>
 <div class="cell" data-execution_count="3">
-<div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><span class="im" style="color: #00769E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><span class="im" style="color: #00769E;
 background-color: null;
 font-style: inherit;">import</span> numpy <span class="im" style="color: #00769E;
 background-color: null;
@@ -2454,7 +2454,7 @@ background-color: null;
 font-style: inherit;">1000</span>)</span>
 <span id="cb3-8">plot_histograms(data, <span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">'Histogram of Random Variable'</span>)</span></code></pre></div>
+font-style: inherit;">'Histogram of Random Variable'</span>)</span></code></pre></div></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -2467,7 +2467,7 @@ font-style: inherit;">'Histogram of Random Variable'</span>)</span></code></pre>
 <p>The following code generates a dataset with two classes, trains a Random Forest Classifier on the data, and then generates predictions on a test set. The histograms before and after applying the machine learning model are plotted on top of one another for comparison.</p>
 <p>The <strong><code>generate_dataset</code></strong> function creates a synthetic dataset with two classes, and the <strong><code>plot_histograms</code></strong> function is used to visualize the distribution before and after applying the machine learning model. The accuracy of the model is also printed to give an idea of its performance.</p>
 <div class="cell" data-execution_count="4">
-<div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><span class="im" style="color: #00769E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><span class="im" style="color: #00769E;
 background-color: null;
 font-style: inherit;">from</span> sklearn.model_selection <span class="im" style="color: #00769E;
 background-color: null;
@@ -2638,7 +2638,7 @@ background-color: null;
 font-style: inherit;">'Original Dataset'</span>)</span>
 <span id="cb4-36">plot_histograms(data_after, <span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">'Dataset after Machine Learning'</span>)</span></code></pre></div>
+font-style: inherit;">'Dataset after Machine Learning'</span>)</span></code></pre></div></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Accuracy of the model: 89.00%</code></pre>
 </div>
