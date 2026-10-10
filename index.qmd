@@ -122,7 +122,7 @@ I am a Software Engineer II at Estes Express Lines on the Agentic Development Li
 <div class="timeline-role">
 <h4>Software Engineer II</h4>
 <small>July 2025 - October 2026</small>
-<p>Software engineer on an agile development team creating and improving features for internal and external software applications as well as mentor new developers who join our team.</p>
+<p>Software engineer on an agile development team creating and improving features for internal and external software applications, as well as mentoring new developers who join our team.</p>
 </div>
 </div>
 :::
