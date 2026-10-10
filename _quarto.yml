@@ -19,6 +19,15 @@ website:
   twitter-card: true
   repo-url: https://github.com/hannahl8/hannahl8.github.io
   repo-actions: [source]
+  page-footer:
+    left: "© 2026 Hannah Lyons"
+    right:
+      - icon: github
+        href: https://github.com/hannahl8
+      - icon: linkedin
+        href: https://www.linkedin.com/in/hannah-lyons-l8/
+      - text: "Built with Quarto"
+        href: https://quarto.org
   navbar:
     right:
       - text: Blog
@@ -33,7 +42,10 @@ website:
         href: https://github.com/hannahl8
 format:
   html:
-    theme: vapor
+    theme:
+      light: theme-light.scss
+      dark: theme-dark.scss
+    respect-user-color-scheme: true
     css: styles.css
 
 editor: visual

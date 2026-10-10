@@ -26,6 +26,7 @@
 
 
 
+
 <section id="overview" class="level1">
 <h1>Overview</h1>
 <p>I created a jeopardy game before using Python (Django), but then I learned tools like Jakarta EE and React which I liked much more, so I am continuously working on this project in my free time to recreate a jeopardy application to play with friends. I really enjoy coding like this in my free time.</p>
@@ -66,6 +67,7 @@
   <dc:creator>Hannah Lyons</dc:creator>
   <link>https://hannahl8.github.io/posts/projects/vt-research-connect/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -291,6 +293,7 @@ font-style: inherit;">'black'</span>)</span>
 
 
 
+
 <section id="overview" class="level1">
 <h1>Overview</h1>
 <p>I completed this project as part of a Web Application Development course in my Master’s program.</p>
@@ -355,6 +358,7 @@ font-style: inherit;">'black'</span>)</span>
   <dc:creator>Hannah Lyons</dc:creator>
   <link>https://hannahl8.github.io/posts/diy/keezer/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -697,6 +701,7 @@ font-style: inherit;">'black'</span>)</span>
 
 
 
+
 <section id="overview" class="level1">
 <h1>Overview</h1>
 <p>I completed this project as part of a Project Management course in my Master’s program. I uploaded the files to the file system hosted by VT, so this <a href="https://people.cs.vt.edu/hannahl8/BIT4484/hokiehousinghub/base.html" style="color: rgb(55, 148, 255) !important; text-decoration: underline;">link</a> is purely a static site.</p>
@@ -758,6 +763,7 @@ font-style: inherit;">'black'</span>)</span>
   <dc:creator>Hannah Lyons</dc:creator>
   <link>https://hannahl8.github.io/posts/homebrewing/shandy/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -927,6 +933,7 @@ font-style: inherit;">'black'</span>)</span>
 
 
 
+
 <section id="overview" class="level1">
 <h1>Overview</h1>
 <p>I created this project for fun because my best friend was finally moving to the same city as me, and I hosted her and her boyfriend a welcome party! I created this website in just two weeks, and I am proud of it for having only learned Django in school one semester before. I haven’t touched this project since then, but it’s definitely a fun little personalized game (I kind of turned it into a drinking game LOL). Everyone enjoyed it, I love being able to do small things like this with my coding abilities!</p>
@@ -978,6 +985,7 @@ font-style: inherit;">'black'</span>)</span>
   <dc:creator>Hannah Lyons</dc:creator>
   <link>https://hannahl8.github.io/posts/projects/focal/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -1050,6 +1058,7 @@ font-style: inherit;">'black'</span>)</span>
   <dc:creator>Hannah Lyons</dc:creator>
   <link>https://hannahl8.github.io/posts/machine-learning-intro/anomaly/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -1366,6 +1375,7 @@ F1 Score: 0.95</code></pre>
   <dc:creator>Hannah Lyons</dc:creator>
   <link>https://hannahl8.github.io/posts/machine-learning-intro/classification/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -1772,6 +1782,7 @@ font-style: inherit;">=</span>blue)</span>
 
 
 
+
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
 <p>Regression, a fundamental concept in machine learning, enables us to model relationships between variables. Whether predicting house prices based on square footage or analyzing the impact of advertising spend on sales, regression plays a pivotal role in understanding and predicting patterns in data.</p>
@@ -2096,6 +2107,7 @@ font-style: inherit;">'Nonlinear Regression (Polynomial)'</span>)</span></code><
 
 
 
+
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
 <p>Clustering, a fundamental technique in machine learning, is the process of grouping similar data points together. Its applications are diverse, ranging from customer segmentation in marketing to anomaly detection in cybersecurity. By identifying patterns within datasets, clustering enables us to gain valuable insights and make informed decisions.</p>
@@ -2299,6 +2311,7 @@ font-style: inherit;">=</span>blue)</span>
   <dc:creator>Hannah Lyons</dc:creator>
   <link>https://hannahl8.github.io/posts/machine-learning-intro/probability/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -2679,6 +2692,7 @@ font-style: inherit;">'Dataset after Machine Learning'</span>)</span></code></pr
   <dc:creator>Hannah Lyons</dc:creator>
   <link>https://hannahl8.github.io/posts/machine-learning-intro/intro-to-ml/</link>
   <description><![CDATA[ 
+
 
 
 

@@ -1,5 +1,7 @@
 ---
-title: "About"
+title: "Hannah Lyons"
+subtitle: "Software Engineer · full-stack web & desktop apps"
+pagetitle: "About · Hannah Lyons"
 image: headshot-480.jpg
 resources:
   - resume/Hannah-Lyons-Resume.pdf
@@ -21,14 +23,14 @@ about:
       href: resume/Hannah-Lyons-Resume.docx
 ---
 
-I am a Software Engineer working for Estes Express Lines. I work on an agile development team creating and improving features for software applications. I am super passionate about front and back end web development (full stack), as well as general software development for desktop applications, etc. Please check out the [Blog](https://hannahl8.github.io/blog.html) page to see coding projects from both my personal and academic career.
-
-<br>
+::: {.lead}
+I am a Software Engineer working for Estes Express Lines. I work on an agile development team creating and improving features for software applications. I am super passionate about front and back end web development (full stack), as well as general software development for desktop applications, etc. Please check out the [Blog](blog.qmd) page to see coding projects from both my personal and academic career.
+:::
 
 ## Skills
 
 ```{=html}
-<div class="skills" id="skills">
+<div class="skills" id="skills-grid">
 <div class="skill-group">
 <h3>Front-End</h3>
 <ul class="skill-badges">
@@ -92,9 +94,7 @@ I am a Software Engineer working for Estes Express Lines. I work on an agile dev
 </div>
 ```
 
-<br>
-
-## My Academic & Career Timeline
+## Academic & Career Timeline
 
 ::::::::::::::::::::::::::::: {}
 ::: center-button
@@ -275,7 +275,7 @@ if (canAnimate) {
 
 // Skills: badges pop in one after another when their group scrolls into view
 if (canAnimate) {
-  const skills = document.getElementById('skills');
+  const skills = document.getElementById('skills-grid');
   skills.classList.add('reveal-ready');
   skills.querySelectorAll('.skill-badges').forEach((list) => {
     Array.from(list.children).forEach((badge, i) => badge.style.setProperty('--badge-index', i));

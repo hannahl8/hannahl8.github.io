@@ -1,0 +1,46 @@
+/*-- scss:defaults --*/
+// Fonts: Fraunces (headings), Inter (body), JetBrains Mono (code / dates)
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+$body-bg: #131118;
+$body-color: #e9e5ef;
+$primary: #a594ff;
+$secondary: #a39cae;
+$link-color: #a594ff;
+$border-color: #2d2836;
+
+$font-family-sans-serif: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+$font-family-monospace: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+$headings-font-family: "Fraunces", Georgia, serif;
+$headings-font-weight: 600;
+$font-size-root: 17px;
+$line-height-base: 1.65;
+$border-radius: .6rem;
+
+$navbar-bg: #131118;
+$navbar-fg: #c9c2d4;
+$navbar-hl: #a594ff;
+$code-color: #ff9fb6;
+$code-bg: #1e1a25;
+$toc-color: #a594ff;
+
+/*-- scss:rules --*/
+// Design tokens consumed by styles.css (shared by both themes)
+:root {
+  --hl-bg: #131118;
+  --hl-surface: #1b1821;
+  --hl-surface-2: #221e2a;
+  --hl-ink: #e9e5ef;
+  --hl-muted: #a39cae;
+  --hl-border: #2d2836;
+  --hl-accent: #a594ff;
+  --hl-accent-soft: rgba(165, 148, 255, 0.12);
+  --hl-accent-ring: rgba(165, 148, 255, 0.35);
+  --hl-warm: #ff8f6b;
+  --hl-warm-soft: rgba(255, 143, 107, 0.14);
+  --hl-glow-1: rgba(165, 148, 255, 0.12);
+  --hl-glow-2: rgba(255, 143, 107, 0.07);
+  --hl-dot: rgba(233, 229, 239, 0.05);
+  --hl-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 12px 30px -16px rgba(0, 0, 0, 0.7);
+  --hl-shadow-lg: 0 2px 4px rgba(0, 0, 0, 0.3), 0 22px 44px -18px rgba(165, 148, 255, 0.35);
+}

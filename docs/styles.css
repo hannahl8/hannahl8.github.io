@@ -1,30 +1,378 @@
-html,
+/* =====================================================================
+   Site styles shared by both themes.
+   Colors come from the --hl-* tokens defined in theme-light.scss and
+   theme-dark.scss, so everything here follows the light/dark toggle.
+   ===================================================================== */
+
+/* ---------- Base ---------- */
+html {
+    scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
 body {
     min-height: 100vh;
-    background-image: linear-gradient(#17082e 0%, #1a0933 7%, #1a0933 80%, #0c1f4c 100%);
-    text-shadow: 0 0 1px rgba(50, 251, 226, 0.3), 0 0 2px rgba(50, 251, 226, 0.3), 0 0 5px rgba(50, 251, 226, 0.2);
+    background-color: var(--hl-bg);
+    /* Soft color washes at the top plus a faint dot grid */
+    background-image:
+        radial-gradient(60rem 30rem at 15% -10%, var(--hl-glow-1), transparent 70%),
+        radial-gradient(50rem 26rem at 95% 0%, var(--hl-glow-2), transparent 70%),
+        radial-gradient(var(--hl-dot) 1px, transparent 1px);
+    background-size: auto, auto, 22px 22px;
+    background-repeat: no-repeat, no-repeat, repeat;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+    background: var(--hl-accent);
+    color: var(--hl-bg);
+}
+
+h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
+    letter-spacing: -0.015em;
+    font-optical-sizing: auto;
+}
+
+main a:not(.btn):not(.nav-link):not(.about-link) {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+    text-decoration-color: var(--hl-accent-ring);
+    transition: text-decoration-color 0.2s ease, color 0.2s ease;
+}
+
+main a:not(.btn):not(.nav-link):not(.about-link):hover {
+    text-decoration-color: currentColor;
+}
+
+:focus-visible {
+    outline: 2px solid var(--hl-accent);
+    outline-offset: 3px;
+    border-radius: 4px;
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+    background-color: color-mix(in srgb, var(--hl-bg) 82%, transparent) !important;
+    backdrop-filter: saturate(160%) blur(14px);
+    -webkit-backdrop-filter: saturate(160%) blur(14px);
+    border-bottom: 1px solid var(--hl-border);
+    box-shadow: none;
+}
+
+.navbar-brand .navbar-title {
+    font-family: "Fraunces", Georgia, serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+    letter-spacing: -0.02em;
+    color: var(--hl-ink);
+}
+
+.navbar-brand .navbar-title::after {
+    content: ".";
+    color: var(--hl-warm);
+}
+
+.navbar .nav-link {
+    font-weight: 500;
+    font-size: 0.95rem;
+    border-radius: 999px;
+    padding-left: 0.85rem !important;
+    padding-right: 0.85rem !important;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.navbar .nav-link:hover {
+    background-color: var(--hl-accent-soft);
+}
+
+.navbar .nav-link.active {
+    color: var(--hl-accent) !important;
+    background-color: var(--hl-accent-soft);
+}
+
+.navbar .quarto-color-scheme-toggle,
+.navbar #quarto-search .aa-DetachedSearchButton {
+    border-radius: 999px;
+}
+
+/* ---------- Footer ---------- */
+.nav-footer {
+    background: transparent;
+    border-top: 1px solid var(--hl-border);
+    color: var(--hl-muted);
+    font-size: 0.85rem;
+    min-height: 4rem;
+}
+
+.nav-footer a {
+    color: var(--hl-muted);
+}
+
+.nav-footer a:hover {
+    color: var(--hl-accent);
+}
+
+/* ---------- Section headings with an accent tick ---------- */
+#quarto-document-content > section.level2 > h2,
+.quarto-about-jolla main h2 {
+    border-bottom: none;
+    position: relative;
+    margin-top: 3.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.quarto-about-jolla main h2::before {
+    content: "";
+    display: block;
+    width: 44px;
+    height: 4px;
+    margin: 0 auto 0.85rem;
+    border-radius: 2px;
+    background: linear-gradient(90deg, var(--hl-accent), var(--hl-warm));
+}
+
+/* =====================================================================
+   About page (jolla template)
+   ===================================================================== */
+.quarto-about-jolla {
+    margin-top: 3rem;
+}
+
+/* Put the link buttons right under the name instead of at the very bottom */
+.quarto-about-jolla > .about-image { order: 1; }
+.quarto-about-jolla > #title-block-header { order: 2; }
+.quarto-about-jolla > .about-links { order: 3; }
+.quarto-about-jolla > main { order: 4; }
+.quarto-about-jolla > .about-sep { display: none; }
+
+.quarto-about-jolla > main {
+    width: 100%;
+    max-width: 860px;
+}
+
+.quarto-about-jolla .about-image {
+    width: 11.5em !important;
+    height: 11.5em !important;
+    padding: 5px;
+    background: linear-gradient(135deg, var(--hl-accent), var(--hl-warm));
+    box-shadow: var(--hl-shadow-lg);
+    margin-bottom: 1.75em;
+}
+
+.quarto-about-jolla .quarto-title h1.title {
+    font-size: clamp(2.4rem, 6vw, 3.6rem);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 1.05;
+    margin-bottom: 0.4rem;
+}
+
+.quarto-about-jolla .quarto-title .subtitle {
+    text-align: center;
+    color: var(--hl-muted);
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.quarto-about-jolla .about-links {
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.6rem !important;
+    width: auto !important;
+    padding: 1.6rem 0 0.5rem !important;
+}
+
+.quarto-about-jolla .about-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.92rem !important;
+    font-weight: 500;
+    padding: 0.5rem 1rem !important;
+    border: 1px solid var(--hl-border) !important;
+    border-radius: 999px !important;
+    background: var(--hl-surface);
+    color: var(--hl-ink) !important;
+    box-shadow: var(--hl-shadow);
+    transition: transform 0.2s ease, border-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.quarto-about-jolla .about-link:hover {
+    color: var(--hl-accent) !important;
+    border-color: var(--hl-accent) !important;
+    transform: translateY(-2px);
+    box-shadow: var(--hl-shadow-lg);
+}
+
+.quarto-about-jolla .about-link i.bi {
+    margin-right: 0 !important;
+}
+
+.quarto-about-jolla main .lead {
+    max-width: 680px;
+    margin: 1.5rem auto 0;
+    font-size: 1.12rem;
+    line-height: 1.75;
+    color: var(--hl-muted);
+}
+
+.quarto-about-jolla main .lead p {
+    margin: 0;
+}
+
+/* ---------- About page skills ---------- */
+.skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr));
+    /* Don't let the grid's natural width stretch the About page's shrink-to-fit column on phones */
+    contain: inline-size;
+    gap: 16px;
+    max-width: 860px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.skill-group {
+    padding: 20px 20px 22px;
+    border: 1px solid var(--hl-border);
+    border-radius: 14px;
+    background: var(--hl-surface);
+    box-shadow: var(--hl-shadow);
+}
+
+.skill-group h3 {
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--hl-accent);
+    margin: 0 0 14px;
+}
+
+.skill-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.skill-badges li {
+    padding: 3px 11px;
+    border: 1px solid var(--hl-border);
+    border-radius: 999px;
+    background-color: var(--hl-surface-2);
+    color: var(--hl-ink);
+    font-size: 0.85rem;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+@media (max-width: 400px) {
+    .skill-badges li {
+        font-size: 0.8rem;
+        padding: 2px 9px;
+    }
+}
+
+/* .reveal-ready / .is-visible are added by the script in index.qmd */
+@media (prefers-reduced-motion: no-preference) {
+    .skill-badges li {
+        transition:
+            opacity 0.4s ease calc(var(--group-delay, 0ms) + var(--badge-index, 0) * 60ms),
+            translate 0.5s cubic-bezier(0.3, 1.5, 0.5, 1) calc(var(--group-delay, 0ms) + var(--badge-index, 0) * 60ms),
+            scale 0.5s cubic-bezier(0.3, 1.5, 0.5, 1) calc(var(--group-delay, 0ms) + var(--badge-index, 0) * 60ms),
+            transform 0.2s ease,
+            background-color 0.2s ease,
+            border-color 0.2s ease,
+            color 0.2s ease;
+    }
+
+    .skills.reveal-ready .skill-group:not(.is-visible) li {
+        opacity: 0;
+        translate: 0 10px;
+        scale: 0.85;
+    }
+
+    .skills.reveal-ready .skill-group {
+        transition: opacity 0.5s ease var(--group-delay, 0ms), translate 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) var(--group-delay, 0ms);
+    }
+
+    .skills.reveal-ready .skill-group:not(.is-visible) {
+        opacity: 0;
+        translate: 0 16px;
+    }
+
+    @media (hover: hover) {
+        .skill-badges li:hover {
+            transform: translateY(-2px);
+            border-color: var(--hl-accent);
+            background-color: var(--hl-accent-soft);
+            color: var(--hl-accent);
+        }
+    }
+}
+
+/* ---------- Timeline ---------- */
+.center-button {
+    text-align: center;
+}
+
+.center-button p {
+    margin: 0;
+}
+
+#toggle-btn {
+    border-radius: 999px;
+    padding: 0.45rem 1.1rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    background: var(--hl-surface);
+    color: var(--hl-ink);
+    border: 1px solid var(--hl-border);
+    box-shadow: var(--hl-shadow);
+    transition: border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+#toggle-btn:hover {
+    color: var(--hl-accent);
+    border-color: var(--hl-accent);
+    transform: translateY(-1px);
 }
 
 .timeline {
     position: relative;
-    max-width: 800px;
+    max-width: 860px;
     margin: 0 auto;
     padding: 40px 0;
+    text-align: left;
 }
 
 .timeline::after {
     content: '';
     position: absolute;
-    width: 4px;
-    background-color: #6E43BB;
+    width: 3px;
+    border-radius: 3px;
+    background: linear-gradient(var(--hl-accent), var(--hl-warm));
     top: 0;
     bottom: 0;
     left: 50%;
-    margin-left: -2px;
+    margin-left: -1.5px;
 }
 
 .timeline-item {
-    padding: 20px 40px;
+    padding: 14px 36px;
     position: relative;
     width: 50%;
 }
@@ -32,14 +380,20 @@ body {
 .timeline-item::after {
     content: '';
     position: absolute;
-    width: 20px;
-    height: 20px;
-    right: -10px;
-    background-color: #6E43BB;
-    border: 4px solid white;
-    top: 20px;
+    width: 18px;
+    height: 18px;
+    right: -9px;
+    background-color: var(--hl-accent);
+    border: 4px solid var(--hl-bg);
+    box-shadow: 0 0 0 2px var(--hl-accent-ring);
+    top: 34px;
     border-radius: 50%;
     z-index: 1;
+}
+
+.timeline-item.current::after {
+    background-color: var(--hl-warm);
+    box-shadow: 0 0 0 2px var(--hl-warm-soft);
 }
 
 .left {
@@ -51,47 +405,65 @@ body {
 }
 
 .right::after {
-    left: -10px;
+    left: -9px;
 }
 
 .timeline-content {
-    padding: 20px;
-    border-radius: 8px;
-    border: 1px solid white;
+    padding: 20px 22px;
+    border-radius: 14px;
+    border: 1px solid var(--hl-border);
+    background: var(--hl-surface);
+    box-shadow: var(--hl-shadow);
     position: relative;
+    overflow-wrap: anywhere;
+}
+
+.timeline .timeline-item.current .timeline-content {
+    border-color: color-mix(in srgb, var(--hl-warm) 45%, var(--hl-border));
+}
+
+/* "Now" tag on the current role */
+.timeline .timeline-item.current .timeline-content::before {
+    content: "Now";
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    padding: 1px 10px;
+    border-radius: 999px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--hl-warm);
+    background: var(--hl-warm-soft);
 }
 
 .timeline h3 {
     margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    line-height: 1.3;
 }
 
 .timeline small {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: white;
+    display: inline-block;
+    margin-bottom: 8px;
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-size: 0.74rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--hl-accent);
 }
 
 .timeline-content p {
-    color: white;
+    color: var(--hl-muted);
+    font-size: 0.95rem;
+    line-height: 1.65;
 }
 
-.center-button {
-    text-align: center;
-}
-
-.center-button p {
-    margin: 0;
-}
-.timeline-content {
-    overflow-wrap: anywhere;
-}
-
-/* About page: keep the neon glow on headings, but drop it from body text so it reads crisply */
-.quarto-about-jolla p,
-.quarto-about-jolla small,
-.quarto-about-jolla li {
-    text-shadow: none;
+.timeline-content p:last-child {
+    margin-bottom: 0;
 }
 
 /* Tablets and phones: collapse the alternating timeline into a single column */
@@ -111,17 +483,27 @@ body {
     }
 
     .timeline .timeline-item::after {
-        left: 10px;
+        left: 11px;
         right: auto;
-        top: 22px;
+        top: 30px;
     }
 
     .timeline-content {
-        padding: 15px;
+        padding: 16px;
     }
 
     .timeline h3 {
-        font-size: 1.15rem;
+        font-size: 1.1rem;
+    }
+
+    .timeline .timeline-item.current .timeline-content::before {
+        position: static;
+        display: inline-block;
+        margin: 0 0 8px;
+    }
+
+    .timeline .timeline-item.current small {
+        display: block;
     }
 }
 
@@ -143,15 +525,15 @@ body {
     }
 
     .timeline-content {
-        padding: 12px;
+        padding: 13px;
     }
 
     .timeline h3 {
-        font-size: 1.05rem;
+        font-size: 1.02rem;
     }
 }
 
-/* ---------- About page timeline animations ----------
+/* ---------- Timeline animations ----------
    .reveal-ready / .is-visible are added by the script in index.qmd.
    Without JS, or with reduced motion turned on, the timeline shows fully and stays still. */
 @media (prefers-reduced-motion: no-preference) {
@@ -159,7 +541,6 @@ body {
     .timeline.reveal-ready::after {
         transform: scaleY(var(--line-progress, 0));
         transform-origin: top;
-        box-shadow: 0 0 8px rgba(110, 67, 187, 0.8);
     }
 
     /* Cards fade and slide in from their side of the line; `translate` is kept separate from
@@ -185,7 +566,7 @@ body {
         translate: 30px 0;
     }
 
-    /* Dots pop in with a neon ring */
+    /* Dots pop in */
     .timeline.reveal-ready .timeline-item::after {
         transition: transform 0.4s cubic-bezier(0.3, 1.6, 0.5, 1) var(--reveal-delay, 0s);
     }
@@ -195,124 +576,349 @@ body {
     }
 
     .timeline.reveal-ready .timeline-item.is-visible::after {
-        animation: timeline-dot-glow 1.2s ease-out var(--reveal-delay, 0s);
+        animation: timeline-dot-ping 1.2s ease-out var(--reveal-delay, 0s);
     }
 
     /* Current role keeps a slow pulse */
     .timeline .timeline-item.current::after,
     .timeline.reveal-ready .timeline-item.current.is-visible::after {
         animation:
-            timeline-dot-glow 1.2s ease-out var(--reveal-delay, 0s),
-            timeline-dot-glow 2.4s ease-out 1.2s infinite;
+            timeline-dot-ping-warm 1.2s ease-out var(--reveal-delay, 0s),
+            timeline-dot-ping-warm 2.4s ease-out 1.2s infinite;
     }
 
-    /* Hover lift + glow (only on devices with a real pointer, so taps on phones don't stick) */
+    /* Hover lift (only on devices with a real pointer, so taps on phones don't stick) */
     @media (hover: hover) {
         .timeline-content:hover {
             transform: translateY(-4px);
-            border-color: #32fbe2;
-            box-shadow: 0 0 14px rgba(50, 251, 226, 0.45), inset 0 0 10px rgba(50, 251, 226, 0.1);
+            border-color: var(--hl-accent);
+            box-shadow: var(--hl-shadow-lg);
         }
     }
 
     /* Single-column layout: every card comes in from the line on the left */
     @media (max-width: 768px) {
-        .timeline.reveal-ready .timeline-item.right:not(.is-visible) .timeline-content {
-            translate: -24px 0;
-        }
-
+        .timeline.reveal-ready .timeline-item.right:not(.is-visible) .timeline-content,
         .timeline.reveal-ready .timeline-item.left:not(.is-visible) .timeline-content {
             translate: -24px 0;
         }
     }
 }
 
-@keyframes timeline-dot-glow {
+@keyframes timeline-dot-ping {
     0% {
-        box-shadow: 0 0 0 0 rgba(50, 251, 226, 0.8);
+        box-shadow: 0 0 0 2px var(--hl-accent-ring), 0 0 0 0 var(--hl-accent-ring);
     }
 
     100% {
-        box-shadow: 0 0 0 14px rgba(50, 251, 226, 0);
+        box-shadow: 0 0 0 2px var(--hl-accent-ring), 0 0 0 16px transparent;
     }
 }
 
-/* ---------- About page skills ---------- */
-.skills {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
-    /* Don't let the grid's natural two-column width stretch the About page's shrink-to-fit column on phones */
-    contain: inline-size;
-    gap: 28px 32px;
-    max-width: 800px;
-    margin: 24px auto 0;
+@keyframes timeline-dot-ping-warm {
+    0% {
+        box-shadow: 0 0 0 2px var(--hl-warm-soft), 0 0 0 0 color-mix(in srgb, var(--hl-warm) 60%, transparent);
+    }
+
+    100% {
+        box-shadow: 0 0 0 2px var(--hl-warm-soft), 0 0 0 16px transparent;
+    }
 }
 
-.skill-group h3 {
-    font-size: 1.1rem;
-    margin: 0 0 12px;
+/* =====================================================================
+   Listings (Blog, Archive, Series)
+   ===================================================================== */
+.quarto-listing-default div.quarto-post {
+    position: relative;
+    gap: 1.5rem;
+    margin-bottom: 14px;
+    padding: 22px 24px;
+    border: 1px solid var(--hl-border);
+    border-radius: 14px;
+    background: var(--hl-surface);
+    box-shadow: var(--hl-shadow);
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+@media (hover: hover) {
+    .quarto-listing-default div.quarto-post:hover {
+        transform: translateY(-3px);
+        border-color: var(--hl-accent);
+        box-shadow: var(--hl-shadow-lg);
+    }
+}
+
+div.quarto-post a {
+    color: inherit;
+    text-decoration: none !important;
+}
+
+/* Date column on the left, content takes the rest */
+div.quarto-post .body {
+    flex: 1 1 auto;
+}
+
+div.quarto-post .metadata {
+    order: -1;
+    flex: 0 0 104px;
+}
+
+div.quarto-post .body h3.listing-title {
+    font-size: 1.35rem;
+    line-height: 1.25;
+    margin-bottom: 0.45rem;
+}
+
+div.quarto-post .body h3.listing-title a {
+    transition: color 0.2s ease;
+}
+
+div.quarto-post:hover .body h3.listing-title a {
+    color: var(--hl-accent);
+}
+
+/* Make the whole card clickable via the title link */
+.quarto-listing-default div.quarto-post .body h3.listing-title a::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+}
+
+/* Keep category chips clickable above the stretched title link */
+div.quarto-post .listing-categories {
+    position: relative;
+    z-index: 1;
+    padding-bottom: 6px;
+}
+
+div.quarto-post .listing-description {
+    color: var(--hl-muted);
+    font-size: 0.95rem;
+    margin-bottom: 0;
+}
+
+div.quarto-post .listing-description p {
+    margin-bottom: 0;
+}
+
+div.quarto-post .metadata {
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-size: 0.75rem;
+    letter-spacing: 0.02em;
+    color: var(--hl-muted);
+    text-align: right;
+    padding-top: 0.35rem;
+}
+
+div.quarto-post .metadata .listing-date {
+    color: var(--hl-accent);
+    font-weight: 500;
+}
+
+/* Category chips everywhere (listing cards, category sidebar, post headers) */
+.listing-category,
+div.quarto-post .listing-categories .listing-category,
+.quarto-categories .quarto-category {
+    border: 1px solid var(--hl-border) !important;
+    border-radius: 999px !important;
+    background: var(--hl-surface-2);
+    color: var(--hl-muted) !important;
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-size: 0.68rem !important;
+    letter-spacing: 0.06em;
+    padding: 0.2em 0.75em !important;
+    transition: color 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.listing-category:hover,
+.quarto-listing-category .category:hover {
+    color: var(--hl-accent) !important;
+    border-color: var(--hl-accent) !important;
+    background: var(--hl-accent-soft);
+}
+
+/* Category sidebar on the Blog page */
+.quarto-listing-category-title {
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--hl-muted);
+}
+
+.quarto-listing-category .category {
+    border-radius: 8px;
+    padding: 0.2rem 0.6rem;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.quarto-listing-category .category.active {
+    color: var(--hl-accent);
+    background: var(--hl-accent-soft);
+    font-weight: 500;
+}
+
+/* Sort/filter controls */
+.quarto-listing-sort select,
+.quarto-listing-sort .input-group-text,
+.quarto-listing-filter input,
+.quarto-listing-filter .input-group-text {
+    color: var(--hl-muted);
+    border-color: var(--hl-border);
+    background-color: var(--hl-surface);
+}
+
+.quarto-listing-filter input,
+.quarto-listing-sort select {
+    border-radius: 999px !important;
+}
+
+.quarto-listing-filter .input-group-text {
+    border-radius: 999px 0 0 999px !important;
+}
+
+.quarto-listing-filter .input-group-text + input {
+    border-radius: 0 999px 999px 0 !important;
+}
+
+/* Phones: stack the date under the description */
+@media (max-width: 576px) {
+    .quarto-listing-default div.quarto-post {
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 18px;
+    }
+
+    div.quarto-post .metadata {
+        flex: 0 0 auto;
+        flex-direction: row;
+        gap: 1rem;
+        padding-top: 0;
+        text-align: left;
+    }
+}
+
+/* =====================================================================
+   Post pages
+   ===================================================================== */
+.quarto-title-banner {
+    background:
+        radial-gradient(40rem 18rem at 85% -20%, rgba(255, 255, 255, 0.18), transparent 70%),
+        linear-gradient(120deg, #3b2a9e 0%, #5b3fe0 55%, #d9603f 130%) !important;
+    color: rgba(255, 255, 255, 0.92) !important;
+    padding-top: 3rem;
+    padding-bottom: 2.25rem !important;
+    margin-bottom: 2rem !important;
+}
+
+.quarto-title-banner h1.title {
+    color: #fff !important;
+    font-size: clamp(2.1rem, 5vw, 3.1rem);
+    font-weight: 700 !important;
+    letter-spacing: -0.03em;
+}
+
+.quarto-title-banner .description,
+.quarto-title-banner .subtitle {
+    color: rgba(255, 255, 255, 0.82) !important;
+}
+
+.quarto-title-banner .quarto-categories .quarto-category {
+    background: rgba(255, 255, 255, 0.14);
+    border-color: rgba(255, 255, 255, 0.3) !important;
+    color: #fff !important;
+}
+
+.quarto-title-banner .code-tools-button {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.quarto-title-banner .code-tools-button:hover {
+    color: #fff !important;
+}
+
+.quarto-title-meta-heading {
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-size: 0.7rem !important;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--hl-muted);
+}
+
+.page-layout-article main.content {
+    font-size: 1.02rem;
+}
+
+main.content figure img,
+main.content p > img,
+main.content .quarto-figure img {
+    border-radius: 12px;
+    border: 1px solid var(--hl-border);
+    box-shadow: var(--hl-shadow);
+}
+
+main.content video {
+    border-radius: 12px;
+    max-width: 100%;
+}
+
+.figure-caption,
+figcaption {
+    color: var(--hl-muted);
+    font-size: 0.88rem;
     text-align: center;
 }
 
-.skill-badges {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 8px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+main.content blockquote {
+    border-left: 3px solid var(--hl-accent);
+    background: var(--hl-accent-soft);
+    padding: 0.75rem 1.1rem;
+    border-radius: 0 10px 10px 0;
+    color: var(--hl-ink);
 }
 
-.skill-badges li {
-    padding: 4px 12px;
-    border: 1px solid rgba(50, 251, 226, 0.6);
-    border-radius: 999px;
-    background-color: rgba(110, 67, 187, 0.35);
-    color: white;
-    font-size: 0.9rem;
-    line-height: 1.5;
-    text-shadow: none;
+/* Code */
+div.sourceCode,
+pre.sourceCode {
+    border-radius: 12px !important;
+    border: 1px solid var(--hl-border) !important;
 }
 
-@media (max-width: 400px) {
-    .skill-badges li {
-        font-size: 0.85rem;
-        padding: 3px 10px;
-    }
+code {
+    font-size: 0.88em;
 }
 
-/* .reveal-ready / .is-visible are added by the script in index.qmd */
-@media (prefers-reduced-motion: no-preference) {
-    .skill-badges li {
-        transition:
-            opacity 0.4s ease calc(var(--group-delay, 0ms) + var(--badge-index, 0) * 70ms),
-            translate 0.5s cubic-bezier(0.3, 1.5, 0.5, 1) calc(var(--group-delay, 0ms) + var(--badge-index, 0) * 70ms),
-            scale 0.5s cubic-bezier(0.3, 1.5, 0.5, 1) calc(var(--group-delay, 0ms) + var(--badge-index, 0) * 70ms),
-            transform 0.2s ease,
-            box-shadow 0.2s ease,
-            border-color 0.2s ease;
-    }
+:not(pre) > code {
+    padding: 0.12em 0.4em;
+    border-radius: 6px;
+}
 
-    .skills.reveal-ready .skill-group:not(.is-visible) li {
-        opacity: 0;
-        translate: 0 12px;
-        scale: 0.8;
-    }
+/* Table of contents */
+#TOC,
+nav#TOC[role="doc-toc"] {
+    font-size: 0.88rem;
+}
 
-    .skills.reveal-ready .skill-group h3 {
-        transition: opacity 0.5s ease var(--group-delay, 0ms);
-    }
+#TOC h2,
+#toc-title {
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-size: 0.72rem !important;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--hl-muted);
+}
 
-    .skills.reveal-ready .skill-group:not(.is-visible) h3 {
-        opacity: 0;
-    }
+#TOC .nav-link.active {
+    font-weight: 600;
+}
 
-    @media (hover: hover) {
-        .skill-badges li:hover {
-            transform: translateY(-2px);
-            border-color: #32fbe2;
-            box-shadow: 0 0 10px rgba(50, 251, 226, 0.5);
-        }
-    }
+/* Tables */
+main.content table {
+    font-size: 0.92rem;
+}
+
+main.content table thead th {
+    font-weight: 600;
+    border-bottom-color: var(--hl-accent-ring) !important;
 }
