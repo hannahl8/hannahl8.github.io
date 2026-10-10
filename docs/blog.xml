@@ -1075,37 +1075,42 @@ font-style: inherit;">'black'</span>)</span>
 <section id="data-visualization" class="level2">
 <h2 class="anchored" data-anchor-id="data-visualization">Data Visualization</h2>
 <p>I use the following colors in all of my blogs data visualizations</p>
-<div class="cell" data-execution_count="1">
+<div id="6008e4ef" class="cell" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="co" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;"># Define specific colors (same as CSS from quarto vapor theme)</span></span>
+font-style: inherit;"># Define specific colors (same as the site's light theme)</span></span>
 <span id="cb1-2">background <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> <span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">'#1b133a'</span></span>
-<span id="cb1-3">pink <span class="op" style="color: #5E5E5E;
+font-style: inherit;">'#fbf8f3'</span></span>
+<span id="cb1-3">surface <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> <span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">'#ea39b8'</span></span>
+font-style: inherit;">'#ffffff'</span></span>
 <span id="cb1-4">purple <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> <span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">'#6f42c1'</span></span>
-<span id="cb1-5">blue <span class="op" style="color: #5E5E5E;
+font-style: inherit;">'#5b3fe0'</span></span>
+<span id="cb1-5">coral <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> <span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">'#32fbe2'</span></span></code></pre></div></div>
+font-style: inherit;">'#ee6a45'</span></span>
+<span id="cb1-6">ink <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'#4a4453'</span></span></code></pre></div></div>
 </div>
 <section id="dbscan-and-evaluation-metrics-for-anomaly-detection" class="level3">
 <h3 class="anchored" data-anchor-id="dbscan-and-evaluation-metrics-for-anomaly-detection"><strong>DBSCAN and Evaluation Metrics for Anomaly Detection</strong></h3>
 <p>Density-Based Spatial Clustering of Applications with Noise (DBSCAN) emerges as a robust algorithm for anomaly detection. Unlike traditional methods, DBSCAN doesn’t assume a specific shape for clusters and can effectively isolate points in low-density regions as outliers.</p>
 <p>Visualizing anomalies is crucial for interpreting model results. Scatter plots with DBSCAN labels provide an intuitive representation of the identified anomalies in the dataset.</p>
 <p>Evaluating anomaly detection models poses challenges due to the scarcity of anomalies. Metrics such as precision, recall, and F1 score provide a nuanced understanding of the model’s performance.</p>
-<div class="cell" data-execution_count="2">
+<div id="a68975e6" class="cell" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="im" style="color: #00769E;
 background-color: null;
 font-style: inherit;">from</span> sklearn.metrics <span class="im" style="color: #00769E;
@@ -1232,11 +1237,11 @@ font-style: inherit;">1</span>], c<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span>predicted_labels, cmap<span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">=</span>plt.cm.cool, edgecolor<span class="op" style="color: #5E5E5E;
+font-style: inherit;">=</span>plt.cm.plasma, edgecolor<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span><span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">'black'</span>, s<span class="op" style="color: #5E5E5E;
+font-style: inherit;">'white'</span>, s<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
 background-color: null;
@@ -1250,12 +1255,12 @@ font-style: inherit;">=</span>purple)</span>
 background-color: null;
 font-style: inherit;">'Feature 1'</span>, color<span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">=</span>blue)</span>
+font-style: inherit;">=</span>ink)</span>
 <span id="cb2-26">ax.set_ylabel(<span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">'Feature 2'</span>, color<span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">=</span>blue)</span>
+font-style: inherit;">=</span>ink)</span>
 <span id="cb2-27">ax.grid(<span class="va" style="color: #111111;
 background-color: null;
 font-style: inherit;">True</span>, linestyle<span class="op" style="color: #5E5E5E;
@@ -1273,15 +1278,15 @@ font-style: inherit;">=</span><span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">'x'</span>, colors<span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">=</span>blue)</span>
+font-style: inherit;">=</span>ink)</span>
 <span id="cb2-29">ax.tick_params(axis<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span><span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">'y'</span>, colors<span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">=</span>blue)</span>
-<span id="cb2-30">ax.set_facecolor(pink)</span>
+font-style: inherit;">=</span>ink)</span>
+<span id="cb2-30">ax.set_facecolor(surface)</span>
 <span id="cb2-31">fig.set_facecolor(background)</span>
 <span id="cb2-32">plt.show()</span>
 <span id="cb2-33"></span>
@@ -1346,7 +1351,7 @@ font-style: inherit;">"</span>)</span></code></pre></div></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="https://hannahl8.github.io/posts/machine-learning-intro/anomaly/index_files/figure-html/cell-3-output-1.png" width="608" height="449" class="figure-img"></p>
+<p><img src="https://hannahl8.github.io/posts/machine-learning-intro/anomaly/index_files/figure-html/cell-3-output-1.png" width="610" height="450" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -1393,7 +1398,7 @@ F1 Score: 0.95</code></pre>
 <li><p><strong>Support Vector Machines (SVM):</strong> Robust for linear and nonlinear classification.</p></li>
 </ul>
 <p>Let’s implement a simple classification model using logistic regression in Python:</p>
-<div class="cell" data-execution_count="1">
+<div id="036eff7c" class="cell" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="im" style="color: #00769E;
 background-color: null;
 font-style: inherit;">import</span> numpy <span class="im" style="color: #00769E;
@@ -1475,35 +1480,40 @@ font-style: inherit;">1</span>]</span></code></pre></div></div>
 <section id="data-visualization" class="level2">
 <h2 class="anchored" data-anchor-id="data-visualization">Data Visualization</h2>
 <p>I use the following colors in all of my blogs data visualizations</p>
-<div class="cell" data-execution_count="2">
+<div id="30512704" class="cell" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="co" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;"># Define specific colors (same as CSS from quarto vapor theme)</span></span>
+font-style: inherit;"># Define specific colors (same as the site's light theme)</span></span>
 <span id="cb2-2">background <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> <span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">'#1b133a'</span></span>
-<span id="cb2-3">pink <span class="op" style="color: #5E5E5E;
+font-style: inherit;">'#fbf8f3'</span></span>
+<span id="cb2-3">surface <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> <span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">'#ea39b8'</span></span>
+font-style: inherit;">'#ffffff'</span></span>
 <span id="cb2-4">purple <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> <span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">'#6f42c1'</span></span>
-<span id="cb2-5">blue <span class="op" style="color: #5E5E5E;
+font-style: inherit;">'#5b3fe0'</span></span>
+<span id="cb2-5">coral <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> <span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">'#32fbe2'</span></span></code></pre></div></div>
+font-style: inherit;">'#ee6a45'</span></span>
+<span id="cb2-6">ink <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'#4a4453'</span></span></code></pre></div></div>
 </div>
 <section id="receiver-operating-characteristic-roc-curve" class="level3">
 <h3 class="anchored" data-anchor-id="receiver-operating-characteristic-roc-curve"><strong>Receiver Operating Characteristic (ROC) Curve</strong></h3>
 <p>ROC curves visualize the trade-off between true positive rate (sensitivity) and false positive rate. The area under the ROC curve (AUC-ROC) is a valuable metric for model performance.</p>
-<div class="cell" data-execution_count="3">
+<div id="74e83688" class="cell" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><span class="im" style="color: #00769E;
 background-color: null;
 font-style: inherit;">import</span> matplotlib.pyplot <span class="im" style="color: #00769E;
@@ -1521,7 +1531,7 @@ background-color: null;
 font-style: inherit;">=</span> plt.subplots()</span>
 <span id="cb3-6">ax.plot(fpr, tpr, color<span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">=</span>blue, lw<span class="op" style="color: #5E5E5E;
+font-style: inherit;">=</span>purple, lw<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
 background-color: null;
@@ -1540,7 +1550,7 @@ font-style: inherit;">0</span>, <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">1</span>], color<span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">=</span>purple, lw<span class="op" style="color: #5E5E5E;
+font-style: inherit;">=</span>coral, lw<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
 background-color: null;
@@ -1557,12 +1567,12 @@ font-style: inherit;">'Random Guess'</span>)</span>
 background-color: null;
 font-style: inherit;">'False Positive Rate'</span>, color<span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">=</span>blue)</span>
+font-style: inherit;">=</span>ink)</span>
 <span id="cb3-9">ax.set_ylabel(<span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">'True Positive Rate'</span>, color<span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">=</span>blue)</span>
+font-style: inherit;">=</span>ink)</span>
 <span id="cb3-10">ax.set_title(<span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">'Receiver Operating Characteristic (ROC) Curve'</span>, color<span class="op" style="color: #5E5E5E;
@@ -1579,21 +1589,21 @@ font-style: inherit;">=</span><span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">'x'</span>, colors<span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">=</span>blue)</span>
+font-style: inherit;">=</span>ink)</span>
 <span id="cb3-13">ax.tick_params(axis<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span><span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">'y'</span>, colors<span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">=</span>blue)</span>
-<span id="cb3-14">ax.set_facecolor(pink)</span>
+font-style: inherit;">=</span>ink)</span>
+<span id="cb3-14">ax.set_facecolor(surface)</span>
 <span id="cb3-15">fig.set_facecolor(background)</span>
 <span id="cb3-16">plt.show()</span></code></pre></div></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="https://hannahl8.github.io/posts/machine-learning-intro/classification/index_files/figure-html/cell-4-output-1.png" width="589" height="449" class="figure-img"></p>
+<p><img src="https://hannahl8.github.io/posts/machine-learning-intro/classification/index_files/figure-html/cell-4-output-1.png" width="590" height="451" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -1602,7 +1612,7 @@ font-style: inherit;">=</span>blue)</span>
 <section id="precision-recall-pr-curve" class="level3">
 <h3 class="anchored" data-anchor-id="precision-recall-pr-curve"><strong>Precision-Recall (PR) Curve</strong></h3>
 <p>PR curves focus on the trade-off between precision and recall, particularly valuable in imbalanced datasets.</p>
-<div class="cell" data-execution_count="4">
+<div id="ee074fd9" class="cell" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># Visualize the Precision-Recall curve</span></span>
@@ -1614,7 +1624,7 @@ background-color: null;
 font-style: inherit;">=</span> plt.subplots()</span>
 <span id="cb4-4">ax.plot(recall, precision, color<span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">=</span>blue, lw<span class="op" style="color: #5E5E5E;
+font-style: inherit;">=</span>purple, lw<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
 background-color: null;
@@ -1627,12 +1637,12 @@ font-style: inherit;">'Precision-Recall curve'</span>)</span>
 background-color: null;
 font-style: inherit;">'Recall (Sensitivity)'</span>, color<span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">=</span>blue)</span>
+font-style: inherit;">=</span>ink)</span>
 <span id="cb4-6">ax.set_ylabel(<span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">'Precision'</span>, color<span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">=</span>blue)</span>
+font-style: inherit;">=</span>ink)</span>
 <span id="cb4-7">ax.set_title(<span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">'Precision-Recall Curve'</span>, color<span class="op" style="color: #5E5E5E;
@@ -1649,21 +1659,21 @@ font-style: inherit;">=</span><span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">'x'</span>, colors<span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">=</span>blue)</span>
+font-style: inherit;">=</span>ink)</span>
 <span id="cb4-10">ax.tick_params(axis<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span><span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">'y'</span>, colors<span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">=</span>blue)</span>
-<span id="cb4-11">ax.set_facecolor(pink)</span>
+font-style: inherit;">=</span>ink)</span>
+<span id="cb4-11">ax.set_facecolor(surface)</span>
 <span id="cb4-12">fig.set_facecolor(background)</span>
 <span id="cb4-13">plt.show()</span></code></pre></div></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="https://hannahl8.github.io/posts/machine-learning-intro/classification/index_files/figure-html/cell-5-output-1.png" width="589" height="449" class="figure-img"></p>
+<p><img src="https://hannahl8.github.io/posts/machine-learning-intro/classification/index_files/figure-html/cell-5-output-1.png" width="590" height="451" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -1672,7 +1682,7 @@ font-style: inherit;">=</span>blue)</span>
 <section id="confusion-matrix" class="level3">
 <h3 class="anchored" data-anchor-id="confusion-matrix"><strong>Confusion Matrix</strong></h3>
 <p>The confusion matrix provides a detailed understanding of a classification model’s performance, breaking down predictions into true positives, true negatives, false positives, and false negatives.</p>
-<div class="cell" data-execution_count="5">
+<div id="b287ddec" class="cell" data-execution_count="5">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><span class="im" style="color: #00769E;
 background-color: null;
 font-style: inherit;">from</span> sklearn.metrics <span class="im" style="color: #00769E;
@@ -1707,7 +1717,7 @@ font-style: inherit;">=</span><span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">'nearest'</span>, cmap<span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">=</span>plt.cm.cool)</span>
+font-style: inherit;">=</span>plt.cm.Purples)</span>
 <span id="cb5-12">ax.set_title(<span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">'Confusion Matrix'</span>, color<span class="op" style="color: #5E5E5E;
@@ -1734,26 +1744,26 @@ font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">45</span>, color<span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">=</span>blue)</span>
+font-style: inherit;">=</span>ink)</span>
 <span id="cb5-19">ax.set_yticklabels(classes, color<span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">=</span>blue)</span>
+font-style: inherit;">=</span>ink)</span>
 <span id="cb5-20">ax.set_xlabel(<span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">'Predicted label'</span>, color<span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">=</span>blue)</span>
+font-style: inherit;">=</span>ink)</span>
 <span id="cb5-21">ax.set_ylabel(<span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">'True label'</span>, color<span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">=</span>blue)</span>
+font-style: inherit;">=</span>ink)</span>
 <span id="cb5-22">fig.set_facecolor(background)</span>
 <span id="cb5-23">plt.show()</span></code></pre></div></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="https://hannahl8.github.io/posts/machine-learning-intro/classification/index_files/figure-html/cell-6-output-1.png" width="535" height="479" class="figure-img"></p>
+<p><img src="https://hannahl8.github.io/posts/machine-learning-intro/classification/index_files/figure-html/cell-6-output-1.png" width="537" height="482" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -1790,33 +1800,38 @@ font-style: inherit;">=</span>blue)</span>
 <section id="data-visualization" class="level2">
 <h2 class="anchored" data-anchor-id="data-visualization">Data Visualization</h2>
 <p>I use the following colors in all of my blogs data visualizations</p>
-<div class="cell" data-execution_count="1">
+<div id="fb69d023" class="cell" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="co" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;"># Define specific colors (same as CSS from quarto vapor theme)</span></span>
+font-style: inherit;"># Define specific colors (same as the site's light theme)</span></span>
 <span id="cb1-2">background <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> <span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">'#1b133a'</span></span>
-<span id="cb1-3">pink <span class="op" style="color: #5E5E5E;
+font-style: inherit;">'#fbf8f3'</span></span>
+<span id="cb1-3">surface <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> <span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">'#ea39b8'</span></span>
+font-style: inherit;">'#ffffff'</span></span>
 <span id="cb1-4">purple <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> <span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">'#6f42c1'</span></span>
-<span id="cb1-5">blue <span class="op" style="color: #5E5E5E;
+font-style: inherit;">'#5b3fe0'</span></span>
+<span id="cb1-5">coral <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> <span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">'#32fbe2'</span></span></code></pre></div></div>
+font-style: inherit;">'#ee6a45'</span></span>
+<span id="cb1-6">ink <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'#4a4453'</span></span></code></pre></div></div>
 </div>
 <p>I will use the following <strong><code>plot_scatter</code></strong> function to create the data visualizations on this page</p>
-<div class="cell" data-execution_count="2">
+<div id="37b8fcfc" class="cell" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="im" style="color: #00769E;
 background-color: null;
 font-style: inherit;">import</span> matplotlib.pyplot <span class="im" style="color: #00769E;
@@ -1834,22 +1849,22 @@ font-style: inherit;">=</span> plt.subplots()</span>
 background-color: null;
 font-style: inherit;">=</span> ax.scatter(X, y, color<span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">=</span>blue, edgecolor<span class="op" style="color: #5E5E5E;
+font-style: inherit;">=</span>purple, edgecolor<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span><span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">'black'</span>, alpha<span class="op" style="color: #5E5E5E;
+font-style: inherit;">'white'</span>, alpha<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span><span class="fl" style="color: #AD0000;
 background-color: null;
-font-style: inherit;">0.6</span>)</span>
+font-style: inherit;">0.7</span>)</span>
 <span id="cb2-6">  ax.plot(X_Range, ax_plot, color<span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">=</span>purple, linewidth<span class="op" style="color: #5E5E5E;
+font-style: inherit;">=</span>coral, linewidth<span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+font-style: inherit;">=</span><span class="fl" style="color: #AD0000;
 background-color: null;
-font-style: inherit;">2</span>)</span>
+font-style: inherit;">2.5</span>)</span>
 <span id="cb2-7">  ax.set_title(title, color<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span>purple)</span>
@@ -1857,12 +1872,12 @@ font-style: inherit;">=</span>purple)</span>
 background-color: null;
 font-style: inherit;">'Feature'</span>, color<span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">=</span>blue)</span>
+font-style: inherit;">=</span>ink)</span>
 <span id="cb2-9">  ax.set_ylabel(<span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">'Target'</span>, color<span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">=</span>blue)</span>
+font-style: inherit;">=</span>ink)</span>
 <span id="cb2-10">  ax.grid(<span class="va" style="color: #111111;
 background-color: null;
 font-style: inherit;">True</span>, linestyle<span class="op" style="color: #5E5E5E;
@@ -1880,15 +1895,15 @@ font-style: inherit;">=</span><span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">'x'</span>, colors<span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">=</span>blue)</span>
+font-style: inherit;">=</span>ink)</span>
 <span id="cb2-12">  ax.tick_params(axis<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span><span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">'y'</span>, colors<span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">=</span>blue)</span>
-<span id="cb2-13">  ax.set_facecolor(pink)</span>
+font-style: inherit;">=</span>ink)</span>
+<span id="cb2-13">  ax.set_facecolor(surface)</span>
 <span id="cb2-14">  fig.set_facecolor(background)</span>
 <span id="cb2-15">  plt.show()</span></code></pre></div></div>
 </div>
@@ -1896,7 +1911,7 @@ font-style: inherit;">=</span>blue)</span>
 <h3 class="anchored" data-anchor-id="linear-regression"><strong>Linear Regression</strong></h3>
 <p>Linear regression is a straightforward method for modeling linear relationships between variables. In a simple linear regression model, the relationship is expressed as <img src="https://latex.codecogs.com/png.latex?y=mx+b"> where <img src="https://latex.codecogs.com/png.latex?y"> is the target variable, <img src="https://latex.codecogs.com/png.latex?x"> is the feature, <img src="https://latex.codecogs.com/png.latex?m"> is the slope, and <img src="https://latex.codecogs.com/png.latex?b"> is the intercept. For multiple features, the equation becomes a linear combination.</p>
 <p>Linear regression can be implemented effortlessly using Python’s scikit-learn library. Let’s generate a synthetic dataset and visualize the linear regression line:</p>
-<div class="cell" data-execution_count="3">
+<div id="f4c68a4b" class="cell" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><span class="im" style="color: #00769E;
 background-color: null;
 font-style: inherit;">import</span> numpy <span class="im" style="color: #00769E;
@@ -1963,7 +1978,7 @@ font-style: inherit;">'Linear Regression'</span>)</span></code></pre></div></div
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="https://hannahl8.github.io/posts/machine-learning-intro/regression/index_files/figure-html/cell-4-output-1.png" width="585" height="449" class="figure-img"></p>
+<p><img src="https://hannahl8.github.io/posts/machine-learning-intro/regression/index_files/figure-html/cell-4-output-1.png" width="585" height="450" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -1973,7 +1988,7 @@ font-style: inherit;">'Linear Regression'</span>)</span></code></pre></div></div
 <h3 class="anchored" data-anchor-id="nonlinear-regression"><strong>Nonlinear Regression</strong></h3>
 <p>While linear regression is powerful, not all relationships are linear. Nonlinear regression extends the concept by accommodating more complex patterns. Polynomial regression is a common technique, where the relationship between variables is expressed as a polynomial equation.</p>
 <p>Let’s use Python to implement nonlinear regression through polynomial regression. This time, we’ll generate a synthetic dataset with a nonlinear relationship:</p>
-<div class="cell" data-execution_count="4">
+<div id="cab36bb1" class="cell" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><span class="im" style="color: #00769E;
 background-color: null;
 font-style: inherit;">from</span> sklearn.preprocessing <span class="im" style="color: #00769E;
@@ -2077,7 +2092,7 @@ font-style: inherit;">'Nonlinear Regression (Polynomial)'</span>)</span></code><
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="https://hannahl8.github.io/posts/machine-learning-intro/regression/index_files/figure-html/cell-5-output-1.png" width="585" height="449" class="figure-img"></p>
+<p><img src="https://hannahl8.github.io/posts/machine-learning-intro/regression/index_files/figure-html/cell-5-output-1.png" width="585" height="450" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -2125,7 +2140,7 @@ font-style: inherit;">'Nonlinear Regression (Polynomial)'</span>)</span></code><
 <section id="data-visualization" class="level2">
 <h2 class="anchored" data-anchor-id="data-visualization"><strong>Data Visualization</strong></h2>
 <p>Let’s demonstrate the power of DBSCAN using Python and scikit-learn. We’ll start by generating a synthetic dataset:</p>
-<div class="cell" data-execution_count="1">
+<div id="d72f4579" class="cell" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="im" style="color: #00769E;
 background-color: null;
 font-style: inherit;">import</span> numpy <span class="im" style="color: #00769E;
@@ -2184,33 +2199,38 @@ background-color: null;
 font-style: inherit;">=</span> dbscan.fit_predict(X)</span></code></pre></div></div>
 </div>
 <p>I use the following colors in all of my blogs data visualizations</p>
-<div class="cell" data-execution_count="2">
+<div id="32c96f24" class="cell" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="co" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;"># Define specific colors (same as CSS from quarto vapor theme)</span></span>
+font-style: inherit;"># Define specific colors (same as the site's light theme)</span></span>
 <span id="cb2-2">background <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> <span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">'#1b133a'</span></span>
-<span id="cb2-3">pink <span class="op" style="color: #5E5E5E;
+font-style: inherit;">'#fbf8f3'</span></span>
+<span id="cb2-3">surface <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> <span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">'#ea39b8'</span></span>
+font-style: inherit;">'#ffffff'</span></span>
 <span id="cb2-4">purple <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> <span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">'#6f42c1'</span></span>
-<span id="cb2-5">blue <span class="op" style="color: #5E5E5E;
+font-style: inherit;">'#5b3fe0'</span></span>
+<span id="cb2-5">coral <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> <span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">'#32fbe2'</span></span></code></pre></div></div>
+font-style: inherit;">'#ee6a45'</span></span>
+<span id="cb2-6">ink <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'#4a4453'</span></span></code></pre></div></div>
 </div>
 <p>Visualizing the results of clustering is crucial for understanding the underlying structure of the data. Let’s create a scatter plot that represents the original data points with cluster labels:</p>
-<div class="cell" data-execution_count="3">
+<div id="cca1cd77" class="cell" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><span class="im" style="color: #00769E;
 background-color: null;
 font-style: inherit;">import</span> matplotlib.pyplot <span class="im" style="color: #00769E;
@@ -2233,11 +2253,11 @@ font-style: inherit;">1</span>], c<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span>labels, cmap<span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">=</span>plt.cm.cool, edgecolor<span class="op" style="color: #5E5E5E;
+font-style: inherit;">=</span>plt.cm.plasma, edgecolor<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span><span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">'black'</span>, s<span class="op" style="color: #5E5E5E;
+font-style: inherit;">'white'</span>, s<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
 background-color: null;
@@ -2251,12 +2271,12 @@ font-style: inherit;">=</span>purple)</span>
 background-color: null;
 font-style: inherit;">'Feature 1'</span>, color<span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">=</span>blue)</span>
+font-style: inherit;">=</span>ink)</span>
 <span id="cb3-8">ax.set_ylabel(<span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">'Feature 2'</span>, color<span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">=</span>blue)</span>
+font-style: inherit;">=</span>ink)</span>
 <span id="cb3-9">ax.grid(<span class="va" style="color: #111111;
 background-color: null;
 font-style: inherit;">True</span>, linestyle<span class="op" style="color: #5E5E5E;
@@ -2274,21 +2294,21 @@ font-style: inherit;">=</span><span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">'x'</span>, colors<span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">=</span>blue)</span>
+font-style: inherit;">=</span>ink)</span>
 <span id="cb3-11">ax.tick_params(axis<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span><span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">'y'</span>, colors<span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">=</span>blue)</span>
-<span id="cb3-12">ax.set_facecolor(pink)</span>
+font-style: inherit;">=</span>ink)</span>
+<span id="cb3-12">ax.set_facecolor(surface)</span>
 <span id="cb3-13">fig.set_facecolor(background)</span>
 <span id="cb3-14">plt.show()</span></code></pre></div></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="https://hannahl8.github.io/posts/machine-learning-intro/clustering/index_files/figure-html/cell-4-output-1.png" width="576" height="449" class="figure-img"></p>
+<p><img src="https://hannahl8.github.io/posts/machine-learning-intro/clustering/index_files/figure-html/cell-4-output-1.png" width="577" height="450" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -2331,33 +2351,38 @@ font-style: inherit;">=</span>blue)</span>
 <section id="data-visualization" class="level2">
 <h2 class="anchored" data-anchor-id="data-visualization">Data Visualization</h2>
 <p>I use the following colors in all of my blogs data visualizations</p>
-<div class="cell" data-execution_count="1">
+<div id="61105b66" class="cell" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="co" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;"># Define specific colors (same as CSS from quarto vapor theme)</span></span>
+font-style: inherit;"># Define specific colors (same as the site's light theme)</span></span>
 <span id="cb1-2">background <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> <span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">'#1b133a'</span></span>
-<span id="cb1-3">pink <span class="op" style="color: #5E5E5E;
+font-style: inherit;">'#fbf8f3'</span></span>
+<span id="cb1-3">surface <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> <span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">'#ea39b8'</span></span>
+font-style: inherit;">'#ffffff'</span></span>
 <span id="cb1-4">purple <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> <span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">'#6f42c1'</span></span>
-<span id="cb1-5">blue <span class="op" style="color: #5E5E5E;
+font-style: inherit;">'#5b3fe0'</span></span>
+<span id="cb1-5">coral <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> <span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">'#32fbe2'</span></span></code></pre></div></div>
+font-style: inherit;">'#ee6a45'</span></span>
+<span id="cb1-6">ink <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'#4a4453'</span></span></code></pre></div></div>
 </div>
 <p>I will use the following <strong><code>plot_histograms</code></strong> function to create the data visualizations on this page</p>
-<div class="cell" data-execution_count="2">
+<div id="92eebfa2" class="cell" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="im" style="color: #00769E;
 background-color: null;
 font-style: inherit;">import</span> matplotlib.pyplot <span class="im" style="color: #00769E;
@@ -2385,17 +2410,13 @@ font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">30</span>, edgecolor<span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">=</span><span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'black'</span>, alpha<span class="op" style="color: #5E5E5E;
+font-style: inherit;">=</span>surface, alpha<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span><span class="fl" style="color: #AD0000;
 background-color: null;
-font-style: inherit;">0.7</span>, color<span class="op" style="color: #5E5E5E;
+font-style: inherit;">0.85</span>, color<span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">=</span>purple, ec<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span>blue)</span>
+font-style: inherit;">=</span>purple)</span>
 <span id="cb2-8">    ax.set_title(title, color<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span>purple)</span>
@@ -2403,12 +2424,12 @@ font-style: inherit;">=</span>purple)</span>
 background-color: null;
 font-style: inherit;">'Values'</span>, color<span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">=</span>blue)</span>
+font-style: inherit;">=</span>ink)</span>
 <span id="cb2-10">    ax.set_ylabel(<span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">'Frequency'</span>, color<span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">=</span>blue)</span>
+font-style: inherit;">=</span>ink)</span>
 <span id="cb2-11">    ax.grid(<span class="va" style="color: #111111;
 background-color: null;
 font-style: inherit;">True</span>, linestyle<span class="op" style="color: #5E5E5E;
@@ -2426,16 +2447,16 @@ font-style: inherit;">=</span><span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">'x'</span>, colors<span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">=</span>blue)</span>
+font-style: inherit;">=</span>ink)</span>
 <span id="cb2-13">    ax.tick_params(axis<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span><span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">'y'</span>, colors<span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">=</span>blue)</span>
+font-style: inherit;">=</span>ink)</span>
 <span id="cb2-14">    </span>
-<span id="cb2-15">    ax.set_facecolor(pink)</span>
+<span id="cb2-15">    ax.set_facecolor(surface)</span>
 <span id="cb2-16">    fig.set_facecolor(background)</span>
 <span id="cb2-17">    </span>
 <span id="cb2-18">    <span class="co" style="color: #5E5E5E;
@@ -2444,7 +2465,7 @@ font-style: inherit;"># Show the plot</span></span>
 <span id="cb2-19">    plt.show()</span></code></pre></div></div>
 </div>
 <p>Let’s use Python to create a histogram of a simulated random variable:</p>
-<div class="cell" data-execution_count="3">
+<div id="bc64b273" class="cell" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><span class="im" style="color: #00769E;
 background-color: null;
 font-style: inherit;">import</span> numpy <span class="im" style="color: #00769E;
@@ -2476,7 +2497,7 @@ font-style: inherit;">'Histogram of Random Variable'</span>)</span></code></pre>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="https://hannahl8.github.io/posts/machine-learning-intro/probability/index_files/figure-html/cell-4-output-1.png" width="593" height="449" class="figure-img"></p>
+<p><img src="https://hannahl8.github.io/posts/machine-learning-intro/probability/index_files/figure-html/cell-4-output-1.png" width="594" height="451" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -2484,7 +2505,7 @@ font-style: inherit;">'Histogram of Random Variable'</span>)</span></code></pre>
 <p>Probability theory and random variables are not just theoretical concepts; they are integral to the practical application of machine learning. Models are built upon the assumptions of probability distributions, and the visualization of data through histograms aids in model interpretation and validation. As you dive deeper into machine learning, a solid understanding of these foundational concepts will empower you to make more informed decisions in model selection, training, and evaluation.</p>
 <p>The following code generates a dataset with two classes, trains a Random Forest Classifier on the data, and then generates predictions on a test set. The histograms before and after applying the machine learning model are plotted on top of one another for comparison.</p>
 <p>The <strong><code>generate_dataset</code></strong> function creates a synthetic dataset with two classes, and the <strong><code>plot_histograms</code></strong> function is used to visualize the distribution before and after applying the machine learning model. The accuracy of the model is also printed to give an idea of its performance.</p>
-<div class="cell" data-execution_count="4">
+<div id="59abc262" class="cell" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><span class="im" style="color: #00769E;
 background-color: null;
 font-style: inherit;">from</span> sklearn.model_selection <span class="im" style="color: #00769E;
@@ -2663,14 +2684,14 @@ font-style: inherit;">'Dataset after Machine Learning'</span>)</span></code></pr
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="https://hannahl8.github.io/posts/machine-learning-intro/probability/index_files/figure-html/cell-5-output-2.png" width="585" height="449" class="figure-img"></p>
+<p><img src="https://hannahl8.github.io/posts/machine-learning-intro/probability/index_files/figure-html/cell-5-output-2.png" width="585" height="451" class="figure-img"></p>
 </figure>
 </div>
 </div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="https://hannahl8.github.io/posts/machine-learning-intro/probability/index_files/figure-html/cell-5-output-3.png" width="593" height="449" class="figure-img"></p>
+<p><img src="https://hannahl8.github.io/posts/machine-learning-intro/probability/index_files/figure-html/cell-5-output-3.png" width="594" height="451" class="figure-img"></p>
 </figure>
 </div>
 </div>

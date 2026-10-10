@@ -46,11 +46,12 @@ labels = dbscan.fit_predict(X)
 I use the following colors in all of my blogs data visualizations
 
 ```{python}
-# Define specific colors (same as CSS from quarto vapor theme)
-background = '#1b133a'
-pink = '#ea39b8'
-purple = '#6f42c1'
-blue = '#32fbe2'
+# Define specific colors (same as the site's light theme)
+background = '#fbf8f3'
+surface = '#ffffff'
+purple = '#5b3fe0'
+coral = '#ee6a45'
+ink = '#4a4453'
 ```
 
 Visualizing the results of clustering is crucial for understanding the underlying structure of the data. Let's create a scatter plot that represents the original data points with cluster labels:
@@ -60,14 +61,14 @@ import matplotlib.pyplot as plt
 
 # Visualize the clustering
 fig, ax = plt.subplots()
-scatter = ax.scatter(X[:, 0], X[:, 1], c=labels, cmap=plt.cm.cool, edgecolor='black', s=50)
+scatter = ax.scatter(X[:, 0], X[:, 1], c=labels, cmap=plt.cm.plasma, edgecolor='white', s=50)
 ax.set_title('DBSCAN Clustering', color=purple)
-ax.set_xlabel('Feature 1', color=blue)
-ax.set_ylabel('Feature 2', color=blue)
+ax.set_xlabel('Feature 1', color=ink)
+ax.set_ylabel('Feature 2', color=ink)
 ax.grid(True, linestyle='--', alpha=0.5)
-ax.tick_params(axis='x', colors=blue)
-ax.tick_params(axis='y', colors=blue)
-ax.set_facecolor(pink)
+ax.tick_params(axis='x', colors=ink)
+ax.tick_params(axis='y', colors=ink)
+ax.set_facecolor(surface)
 fig.set_facecolor(background)
 plt.show()
 ```

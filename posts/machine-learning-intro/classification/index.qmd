@@ -53,11 +53,12 @@ y_proba = logreg.predict_proba(X_test)[:, 1]
 I use the following colors in all of my blogs data visualizations
 
 ```{python}
-# Define specific colors (same as CSS from quarto vapor theme)
-background = '#1b133a'
-pink = '#ea39b8'
-purple = '#6f42c1'
-blue = '#32fbe2'
+# Define specific colors (same as the site's light theme)
+background = '#fbf8f3'
+surface = '#ffffff'
+purple = '#5b3fe0'
+coral = '#ee6a45'
+ink = '#4a4453'
 ```
 
 ### **Receiver Operating Characteristic (ROC) Curve**
@@ -70,15 +71,15 @@ import matplotlib.pyplot as plt
 # Visualize the ROC curve
 fpr, tpr, _ = roc_curve(y_test, y_proba)
 fig, ax = plt.subplots()
-ax.plot(fpr, tpr, color=blue, lw=2, label='ROC curve')
-ax.plot([0, 1], [0, 1], color=purple, lw=2, linestyle='--', label='Random Guess')
-ax.set_xlabel('False Positive Rate', color=blue)
-ax.set_ylabel('True Positive Rate', color=blue)
+ax.plot(fpr, tpr, color=purple, lw=2, label='ROC curve')
+ax.plot([0, 1], [0, 1], color=coral, lw=2, linestyle='--', label='Random Guess')
+ax.set_xlabel('False Positive Rate', color=ink)
+ax.set_ylabel('True Positive Rate', color=ink)
 ax.set_title('Receiver Operating Characteristic (ROC) Curve', color=purple)
 ax.legend(loc='lower right')
-ax.tick_params(axis='x', colors=blue)
-ax.tick_params(axis='y', colors=blue)
-ax.set_facecolor(pink)
+ax.tick_params(axis='x', colors=ink)
+ax.tick_params(axis='y', colors=ink)
+ax.set_facecolor(surface)
 fig.set_facecolor(background)
 plt.show()
 ```
@@ -91,14 +92,14 @@ PR curves focus on the trade-off between precision and recall, particularly valu
 # Visualize the Precision-Recall curve
 precision, recall, _ = precision_recall_curve(y_test, y_proba)
 fig, ax = plt.subplots()
-ax.plot(recall, precision, color=blue, lw=2, label='Precision-Recall curve')
-ax.set_xlabel('Recall (Sensitivity)', color=blue)
-ax.set_ylabel('Precision', color=blue)
+ax.plot(recall, precision, color=purple, lw=2, label='Precision-Recall curve')
+ax.set_xlabel('Recall (Sensitivity)', color=ink)
+ax.set_ylabel('Precision', color=ink)
 ax.set_title('Precision-Recall Curve', color=purple)
 ax.legend(loc='lower left')
-ax.tick_params(axis='x', colors=blue)
-ax.tick_params(axis='y', colors=blue)
-ax.set_facecolor(pink)
+ax.tick_params(axis='x', colors=ink)
+ax.tick_params(axis='y', colors=ink)
+ax.set_facecolor(surface)
 fig.set_facecolor(background)
 plt.show()
 ```
@@ -118,17 +119,17 @@ cm = confusion_matrix(y_test, y_pred)
 
 # Visualize the confusion matrix
 fig, ax = plt.subplots()
-cax = ax.imshow(cm, interpolation='nearest', cmap=plt.cm.cool)
+cax = ax.imshow(cm, interpolation='nearest', cmap=plt.cm.Purples)
 ax.set_title('Confusion Matrix', color=purple)
 plt.colorbar(cax)
 classes = ['Class 0', 'Class 1']
 tick_marks = np.arange(len(classes))
 ax.set_xticks(tick_marks)
 ax.set_yticks(tick_marks)
-ax.set_xticklabels(classes, rotation=45, color=blue)
-ax.set_yticklabels(classes, color=blue)
-ax.set_xlabel('Predicted label', color=blue)
-ax.set_ylabel('True label', color=blue)
+ax.set_xticklabels(classes, rotation=45, color=ink)
+ax.set_yticklabels(classes, color=ink)
+ax.set_xlabel('Predicted label', color=ink)
+ax.set_ylabel('True label', color=ink)
 fig.set_facecolor(background)
 plt.show()
 ```

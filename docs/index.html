@@ -48,9 +48,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-4a93137e1f464f6b571849bbdd2e7ac0.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-f7d7ad64e1cf25535aeef8edea61d08c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-e229f4fa0ed2dd195099a4e72384ab2a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-f7d7ad64e1cf25535aeef8edea61d08c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-d227ca9215eb7d48a5ca07801d090427.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-57fc6de9a61a1f816275cd5e27045eae.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-d227ca9215eb7d48a5ca07801d090427.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -109,11 +109,11 @@ cookieconsent.run({
 
 <link rel="stylesheet" href="styles.css">
 <meta property="og:title" content="About · Hannah Lyons">
-<meta property="og:description" content="Software Engineer · full-stack web &amp; desktop apps">
+<meta property="og:description" content="Software Engineer · full-stack apps &amp; agentic development">
 <meta property="og:image" content="https://hannahl8.github.io/headshot-480.jpg">
 <meta property="og:site_name" content="Hannah Lyons">
 <meta name="twitter:title" content="About · Hannah Lyons">
-<meta name="twitter:description" content="Software Engineer · full-stack web &amp; desktop apps">
+<meta name="twitter:description" content="Software Engineer · full-stack apps &amp; agentic development">
 <meta name="twitter:image" content="https://hannahl8.github.io/headshot-480.jpg">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -348,7 +348,7 @@ cookieconsent.run({
  <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Hannah Lyons</h1>
-<p class="subtitle lead">Software Engineer · full-stack web &amp; desktop apps</p>
+<p class="subtitle lead">Software Engineer · full-stack apps &amp; agentic development</p>
 </div>
 <div class="quarto-title-meta">
   </div>
@@ -418,7 +418,7 @@ cookieconsent.run({
 <ul class="skill-badges">
 <li>Claude Code (CLI)</li>
 <li>GitLab Duo</li>
-<li>GCP Scion (agent orchestration)</li>
+<li>GCP Scion</li>
 </ul>
 </div>
 </div>
@@ -698,6 +698,18 @@ function toggleTimelineOrder() {
 </div>
 </div>
  <!-- /main -->
+<script>
+
+  // Keep the footer copyright year current (the 2026 in _quarto.yml is only a fallback)
+
+  document.querySelectorAll(".copyright-year").forEach((el) => {
+
+    el.textContent = new Date().getFullYear();
+
+  });
+
+</script>
+
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
@@ -1108,7 +1120,7 @@ function toggleTimelineOrder() {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>© 2026 Hannah Lyons</p>
+<p>© <span class="copyright-year">2026</span> Hannah Lyons</p>
 </div>   
     <div class="nav-footer-center">
 

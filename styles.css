@@ -982,3 +982,135 @@ main.content table thead th {
     font-weight: 600;
     border-bottom-color: var(--hl-accent-ring) !important;
 }
+
+/* =====================================================================
+   Cookie consent banner + preferences dialog
+   The library only ships "light" and "dark" palettes; these overrides
+   make it follow the site theme instead.
+   ===================================================================== */
+.termsfeed-com---nb.termsfeed-com---nb-simple {
+    right: 16px !important;
+    bottom: 16px !important;
+    max-width: 420px !important;
+    border-radius: 16px;
+    border: 1px solid var(--hl-border);
+    box-shadow: var(--hl-shadow-lg);
+    overflow: hidden;
+}
+
+body .termsfeed-com---nb,
+body .termsfeed-com---palette-dark.termsfeed-com---nb,
+body .termsfeed-com---palette-light.termsfeed-com---nb {
+    background-color: var(--hl-surface) !important;
+    color: var(--hl-ink) !important;
+}
+
+body .termsfeed-com---nb .cc-nb-main-container {
+    padding: 1.5rem 1.6rem !important;
+}
+
+body .termsfeed-com---nb .cc-nb-title {
+    font-family: "Fraunces", Georgia, serif !important;
+    font-size: 1.3rem !important;
+    color: var(--hl-ink) !important;
+}
+
+body .termsfeed-com---nb .cc-nb-text {
+    font-family: "Inter", system-ui, sans-serif !important;
+    font-size: 0.88rem !important;
+    line-height: 1.6 !important;
+    color: var(--hl-muted) !important;
+}
+
+body .termsfeed-com---nb .cc-nb-okagree,
+body .termsfeed-com---nb .cc-nb-reject,
+body .termsfeed-com---nb .cc-nb-changep,
+body .termsfeed-com---pc-dialog .cc-cp-foot-save {
+    font-family: "Inter", system-ui, sans-serif !important;
+    font-weight: 600 !important;
+    font-size: 0.85rem !important;
+    border-radius: 999px !important;
+    padding: 0.5rem 1.1rem !important;
+    transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+body .termsfeed-com---nb .cc-nb-okagree,
+body .termsfeed-com---pc-dialog .cc-cp-foot-save {
+    background-color: var(--hl-accent) !important;
+    color: var(--hl-bg) !important;
+    border: 1px solid var(--hl-accent) !important;
+}
+
+body .termsfeed-com---nb .cc-nb-reject,
+body .termsfeed-com---nb .cc-nb-changep {
+    background-color: transparent !important;
+    color: var(--hl-ink) !important;
+    border: 1px solid var(--hl-border) !important;
+}
+
+body .termsfeed-com---nb .cc-nb-reject:hover,
+body .termsfeed-com---nb .cc-nb-changep:hover {
+    border-color: var(--hl-accent) !important;
+    color: var(--hl-accent) !important;
+}
+
+body .termsfeed-com---nb button:hover,
+body .termsfeed-com---pc-dialog .cc-cp-foot-save:hover {
+    transform: translateY(-1px);
+}
+
+body .termsfeed-com---nb button:focus,
+body .termsfeed-com---pc-dialog button:focus {
+    box-shadow: 0 0 0 3px var(--hl-accent-ring) !important;
+}
+
+/* Preferences dialog */
+body .termsfeed-com---pc-dialog .cc-pc-container,
+body .termsfeed-com---pc-dialog .cc-pc-head,
+body .termsfeed-com---pc-dialog .cc-cp-foot {
+    background: var(--hl-surface) !important;
+    color: var(--hl-ink) !important;
+    border-color: var(--hl-border) !important;
+}
+
+body .termsfeed-com---pc-dialog .cc-pc-container {
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+body .termsfeed-com---pc-dialog .cc-pc-head-title-headline,
+body .termsfeed-com---pc-dialog .cc-pc-head-title-text,
+body .termsfeed-com---pc-dialog .cc-cp-foot-byline,
+body .termsfeed-com---pc-dialog .cc-pc-head-close {
+    color: var(--hl-ink) !important;
+}
+
+body .termsfeed-com---pc-dialog .cc-cp-body,
+body .termsfeed-com---pc-dialog .cc-cp-body-content,
+body .termsfeed-com---pc-dialog .cc-cp-body-tabs-item[active=true] {
+    background: var(--hl-bg) !important;
+    color: var(--hl-ink) !important;
+}
+
+body .termsfeed-com---pc-dialog .cc-cp-body-content-entry-title,
+body .termsfeed-com---pc-dialog .cc-cp-body-content-entry-text,
+body .termsfeed-com---pc-dialog .cc-cp-body-tabs-item[active=true] button {
+    color: var(--hl-ink) !important;
+}
+
+body .termsfeed-com---pc-dialog .cc-cp-body-tabs {
+    background: var(--hl-surface-2) !important;
+}
+
+body .termsfeed-com---pc-dialog .cc-cp-body-tabs-item-link {
+    color: var(--hl-muted) !important;
+}
+
+@media (max-width: 576px) {
+    .termsfeed-com---nb.termsfeed-com---nb-simple {
+        left: 12px !important;
+        right: 12px !important;
+        bottom: 12px !important;
+        max-width: none !important;
+    }
+}

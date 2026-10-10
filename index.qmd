@@ -1,6 +1,6 @@
 ---
 title: "Hannah Lyons"
-subtitle: "Software Engineer · full-stack web & desktop apps"
+subtitle: "Software Engineer · full-stack apps & agentic development"
 pagetitle: "About · Hannah Lyons"
 image: headshot-480.jpg
 resources:
@@ -89,7 +89,7 @@ I am a Software Engineer II at Estes Express Lines on the Agentic Development Li
 <ul class="skill-badges">
 <li>Claude Code (CLI)</li>
 <li>GitLab Duo</li>
-<li>GCP Scion (agent orchestration)</li>
+<li>GCP Scion</li>
 </ul>
 </div>
 </div>

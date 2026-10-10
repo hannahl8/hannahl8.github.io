@@ -20,7 +20,7 @@ website:
   repo-url: https://github.com/hannahl8/hannahl8.github.io
   repo-actions: [source]
   page-footer:
-    left: "© 2026 Hannah Lyons"
+    left: "© <span class='copyright-year'>2026</span> Hannah Lyons"
     right:
       - icon: github
         href: https://github.com/hannahl8
@@ -47,5 +47,6 @@ format:
       dark: theme-dark.scss
     respect-user-color-scheme: true
     css: styles.css
+    include-after-body: footer-year.html
 
 editor: visual

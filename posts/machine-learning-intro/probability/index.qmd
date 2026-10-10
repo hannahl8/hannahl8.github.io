@@ -29,11 +29,12 @@ Random variables represent various aspects of data. Features can be modeled as r
 I use the following colors in all of my blogs data visualizations
 
 ```{python}
-# Define specific colors (same as CSS from quarto vapor theme)
-background = '#1b133a'
-pink = '#ea39b8'
-purple = '#6f42c1'
-blue = '#32fbe2'
+# Define specific colors (same as the site's light theme)
+background = '#fbf8f3'
+surface = '#ffffff'
+purple = '#5b3fe0'
+coral = '#ee6a45'
+ink = '#4a4453'
 ```
 
 I will use the following **`plot_histograms`** function to create the data visualizations on this page
@@ -45,15 +46,15 @@ import matplotlib.pyplot as plt
 def plot_histograms(data, title):
     # Create a histogram
     fig, ax = plt.subplots()
-    hist = ax.hist(data, bins=30, edgecolor='black', alpha=0.7, color=purple, ec=blue)
+    hist = ax.hist(data, bins=30, edgecolor=surface, alpha=0.85, color=purple)
     ax.set_title(title, color=purple)
-    ax.set_xlabel('Values', color=blue)
-    ax.set_ylabel('Frequency', color=blue)
+    ax.set_xlabel('Values', color=ink)
+    ax.set_ylabel('Frequency', color=ink)
     ax.grid(True, linestyle='--', alpha=0.5)
-    ax.tick_params(axis='x', colors=blue)
-    ax.tick_params(axis='y', colors=blue)
+    ax.tick_params(axis='x', colors=ink)
+    ax.tick_params(axis='y', colors=ink)
     
-    ax.set_facecolor(pink)
+    ax.set_facecolor(surface)
     fig.set_facecolor(background)
     
     # Show the plot
