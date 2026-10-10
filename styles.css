@@ -466,6 +466,66 @@ main a:not(.btn):not(.nav-link):not(.about-link):hover {
     margin-bottom: 0;
 }
 
+/* One company, several roles (LinkedIn style): a mini timeline inside the card */
+.timeline-roles {
+    margin-top: 0.9rem;
+}
+
+/* Company name sits above the role titles, so give it more weight */
+.timeline-content:has(.timeline-roles) > h3 {
+    font-size: 1.4rem;
+}
+
+.timeline-role {
+    position: relative;
+    padding-left: 22px;
+    padding-bottom: 1.1rem;
+}
+
+.timeline-role:last-child {
+    padding-bottom: 0;
+}
+
+.timeline-role::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.4em;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--hl-accent);
+    box-shadow: 0 0 0 3px var(--hl-accent-soft);
+}
+
+.timeline-role.current::before {
+    background: var(--hl-warm);
+    box-shadow: 0 0 0 3px var(--hl-warm-soft);
+}
+
+/* Connector between role dots */
+.timeline-role:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    left: 4.5px;
+    top: calc(0.4em + 16px);
+    bottom: 4px;
+    width: 1px;
+    background: var(--hl-border);
+}
+
+.timeline-role h4 {
+    font-size: 1rem;
+    line-height: 1.35;
+    margin: 0 0 2px;
+}
+
+.timeline .timeline-role small {
+    font-size: 0.68rem;
+    margin-bottom: 6px;
+    color: var(--hl-muted);
+}
+
 /* Tablets and phones: collapse the alternating timeline into a single column */
 @media (max-width: 768px) {
     .timeline {

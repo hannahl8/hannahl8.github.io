@@ -109,25 +109,26 @@ I am a Software Engineer II at Estes Express Lines on the Agentic Development Li
 ::::::::::::::::::::::::::: {#timeline .timeline}
 :::: {.timeline-item .right .current}
 ::: timeline-content
+<small>July 2025 - Present</small>
+
+<h3>Estes Express Lines</h3>
+
+<div class="timeline-roles">
+<div class="timeline-role current">
+<h4>Software Engineer II · Agentic Development Life Cycle (ADLC) Team</h4>
 <small>October 2026 - Present</small>
-
-<h3>Agentic Development Life Cycle (ADLC) Team at Estes Express Lines</h3>
-
 <p>After interviewing for a spot, I joined a new proof-of-concept team (still as a Software Engineer II) that is changing the shape of the development process itself. Instead of AI helping with individual tasks, we define the intent, constraints, and acceptance criteria, and AI agents orchestrated with GCP Scion handle much of the planning, development, testing, and remediation. Our first iteration is a brand-new application built from scratch. I also help interview engineers joining the team, and I'll bring what we learn back to my previous team's legacy applications.</p>
+</div>
+<div class="timeline-role">
+<h4>Software Engineer II</h4>
+<small>July 2025 - October 2026</small>
+<p>Software engineer on an agile development team creating and improving features for internal and external software applications as well as mentor new developers who join our team.</p>
+</div>
+</div>
 :::
 ::::
 
 :::: {.timeline-item .left}
-::: timeline-content
-<small>July 2025 - October 2026</small>
-
-<h3>Software Engineer II at Estes Express Lines</h3>
-
-<p>Software engineer on an agile development team creating and improving features for internal and external software applications as well as mentor new developers who join our team.</p>
-:::
-::::
-
-:::: {.timeline-item .right}
 ::: timeline-content
 <small>September 2024 - May 2025</small>
 
@@ -137,7 +138,7 @@ I am a Software Engineer II at Estes Express Lines on the Agentic Development Li
 :::
 ::::
 
-:::: {.timeline-item .left}
+:::: {.timeline-item .right}
 ::: timeline-content
 <small>August 2024</small>
 
@@ -147,7 +148,7 @@ I am a Software Engineer II at Estes Express Lines on the Agentic Development Li
 :::
 ::::
 
-:::: {.timeline-item .right}
+:::: {.timeline-item .left}
 ::: timeline-content
 <small>August 2023</small>
 
@@ -157,7 +158,7 @@ I am a Software Engineer II at Estes Express Lines on the Agentic Development Li
 :::
 ::::
 
-:::: {.timeline-item .left}
+:::: {.timeline-item .right}
 ::: timeline-content
 <small>June 2021 - September 2024</small>
 
@@ -167,7 +168,7 @@ I am a Software Engineer II at Estes Express Lines on the Agentic Development Li
 :::
 ::::
 
-:::: {.timeline-item .right}
+:::: {.timeline-item .left}
 ::: timeline-content
 <small>May 2021</small>
 
@@ -177,7 +178,7 @@ I am a Software Engineer II at Estes Express Lines on the Agentic Development Li
 :::
 ::::
 
-:::: {.timeline-item .left}
+:::: {.timeline-item .right}
 ::: timeline-content
 <small>June 2020 - August 2020 & December 2020 - January 2021</small>
 
@@ -187,7 +188,7 @@ I am a Software Engineer II at Estes Express Lines on the Agentic Development Li
 :::
 ::::
 
-:::: {.timeline-item .right}
+:::: {.timeline-item .left}
 ::: timeline-content
 <small>August 2019</small>
 
@@ -197,7 +198,7 @@ I am a Software Engineer II at Estes Express Lines on the Agentic Development Li
 :::
 ::::
 
-:::: {.timeline-item .left}
+:::: {.timeline-item .right}
 ::: timeline-content
 <small>May 2019 - August 2019</small>
 
@@ -207,7 +208,7 @@ I am a Software Engineer II at Estes Express Lines on the Agentic Development Li
 :::
 ::::
 
-:::: {.timeline-item .right}
+:::: {.timeline-item .left}
 ::: timeline-content
 <small>August 2017</small>
 
@@ -217,7 +218,7 @@ I am a Software Engineer II at Estes Express Lines on the Agentic Development Li
 :::
 ::::
 
-:::: {.timeline-item .left}
+:::: {.timeline-item .right}
 ::: timeline-content
 <small>June 2017</small>
 
@@ -227,7 +228,7 @@ I am a Software Engineer II at Estes Express Lines on the Agentic Development Li
 :::
 ::::
 
-:::: {.timeline-item .right}
+:::: {.timeline-item .left}
 ::: timeline-content
 <small>March 2016 - August 2017</small>
 
